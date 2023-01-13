@@ -21,11 +21,11 @@ if (App::getLocale() == 'en') {
   <meta name="keywords" content="bootstrap 5, business, corporate, creative, gulp, marketing, minimal, modern, multipurpose, one page, responsive, saas, sass, seo, startup, html5 template, site template">
   <meta name="author" content="david calva">
   <title>@yield('title')</title>
-  <link rel="shortcut icon" href="./assets/img/favicon.png">
-  <link rel="stylesheet" href="./assets/css/plugins.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/colors/leaf.css">
-  <link rel="preload" href="./assets/css/fonts/urbanist.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="shortcut icon" href="{{ asset('assets/img/favicon.png') }}">
+  <link rel="stylesheet" href="{{ asset('assets/css/plugins.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/css/colors/leaf.css') }}">
+  <link rel="preload" href="{{ asset('assets/css/fonts/urbanist.css') }}" as="style" onload="this.rel='stylesheet'">
   @yield('head')
 </head>
 
@@ -603,8 +603,8 @@ if (App::getLocale() == 'en') {
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
     </svg>
   </div>
-  <script src="./assets/js/plugins.js"></script>
-  <script src="./assets/js/theme.js"></script>
+  <script src="{{ asset('assets/js/plugins.js') }}"></script>
+  <script src="{{ asset('assets/js/theme.js') }}"></script>
   @yield('scripts')
 </body>
 
