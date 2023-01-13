@@ -13,12 +13,14 @@ use App\Http\Controllers\WebController;
 |
 */
 Route::middleware('setlocale:en')->name('en.')->group(function () {
-    
+    Route::get('/', [WebController::class, 'home'])->name('home');
+    Route::get('/contact', [WebController::class, 'contact'])->name('contact');
     // Route::get('/', function () {
     //     return view('welcome');
     // });
 });
 Route::middleware('setlocale:es')->name('es.')->prefix('es')->group(function () {
     Route::get('/', [WebController::class, 'home'])->name('home');
+    Route::get('/contacto', [WebController::class, 'contact'])->name('contact');
 });
 /*;*/
