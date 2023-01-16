@@ -14,7 +14,7 @@ class WebController extends Controller
     {
         return view('web.contact');
     }
-    public function sendEmailContact(Request $rq)
+    public function sendContact(Request $rq)
     {
         if (empty($rq->get('recaptcha_token'))) {
             throw new \Exception("captcha required", 1);

@@ -98,7 +98,8 @@
         <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
           <h2 class="display-4 mb-3 text-center">{{ __('contact.Drop-Us-a-Line') }}</h2>
           <p class="lead text-center mb-10">{{ __('contact.Reach-out') }}</p>
-          <form class="contact-form needs-validation" method="post" action="./assets/php/contact.php" novalidate>
+          <form class="contact-form needs-validation" method="post" action="{{route(App::getLocale().'.sendContact')}}" novalidate>
+            <input type="hidden" name="_token" value="{{ csrf_token() }}" />
             <div class="messages"></div>
             <div class="row gx-4">
               <div class="col-md-6">

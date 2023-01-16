@@ -604,7 +604,7 @@ if (App::getLocale() == 'en') {
     </svg>
   </div>
   <script src="{{ asset('assets/js/plugins.js') }}"></script>
-  <script src="{{ asset('assets/js/theme.js') }}"></script>
+  <script src="{{ asset('assets/js/theme.js?v=1') }}"></script>
   @yield('scripts')
 </body>
 
