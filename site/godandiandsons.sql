@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS `site_configurations` (
   `recaptcha_private_key` varchar(255) DEFAULT NULL,
   `recapcha_site_key` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `site_configurations`
