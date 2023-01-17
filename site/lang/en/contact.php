@@ -18,4 +18,7 @@ return [
 	'fields required'=>'These fields are required.',
 	'Send message'=>'Send message',
 	'Phone'=>'Phone',
+	'email'=>'Email',
+	'messageOk'=>'Hemos recibido sus datos, tan pronto como sea posible uno de nuestros agentes lo contactara.',
+	'messageOk'=>'He have received your information, we will contact you as soon as posible.',
 ];

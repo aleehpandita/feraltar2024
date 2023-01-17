@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 
 class WebController extends Controller
@@ -16,10 +17,11 @@ class WebController extends Controller
     }
     public function sendContact(Request $rq)
     {
-        if (empty($rq->get('recaptcha_token'))) {
+        ##dd($rq->all());
+        if (empty($rq->get('g-recaptcha-response'))) {
             throw new \Exception("captcha required", 1);
         }
-        $captcha = $rq->get('recaptcha_token');
+        $captcha = $rq->get('g-recaptcha-response');
         #$secretKey = "6LcGHk8UAAAAAILfagEEFFJmJJRaG8DJy2iDgerd";
         $secretKey = \App::make('SITE_CONFIGURATION')->recaptcha_private_key;
         #$ip = $_SERVER['REMOTE_ADDR'];
@@ -32,6 +34,6 @@ class WebController extends Controller
         Mail::to(json_decode(\App::make('SITE_CONFIGURATION')->bcc_emails))
         ->send(new \App\Mail\Contact($rq));
         #Mail::to(['l.d.calva@gmail.com'])->send(new ContactWeb($rq));
-        return response()->json(['status'=>0, 'message'=>'Hemos recibido sus datos, tan pronto como sea posible uno de nuestros agentes lo contactara.']);
+        return response()->json(['status'=>'OK', 'message'=>trans('contact.messageOk')]);
     }
 }

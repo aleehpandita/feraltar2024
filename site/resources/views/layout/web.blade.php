@@ -26,6 +26,121 @@ if (App::getLocale() == 'en') {
   <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/colors/leaf.css') }}">
   <link rel="preload" href="{{ asset('assets/css/fonts/urbanist.css') }}" as="style" onload="this.rel='stylesheet'">
+  <style>
+      :root {
+        --animate-duration: 1s;
+        --animate-delay: 1s;
+        --animate-repeat: 1;
+      }
+      .animate__animated {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-duration: var(--animate-duration);
+        animation-duration: var(--animate-duration);
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+      }
+      .animate__animated.animate__faster {
+        -webkit-animation-duration: calc(1s / 2);
+        animation-duration: calc(1s / 2);
+        -webkit-animation-duration: calc(var(--animate-duration) / 2);
+        animation-duration: calc(var(--animate-duration) / 2);
+      }
+
+      @media print, (prefers-reduced-motion: reduce) {
+        .animate__animated {
+          -webkit-animation-duration: 1ms !important;
+          animation-duration: 1ms !important;
+          -webkit-transition-duration: 1ms !important;
+          transition-duration: 1ms !important;
+          -webkit-animation-iteration-count: 1 !important;
+          animation-iteration-count: 1 !important;
+        }
+        .animate__animated[class*='Out'] {
+          opacity: 0;
+        }
+      }
+        /* Zooming entrances */
+      @-webkit-keyframes zoomIn {
+        from {
+          opacity: 0;
+          -webkit-transform: scale3d(0.3, 0.3, 0.3);
+          transform: scale3d(0.3, 0.3, 0.3);
+        }
+
+        50% {
+          opacity: 1;
+        }
+      }
+      @keyframes zoomIn {
+        from {
+          opacity: 0;
+          -webkit-transform: scale3d(0.3, 0.3, 0.3);
+          transform: scale3d(0.3, 0.3, 0.3);
+        }
+
+        50% {
+          opacity: 1;
+        }
+      }
+      .animate__zoomIn {
+        -webkit-animation-name: zoomIn;
+        animation-name: zoomIn;
+      }
+      /* Zooming exits */
+      @-webkit-keyframes zoomOut {
+        from {
+          opacity: 1;
+        }
+
+        50% {
+          opacity: 0;
+          -webkit-transform: scale3d(0.3, 0.3, 0.3);
+          transform: scale3d(0.3, 0.3, 0.3);
+        }
+
+        to {
+          opacity: 0;
+        }
+      }
+      @keyframes zoomOut {
+        from {
+          opacity: 1;
+        }
+
+        50% {
+          opacity: 0;
+          -webkit-transform: scale3d(0.3, 0.3, 0.3);
+          transform: scale3d(0.3, 0.3, 0.3);
+        }
+
+        to {
+          opacity: 0;
+        }
+      }
+      .animate__zoomOut {
+        -webkit-animation-name: zoomOut;
+        animation-name: zoomOut;
+      }
+      #loader {
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.3);
+        z-index: 10000;
+        visibility: hidden;
+        display: none;
+      }
+      .visivility{
+        visibility: visible !important;
+        display: flex!important;
+      }
+    </style>
+    <script type="text/javascript">
+      window.CSRF_TOKEN = '{{ csrf_token() }}';
+    </script>
   @yield('head')
 </head>
 
@@ -605,6 +720,29 @@ if (App::getLocale() == 'en') {
   </div>
   <script src="{{ asset('assets/js/plugins.js') }}"></script>
   <script src="{{ asset('assets/js/theme.js?v=1') }}"></script>
+  <div id="loader" class="animate__animated animate__faster">
+    <div class="spinner-grow m-auto text-color1" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  <script>
+    var Loader = (function() {
+      var loaderElement = document.getElementById('loader')
+      var eventFunction = function (e) {
+        loaderElement.classList.remove('visivility')
+      }
+      return {
+        open: function () {
+          loaderElement.classList.remove('animate__zoomOut')
+          loaderElement.classList.add('visivility', 'animate__zoomIn')
+        },
+        close: function() {
+          loaderElement.addEventListener('animationend', eventFunction, {once : true});
+          loaderElement.classList.add('animate__zoomOut')
+        }
+      }
+    }())
+  </script>
   @yield('scripts')
 </body>
 
