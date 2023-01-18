@@ -14,6 +14,10 @@ class WebController extends Controller
     {
         return view('web.contact');
     }
+    public function about()
+    {
+        return view('web.about');
+    }
     public function sendContact(Request $rq)
     {
         if (empty($rq->get('recaptcha_token'))) {

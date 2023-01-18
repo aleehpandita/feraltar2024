@@ -16,6 +16,7 @@ Route::middleware('setlocale:en')->name('en.')->group(function () {
     Route::get('/', [WebController::class, 'home'])->name('home');
     Route::get('/contact', [WebController::class, 'contact'])->name('contact');
     Route::post('/send-contact', [WebController::class, 'sendContact'])->name('sendContact');
+    Route::get('/about', [WebController::class, 'about'])->name('about');
     // Route::get('/', function () {
     //     return view('welcome');
     // });
@@ -23,6 +24,7 @@ Route::middleware('setlocale:en')->name('en.')->group(function () {
 Route::middleware('setlocale:es')->name('es.')->prefix('es')->group(function () {
     Route::get('/', [WebController::class, 'home'])->name('home');
     Route::get('/contacto', [WebController::class, 'contact'])->name('contact');
+    Route::get('/nosotros', [WebController::class, 'about'])->name('about');
     Route::post('/send-contact', [WebController::class, 'sendContact'])->name('sendContact');
 });
 /*;*/

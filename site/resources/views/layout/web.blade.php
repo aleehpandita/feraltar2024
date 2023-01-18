@@ -50,7 +50,7 @@ if (App::getLocale() == 'en') {
                 <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Fleet</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Reservations</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{route(App::getLocale().'.about')}}">About</a></li>
                 @if (0==1)
                 <li class="nav-item dropdown dropdown-mega">
                   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Demos</a>
@@ -197,7 +197,7 @@ if (App::getLocale() == 'en') {
                         <li class="nav-item"><a class="dropdown-item" href="./shop-checkout.html">Checkout</a></li>
                       </ul>
                     </li>
-                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Contact</a>
+                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Cowtact</a>
                       <ul class="dropdown-menu">
                         <li class="nav-item"><a class="dropdown-item" href="./contact.html">Contact I</a></li>
                         <li class="nav-item"><a class="dropdown-item" href="./contact2.html">Contact II</a></li>
@@ -274,7 +274,7 @@ if (App::getLocale() == 'en') {
                   <ul class="dropdown-menu mega-menu mega-menu-dark mega-menu-img">
                     <li class="mega-menu-content">
                       <ul class="row row-cols-1 row-cols-lg-6 gx-0 gx-lg-6 gy-lg-4 list-unstyled">
-                        <li class="col"><a class="dropdown-item" href="./docs/blocks/about.html">
+                        <li class="col"><a class="dropdown-item" href="{{route(App::getLocale().'.about')}}">
                             <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="./assets/img/demos/block1.svg" alt=""></div>
                             <span>About</span>
                           </a>
@@ -456,14 +456,18 @@ if (App::getLocale() == 'en') {
           <!-- /.navbar-collapse -->
           <div class="navbar-other w-100 d-flex ms-auto">
             <ul class="navbar-nav flex-row align-items-center ms-auto">
-              <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-info"><i class="uil uil-info-circle"></i></a></li>
+              <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-info"><i class="uil uil-info-circle"></i>
+              </a></li>
               <li class="nav-item dropdown language-select">
-                <a class="nav-link dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{$flag}}" width="16" height="11" alt=""> En</a>
+                <a class="nav-link dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{$flag}}" width="18" height="11" alt=""> </a>
                 <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="dropdown-item" href="{{route($urlEn)}}"><img src="{{asset('assets/img/flags/us.png')}}" width="16" height="11" alt=""> En</a></li>
-                  <li class="nav-item"><a class="dropdown-item" href="{{route($urlEs)}}"><img src="{{asset('assets/img/flags/mx.png')}}" width="16" height="11" alt=""> Es</a></li>
+                  <li class="nav-item"><a class="dropdown-item" href="{{route($urlEn)}}"><img src="{{asset('assets/img/flags/us.png')}}" width="18" height="11" alt=""> </a></li>
+                  <li class="nav-item"><a class="dropdown-item" href="{{route($urlEs)}}"><img src="{{asset('assets/img/flags/mx.png')}}" width="18" height="11" alt=""> </a></li>
                 </ul>
               </li>
+            
+              <li class="nav-item offcanvas-body"><a class="nav-link " href="{{route(App::getLocale().'.contact')}}"><small>Always at your service: </small><p>☎ 01-800-832-6889</p></a></li>
+            
               <li class="nav-item d-none d-md-block">
                 <a href="{{route(App::getLocale().'.contact')}}" class="btn btn-sm btn-primary rounded-pill">Contact</a>
               </li>

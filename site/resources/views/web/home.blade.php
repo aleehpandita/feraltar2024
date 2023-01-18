@@ -8,9 +8,9 @@
 	    <div class="swiper">
 	      <div class="swiper-wrapper">
 	        <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg28.jpg"></div>
-	        <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg29.jpg"></div>
+	        <!-- <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg29.jpg"></div>
 	        <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg30.jpg"></div>
-	        <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg31.jpg"></div>
+	        <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg31.jpg"></div> -->
 	      </div>
 	      <!--/.swiper-wrapper -->
 	    </div>
@@ -18,9 +18,9 @@
 	    <div class="swiper swiper-thumbs">
 	      <div class="swiper-wrapper">
 	        <div class="swiper-slide"><img src="./assets/img/photos/bg28-th.jpg" srcset="./assets/img/photos/bg28-th@2x.jpg 2x" alt="" /></div>
-	        <div class="swiper-slide"><img src="./assets/img/photos/bg29-th.jpg" srcset="./assets/img/photos/bg29-th@2x.jpg 2x" alt="" /></div>
+	        <!-- <div class="swiper-slide"><img src="./assets/img/photos/bg29-th.jpg" srcset="./assets/img/photos/bg29-th@2x.jpg 2x" alt="" /></div>
 	        <div class="swiper-slide"><img src="./assets/img/photos/bg30-th.jpg" srcset="./assets/img/photos/bg30-th@2x.jpg 2x" alt="" /></div>
-	        <div class="swiper-slide"><img src="./assets/img/photos/bg31-th.jpg" srcset="./assets/img/photos/bg31-th@2x.jpg 2x" alt="" /></div>
+	        <div class="swiper-slide"><img src="./assets/img/photos/bg31-th.jpg" srcset="./assets/img/photos/bg31-th@2x.jpg 2x" alt="" /></div> -->
 	      </div>
 	      <!--/.swiper-wrapper -->
 	    </div>
@@ -28,9 +28,10 @@
 	    <div class="swiper-static">
 	      <div class="container h-100 d-flex align-items-center justify-content-center">
 	        <div class="row">
-	          <div class="col-lg-8 mx-auto mt-n10 text-center">
-	            <h1 class="fs-19 text-uppercase ls-xl text-white mb-3 animate__animated animate__zoomIn animate__delay-1s">I'm Julia Sandbox</h1>
-	            <h2 class="display-1 fs-60 text-white mb-0 animate__animated animate__zoomIn animate__delay-2s">couples & wedding photographer</h2>
+	          <div class="col-lg-12 mx-auto mt-n10 text-center">
+	            <h1 class="fs-19 text-uppercase ls-xl text-white mb-3 animate__animated animate__zoomIn animate__delay-1s">We specialize in luxury transportation <br/> An outstanding private transfer service</h1>
+	            <h2 class="display-1 fs-60 text-white mb-0 animate__animated animate__zoomIn animate__delay-2s">NEED A RIDE?</h2>
+				<a href="{{route(App::getLocale().'.contact')}}" class="btn btn-lg btn-white rounded mb-10">Request a Quote</a>
 	          </div>
 	          <!-- /column -->
 	        </div>
