@@ -1,5 +1,6 @@
 @extends('layout.web')
 @section('title', __('home.home'))
+@section('navBarStyle', 'dark')
 @section('head')
 @endsection
 @section('content')

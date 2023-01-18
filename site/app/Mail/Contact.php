@@ -30,6 +30,6 @@ class Contact extends Mailable
      */
     public function build()
     {
-        return $this->subject('Formulario de contacto: ' .$this->rq->get('subject'))->view('emails.contact');
+        return $this->subject('Formulario de contacto: ' .$this->rq->get('subject'))->view('mails.contact');
     }
 }

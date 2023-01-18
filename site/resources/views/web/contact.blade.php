@@ -98,7 +98,7 @@
         <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
           <h2 class="display-4 mb-3 text-center">{{ __('contact.Drop-Us-a-Line') }}</h2>
           <p class="lead text-center mb-10">{{ __('contact.Reach-out') }}</p>
-          <form class="contact-form needs-validation" method="post" action="{{route(App::getLocale().'.sendContact')}}" novalidate>
+          <form id="form-contact" class="contact-form needs-validation" method="post" action="{{route(App::getLocale().'.sendContact')}}" novalidate>
             <input type="hidden" name="_token" value="{{ csrf_token() }}" />
             <div class="messages"></div>
             <div class="row gx-4">
@@ -139,7 +139,6 @@
               </div>
               <!-- /column -->
               <div class="col-12 text-center">
-                <input type="hidden" id="recaptcha_token" name="recaptcha_token">
                 <div class="g-recaptcha"
                       data-sitekey="{{ $SITE_CONFIGURATION->recapcha_site_key }}"
                       data-callback="onSubmit"
@@ -200,4 +199,45 @@
   <!-- /section -->
 @endsection
 @section('scripts')
+<script>
+  function onSubmit(token) {
+    const form = document.getElementById('form-contact')
+    var data = new FormData(form);
+    var entries = data.entries()
+    var rqData = {}
+    var alertClass = 'alert-danger';
+    Loader.open()
+    for (const pair of entries) {
+      rqData[pair[0]] = pair[1]
+    }
+    fetch(form.getAttribute('action'), {
+      method: "post",
+      body: JSON.stringify(rqData),
+      headers: {
+        'X-CSRF-TOKEN': window.CSRF_TOKEN,
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+    }).then((response) => {
+      if(response.ok) {
+        alertClass = 'alert-success';
+      }
+      return response.json();
+      //return response.text();
+    }).then((data) => {
+      var alertBox = '<div class="alert ' + alertClass + ' alert-dismissible fade show"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' + data.message + '</div>';
+      if(alertClass && data.message) {
+        form.querySelector(".messages").insertAdjacentHTML('beforeend', alertBox);
+        form.reset();
+        grecaptcha.reset();
+        Loader.close()
+      }
+    }).catch((err) => {
+      console.log(err);
+      Loader.close()
+    });
+    
+  }
+</script>
 @endsection

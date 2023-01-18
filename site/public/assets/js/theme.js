@@ -769,14 +769,16 @@ var theme = {
             form.classList.add("was-validated");
             if(form.checkValidity() === true) {
               event.preventDefault();
+              console.log('llallaal')
               form.classList.remove("was-validated");
               // Send message only if the form has class .contact-form
               var isContactForm = form.classList.contains('contact-form');
               if(isContactForm) {
-                var data = new FormData(form);
-                var alertClass = 'alert-danger';
+                //var data = new FormData(form);
+                //var alertClass = 'alert-danger';
+                grecaptcha.execute()
                 //fetch("assets/php/contact.php", {
-                fetch(form.getAttribute('action'), {
+                /*fetch(form.getAttribute('action'), {
                   method: "post",
                   body: data
                 }).then((data) => {
@@ -793,7 +795,7 @@ var theme = {
                   }
                 }).catch((err) => {
                   console.log(err);
-                });
+                });*/
               }
             }
           }, false);
