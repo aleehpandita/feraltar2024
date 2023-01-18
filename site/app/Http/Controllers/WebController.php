@@ -15,6 +15,14 @@ class WebController extends Controller
     {
         return view('web.contact');
     }
+    public function services()
+    {
+        return view('web.services');
+    }
+    public function fleet()
+    {
+        return view('web.fleet');
+    }
     public function sendContact(Request $rq)
     {
         ##dd($rq->all());

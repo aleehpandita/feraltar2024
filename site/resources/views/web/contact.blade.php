@@ -220,14 +220,12 @@
         // 'Content-Type': 'application/x-www-form-urlencoded',
       },
     }).then((response) => {
-      console.log('response',response)
       if(response.ok) {
         alertClass = 'alert-success';
       }
       return response.json();
       //return response.text();
     }).then((data) => {
-      console.log('data', data)
       var alertBox = '<div class="alert ' + alertClass + ' alert-dismissible fade show"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' + data.message + '</div>';
       if(alertClass && data.message) {
         form.querySelector(".messages").insertAdjacentHTML('beforeend', alertBox);
