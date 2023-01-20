@@ -4,7 +4,8 @@
   @parent
 @endsection
 @section('content')
-  <section class="wrapper image-wrapper bg-image bg-overlay text-white" data-image-src="./assets/img/photos/bg6.jpg">
+  <section class="wrapper image-wrapper bg-image bg-overlay text-white" data-image-src="./img/fleet.jpg">
+    <!-- data-image-src="./assets/img/photos/bg6.jpg" -->
     <div class="container pt-17 pb-12 pt-md-19 pb-md-16 text-center">
       <div class="row">
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
@@ -43,7 +44,6 @@
     <div class="container pt-0 pt-md-0 pb-13 pb-md-15 isotope">
       <div class="row isotope-filter filter">
         <div class="col-12">
-          
           <p>Filter:</p>
           <ul>
             <li><a class="filter-item active" data-filter="*">All</a></li>
@@ -57,7 +57,7 @@
           <div class="col-lg-6 position-relative">
             <div class="shape bg-line leaf rounded-circle rellax w-17 h-17" data-rellax-speed="1" style="top: -2rem; right: -0.6rem;"></div>
             <div class="shape bg-pale-violet rounded-circle rellax w-17 h-17" data-rellax-speed="1" style="bottom: -2rem; left: -0.4rem;"></div>
-            <figure class="rounded mb-0"><img src="../../assets/img/photos/se3.jpg" srcset="../../assets/img/photos/se3@2x.jpg 2x" alt=""></figure>
+            <figure class="rounded mb-0"><img src="{{ asset('img/suburban-suv.webp') }}" srcset="{{ asset('img/suburban-suv.webp') }}" alt=""></figure>
           </div>
           <!--/column -->
           <div class="col-lg-6">
@@ -89,7 +89,7 @@
           <div class="col-lg-6 order-lg-2 position-relative">
             <div class="shape bg-line aqua rounded-circle rellax w-17 h-17" data-rellax-speed="1" style="top: -2rem; left: -0.6rem;"></div>
             <div class="shape bg-pale-red rounded-circle rellax w-17 h-17" data-rellax-speed="1" style="bottom: -2rem; right: -0.4rem;"></div>
-            <figure class="rounded mb-0"><img src="../../assets/img/photos/se4.jpg" srcset="../../assets/img/photos/se4@2x.jpg 2x" alt=""></figure>
+            <figure class="rounded mb-0"><img src="{{ asset('img/mercedes.webp') }}" srcset="{{ asset('img/mercedes.webp') }}" alt=""></figure>
           </div>
           <!--/column -->
           <div class="col-lg-6">
