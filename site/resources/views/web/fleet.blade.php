@@ -4,7 +4,7 @@
   @parent
 @endsection
 @section('content')
-  <section class="wrapper image-wrapper bg-image bg-overlay text-white" data-image-src="./img/fleet.jpg">
+  <section class="wrapper image-wrapper bg-image bg-overlay text-white" data-image-src="{{ asset('img/fleet.jpg') }}">
     <!-- data-image-src="./assets/img/photos/bg6.jpg" -->
     <div class="container pt-17 pb-12 pt-md-19 pb-md-16 text-center">
       <div class="row">
@@ -26,21 +26,7 @@
     <!-- /.container -->
   </section>
   <!-- /section -->
-  <!-- <div class="container py-14 py-md-4">
-    <div class="grid grid-view projects-masonry">
-      <div class="isotope-filter filter mb-10">
-        <p>Filter:</p>
-        <ul>
-          <li><a class="filter-item active" data-filter="*">All</a></li>
-          <li><a class="filter-item" data-filter=".suv">SUV</a></li>
-          <li><a class="filter-item" data-filter=".sedan">Sedan</a></li>
-          <li><a class="filter-item" data-filter=".workshop">Workshop</a></li>
-          <li><a class="filter-item" data-filter=".still-life">Still Life</a></li>
-        </ul>
-      </div>
-    </div>
-  </div> -->
-  <section id="snippet-1" class="wrapper bg-light wrapper-border grid py-14 py-md-4">
+  <section id="snippet-1" class="wrapper bg-light wrapper-border grid py-4 py-md-4">
     <div class="container pt-0 pt-md-0 pb-13 pb-md-15 isotope">
       <div class="row isotope-filter filter">
         <div class="col-12">

@@ -147,12 +147,12 @@ if (App::getLocale() == 'en') {
 <body>
   <div class="content-wrapper">
     <header class="wrapper bg-soft-primary">
-      <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-@yield('navBarStyle', 'light') caret-none">
+      <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-@yield('navBarStyle', 'dark') caret-none">
         <div class="container flex-lg-row flex-nowrap align-items-center">
           <div class="navbar-brand w-100">
             <a href="{{route(App::getLocale().'.home')}}">
-              <img width="164" class="logo-dark" src="./assets/img/logo-dark.png" srcset="./assets/img/logo-dark@2x.png 2x" alt="" />
-              <img width="164" class="logo-light" src="./assets/img/logo-light.png" srcset="./assets/img/logo-light@2x.png 2x" alt="" />
+              <img width="164" class="logo-dark" src="{{ asset('/assets/img/logo-dark.png') }}" srcset="./assets/img/logo-dark@2x.png 2x" alt="" />
+              <img width="164" class="logo-light" src="{{ asset('/assets/img/logo-light.png') }}" srcset="./assets/img/logo-light@2x.png 2x" alt="" />
             </a>
           </div>
           <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
@@ -581,7 +581,7 @@ if (App::getLocale() == 'en') {
                 </ul>
               </li>
             
-              <li class="nav-item offcanvas-body"><a class="nav-link " href="{{route(App::getLocale().'.contact')}}"><small>Always at your service: </small><p>☎ 01-800-832-6889</p></a></li>
+              <li class="nav-item offcanvas-body"><a class="nav-link " href="{{route(App::getLocale().'.contact')}}"><small class="d-none d-lg-inline">Always at your service: </small><p>☎ 01-800-832-6889</p></a></li>
             
               <li class="nav-item d-none d-md-block">
                 <a href="{{route(App::getLocale().'.contact')}}" class="btn btn-sm btn-primary rounded-pill">Contact</a>

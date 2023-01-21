@@ -162,6 +162,7 @@ var theme = {
               return;
             }
             var filterValue = event.target.getAttribute('data-filter');
+            console.log('filterValue', filterValue)
             iso.arrange({
               filter: filterValue
             });
