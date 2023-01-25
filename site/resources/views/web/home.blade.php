@@ -8,7 +8,7 @@
 	  <div class="swiper-container swiper-thumbs-container swiper-fullscreen nav-dark" data-margin="0" data-autoplay="true" data-autoplaytime="7000" data-nav="true" data-dots="false" data-items="1" data-thumbs="true">
 	    <div class="swiper">
 	      <div class="swiper-wrapper">
-	        <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg28.jpg"></div>
+	        <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/1_.jpg"></div>
 	        <!-- <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg29.jpg"></div>
 	        <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg30.jpg"></div>
 	        <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg31.jpg"></div> -->
@@ -30,9 +30,9 @@
 	      <div class="container h-100 d-flex align-items-center justify-content-center">
 	        <div class="row">
 	          <div class="col-lg-12 mx-auto mt-n10 text-center">
-	            <h1 class="fs-19 text-uppercase ls-xl text-white mb-3 animate__animated animate__zoomIn animate__delay-1s">We specialize in luxury transportation <br/> An outstanding private transfer service</h1>
-	            <h2 class="display-1 fs-60 text-white mb-0 animate__animated animate__zoomIn animate__delay-2s">NEED A RIDE?</h2>
-				<a href="{{route(App::getLocale().'.contact')}}" class="btn btn-lg btn-white rounded mb-10">Request a Quote</a>
+	            <h1 class="fs-19 text-uppercase ls-xl text-white mb-3 animate__animated animate__zoomIn animate__delay-1s d-none d-md-block">{{ __('home.title1') }} <br/> {{ __('home.title1-1') }} </h1>
+	            <h2 class="display-1 fs-60 text-white mb-0 animate__animated animate__zoomIn animate__delay-2s">{{ __('home.home-h1') }}</h2>
+				<a href="{{route(App::getLocale().'.contact')}}" class="btn btn-sm btn-primary rounded-pill">{{ __('home.need') }}</a>
 	          </div>
 	          <!-- /column -->
 	        </div>
@@ -46,11 +46,11 @@
 	</section>
 	<!-- /section -->
 	<section class="wrapper bg-light">
-	  <div class="container py-14 py-md-16">
+	  <div class="container py-14 py-md-6">
 	    <div class="row">
 	      <div class="col-lg-12 col-xl-10 col-xxl-7 mx-auto text-center">
-	        <i class="icn-flower text-leaf fs-30 opacity-25"></i>
-	        <h2 class="display-5 text-center mt-2 mb-10">I absolutely love shooting weddings and couples because there are so many feelings to capture.</h2>
+		  <img src="./assets/img/icons/lineal/stars.svg" class="svg-inject icon-svg icon-svg-sm text-primary text-leaf fs-30 opacity-25" alt="" />
+	        <h2 class="display-5 text-center mt-2 mb-10">Welcome to the best luxury transportation company.</h2>
 	      </div>
 	      <!--/column -->
 	    </div>
@@ -61,11 +61,11 @@
 	          <figure class="card-img-top overlay overlay-1">
 	            <a href="#"><img class="img-fluid" src="./assets/img/photos/fs1.jpg" srcset="./assets/img/photos/fs1@2x.jpg 2x" alt="" /></a>
 	            <figcaption>
-	              <h5 class="from-top mb-0">View Gallery</h5>
+	              <h5 class="from-top mb-0">View Details</h5>
 	            </figcaption>
 	          </figure>
 	          <div class="card-body p-6">
-	            <h3 class="fs-21 mb-0">Wedding</h3>
+	            <h3 class="fs-21 mb-0">Airport Concierge</h3>
 	          </div>
 	          <!--/.card-body -->
 	        </div>
@@ -77,11 +77,11 @@
 	          <figure class="card-img-top overlay overlay-1">
 	            <a href="#"><img class="img-fluid" src="./assets/img/photos/fs2.jpg" srcset="./assets/img/photos/fs2@2x.jpg 2x" alt="" /></a>
 	            <figcaption>
-	              <h5 class="from-top mb-0">View Gallery</h5>
+	              <h5 class="from-top mb-0">View Details</h5>
 	            </figcaption>
 	          </figure>
 	          <div class="card-body p-6">
-	            <h3 class="fs-21 mb-0">Couples</h3>
+	            <h3 class="fs-21 mb-0">Luxury Transportation</h3>
 	          </div>
 	          <!--/.card-body -->
 	        </div>
@@ -93,11 +93,11 @@
 	          <figure class="card-img-top overlay overlay-1">
 	            <a href="#"><img class="img-fluid" src="./assets/img/photos/fs3.jpg" srcset="./assets/img/photos/fs3@2x.jpg 2x" alt="" /></a>
 	            <figcaption>
-	              <h5 class="from-top mb-0">View Gallery</h5>
+	              <h5 class="from-top mb-0">View Details</h5>
 	            </figcaption>
 	          </figure>
 	          <div class="card-body p-6">
-	            <h3 class="fs-21 mb-0">Engagement</h3>
+	            <h3 class="fs-21 mb-0">Security Services</h3>
 	          </div>
 	          <!--/.card-body -->
 	        </div>
@@ -110,9 +110,9 @@
 	  <!-- /.container -->
 	</section>
 	<!-- /section -->
-	<section class="wrapper image-wrapper bg-image bg-overlay text-white" data-image-src="./assets/img/photos/bg32.jpg">
+	<section class="wrapper image-wrapper bg-image bg-overlay text-white" data-image-src="./assets/img/photos/gs23_01.jpg">
 	  <div class="container py-14 py-md-17 text-center">
-	    <i class="icn-flower text-white fs-30 opacity-50"></i>
+	  <img src="./assets/img/icons/solid/employees.svg" class="svg-inject icon-svg icon-svg-xs solid-mono text-white fs-30 opacity-50" alt="" />
 	    <div class="row mt-3">
 	      <div class="col-xl-9 col-xxl-8 mx-auto">
 	        <div class="swiper-container dots-light dots-closer mb-6" data-margin="30" data-dots="true">
@@ -170,7 +170,7 @@
 	    <div class="row">
 	      <div class="col-xl-9 col-xxl-7 mx-auto text-center">
 	        <i class="icn-flower text-leaf fs-30 opacity-25"></i>
-	        <h2 class="display-5 text-center mt-2 mb-10">I would like to give you a unique photography and video experience, built to serve you best.</h2>
+	        <h2 class="display-5 text-center mt-2 mb-10">{{ __('home.wehave') }}</h2>
 	      </div>
 	      <!--/column -->
 	    </div>

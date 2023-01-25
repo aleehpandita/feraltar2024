@@ -581,7 +581,7 @@ if (App::getLocale() == 'en') {
                 </ul>
               </li>
             
-              <li class="nav-item offcanvas-body"><a class="nav-link " href="{{route(App::getLocale().'.contact')}}"><small class="d-none d-lg-inline">Always at your service: </small><p>☎ 01-800-832-6889</p></a></li>
+              <li class="nav-item offcanvas-body d-none  d-md-block "><a class="nav-link " href="{{route(App::getLocale().'.contact')}}"><small class="d-none d-lg-inline">Always at your service: </small><p>☎ 01-800-832-6889</p></a></li>
             
               <li class="nav-item d-none d-md-block">
                 <a href="{{route(App::getLocale().'.contact')}}" class="btn btn-sm btn-primary rounded-pill">Contact</a>
