@@ -50,7 +50,7 @@
 	    <div class="row">
 	      <div class="col-lg-12 col-xl-10 col-xxl-7 mx-auto text-center">
 		  <img src="./assets/img/icons/lineal/stars.svg" class="svg-inject icon-svg icon-svg-sm text-primary text-leaf fs-30 opacity-25" alt="" />
-	        <h2 class="display-5 text-center mt-2 mb-10">Welcome to the best luxury transportation company.</h2>
+	        <h2 class="display-5 text-center mt-2 mb-10">{{ __('home.welcome') }}</h2>
 	      </div>
 	      <!--/column -->
 	    </div>
@@ -110,6 +110,420 @@
 	  <!-- /.container -->
 	</section>
 	<!-- /section -->
+	<!-- /section -->
+	<section class="wrapper bg-soft-primary">
+	  <div class="overflow-hidden">
+	    <div class="container py-4 py-md-4">
+	      <div class="row">
+	        <div class="col-xl-7 col-xxl-6 mx-auto text-center">
+			  <i class="uil uil-car-sideview text-leaf fs-30 opacity-25"></i>
+	          <h2 class="display-5 text-center mt-2 mb-10">{{ __('home.offer') }}</h2>
+	        </div>
+	        <!--/column -->
+	      </div>
+	      <!--/.row -->
+	      <div class="swiper-container nav-bottom nav-color mb-14" data-margin="30" data-dots="false" data-nav="true" data-items-lg="4" data-items-md="3" data-items-xs="1">
+	        <div class="swiper overflow-visible pb-2">
+	          <div class="swiper-wrapper">
+	            <div class="swiper-slide">
+	              <article>
+	                <div class="card shadow-lg">
+	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/fleet-sedan-mercedes-s-class.jpeg" srcset="./assets/img/photos/fleet-sedan-mercedes-s-class.jpeg" alt="" /></a>
+	                    <figcaption>
+	                      <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                    </figcaption>
+	                  </figure>
+	                  <div class="card-body p-6">
+	                    <div class="post-header">
+	                      <div class="post-category">
+	                        <a href="#" class="hover" rel="category">SEDAN</a>
+	                      </div>
+	                      <!-- /.post-category -->
+	                      <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">Mercedes S Class
+</a></h2>
+	                    </div>
+	                    <!-- /.post-header -->
+	                    <div class="post-footer">
+	                      <ul class="post-meta d-flex mb-0">
+	                        <li class="post-date">3 x <i class="uil uil-user"></i>{{ __('home.pax') }}</li>
+	                        <li class="post-comments">3 x <i class="uil uil-suitcase"></i>{{ __('home.lug') }}</li>
+	                      </ul>
+	                      <!-- /.post-meta -->
+	                    </div>
+	                    <!-- /.post-footer -->
+	                  </div>
+	                  <!--/.card-body -->
+	                </div>
+	                <!-- /.card -->
+	              </article>
+	              <!-- /article -->
+	            </div>
+	            <!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <article>
+	                <div class="card shadow-lg">
+	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/fleet-sedan-mercedes-e-class-compressor.jpeg" srcset="./assets/img/photos/fleet-sedan-mercedes-e-class-compressor.jpeg" alt="" /></a>
+	                    <figcaption>
+	                      <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                    </figcaption>
+	                  </figure>
+	                  <div class="card-body p-6">
+	                    <div class="post-header">
+	                      <div class="post-category">
+	                        <a href="#" class="hover" rel="category">SEDAN</a>
+	                      </div>
+	                      <!-- /.post-category -->
+	                      <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">Mercedes E Class
+</a></h2>
+	                    </div>
+	                    <!-- /.post-header -->
+	                    <div class="post-footer">
+	                      <ul class="post-meta d-flex mb-0">
+	                        <li class="post-date">3 x <i class="uil uil-user"></i>{{ __('home.pax') }}</li>
+	                        <li class="post-comments">3 x <i class="uil uil-suitcase"></i>{{ __('home.lug') }}</li>
+	                      </ul>
+	                      <!-- /.post-meta -->
+	                    </div>
+	                    <!-- /.post-footer -->
+	                  </div>
+	                  <!--/.card-body -->
+	                </div>
+	                <!-- /.card -->
+	              </article>
+	              <!-- /article -->
+	            </div>
+	            <!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <article>
+	                <div class="card shadow-lg">
+	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/fleet-sedan-mercedes-c-class-compressor.jpeg" srcset="./assets/img/photos/fleet-sedan-mercedes-c-class-compressor.jpeg" alt="" /></a>
+	                    <figcaption>
+	                      <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                    </figcaption>
+	                  </figure>
+	                  <div class="card-body p-6">
+	                    <div class="post-header">
+	                      <div class="post-category">
+	                        <a href="#" class="hover" rel="category">SEDAN</a>
+	                      </div>
+	                      <!-- /.post-category -->
+	                      <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">Mercedes C Class
+</a></h2>
+	                    </div>
+	                    <!-- /.post-header -->
+	                    <div class="post-footer">
+	                      <ul class="post-meta d-flex mb-0">
+	                        <li class="post-date">3 x <i class="uil uil-user"></i>{{ __('home.pax') }}</li>
+	                        <li class="post-comments">3 x <i class="uil uil-suitcase"></i>{{ __('home.lug') }}</li>
+	                      </ul>
+	                      <!-- /.post-meta -->
+	                    </div>
+	                    <!-- /.post-footer -->
+	                  </div>
+	                  <!--/.card-body -->
+	                </div>
+	                <!-- /.card -->
+	              </article>
+	              <!-- /article -->
+	            </div>
+	            <!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <article>
+	                <div class="card shadow-lg">
+	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/fleet-sedan-bmw-compressor.jpeg" srcset="./assets/img/photos/fleet-sedan-bmw-compressor.jpeg" alt="" /></a>
+	                    <figcaption>
+	                      <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                    </figcaption>
+	                  </figure>
+	                  <div class="card-body p-6">
+	                    <div class="post-header">
+	                      <div class="post-category">
+	                        <a href="#" class="hover" rel="category">SEDAN</a>
+	                      </div>
+	                      <!-- /.post-category -->
+	                      <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">7 Series BMW
+</a></h2>
+	                    </div>
+	                    <!-- /.post-header -->
+	                    <div class="post-footer">
+	                      <ul class="post-meta d-flex mb-0">
+	                        <li class="post-date">3 x <i class="uil uil-user"></i>{{ __('home.pax') }}</li>
+	                        <li class="post-comments">3 x <i class="uil uil-suitcase"></i>{{ __('home.lug') }}</li>
+	                      </ul>
+	                      <!-- /.post-meta -->
+	                    </div>
+	                    <!-- /.post-footer -->
+	                  </div>
+	                  <!--/.card-body -->
+	                </div>
+	                <!-- /.card -->
+	              </article>
+	              <!-- /article -->
+	            </div>
+	            <!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <article>
+	                <div class="card shadow-lg">
+	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/fleet-sedan-jaguar-compressor.jpeg" srcset="./assets/img/photos/fleet-sedan-jaguar-compressor.jpeg" alt="" /></a>
+	                    <figcaption>
+	                      <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                    </figcaption>
+	                  </figure>
+	                  <div class="card-body p-6">
+	                    <div class="post-header">
+	                      <div class="post-category">
+	                        <a href="#" class="hover" rel="category">SEDAN</a>
+	                      </div>
+	                      <!-- /.post-category -->
+	                      <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">Jaguar XJ
+</a></h2>
+	                    </div>
+	                    <!-- /.post-header -->
+	                    <div class="post-footer">
+	                      <ul class="post-meta d-flex mb-0">
+	                        <li class="post-date">3 x <i class="uil uil-user"></i>{{ __('home.pax') }}</li>
+	                        <li class="post-comments">3 x <i class="uil uil-suitcase"></i>{{ __('home.lug') }}</li>
+	                      </ul>
+	                      <!-- /.post-meta -->
+	                    </div>
+	                    <!-- /.post-footer -->
+	                  </div>
+	                  <!--/.card-body -->
+	                </div>
+	                <!-- /.card -->
+	              </article>
+	              <!-- /article -->
+	            </div>
+	            <!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <article>
+	                <div class="card shadow-lg">
+	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/fleet-sedan-acura-compressor-1.jpeg" srcset="./assets/img/photos/fleet-sedan-acura-compressor-1.jpeg" alt="" /></a>
+	                    <figcaption>
+	                      <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                    </figcaption>
+	                  </figure>
+	                  <div class="card-body p-6">
+	                    <div class="post-header">
+	                      <div class="post-category">
+	                        <a href="#" class="hover" rel="category">SEDAN</a>
+	                      </div>
+	                      <!-- /.post-category -->
+	                      <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">Acura TL
+</a></h2>
+	                    </div>
+	                    <!-- /.post-header -->
+	                    <div class="post-footer">
+	                      <ul class="post-meta d-flex mb-0">
+	                        <li class="post-date">3 x <i class="uil uil-user"></i>{{ __('home.pax') }}</li>
+	                        <li class="post-comments">3 x <i class="uil uil-suitcase"></i>{{ __('home.lug') }}</li>
+	                      </ul>
+	                      <!-- /.post-meta -->
+	                    </div>
+	                    <!-- /.post-footer -->
+	                  </div>
+	                  <!--/.card-body -->
+	                </div>
+	                <!-- /.card -->
+	              </article>
+	              <!-- /article -->
+	            </div>
+	            <!--/.swiper-slide -->
+<!--/.swiper-slide -->
+<div class="swiper-slide">
+	              <article>
+	                <div class="card shadow-lg">
+	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/fleet-suv-viano-compressor-1.jpeg" srcset="./assets/img/photos/fleet-suv-viano-compressor-1.jpeg" alt="" /></a>
+	                    <figcaption>
+	                      <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                    </figcaption>
+	                  </figure>
+	                  <div class="card-body p-6">
+	                    <div class="post-header">
+	                      <div class="post-category">
+	                        <a href="#" class="hover" rel="category">SUV</a>
+	                      </div>
+	                      <!-- /.post-category -->
+	                      <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">Viano
+</a></h2>
+	                    </div>
+	                    <!-- /.post-header -->
+	                    <div class="post-footer">
+	                      <ul class="post-meta d-flex mb-0">
+	                        <li class="post-date">6 x <i class="uil uil-user"></i>{{ __('home.pax') }}</li>
+	                        <li class="post-comments">4 x <i class="uil uil-suitcase"></i>{{ __('home.lug') }}</li>
+	                      </ul>
+	                      <!-- /.post-meta -->
+	                    </div>
+	                    <!-- /.post-footer -->
+	                  </div>
+	                  <!--/.card-body -->
+	                </div>
+	                <!-- /.card -->
+	              </article>
+	              <!-- /article -->
+	            </div>
+	            <!--/.swiper-slide -->
+
+<!--/.swiper-slide -->
+<div class="swiper-slide">
+	              <article>
+	                <div class="card shadow-lg">
+	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/fleet-suv-suburban-compressor-1.jpeg" srcset="./assets/img/photos/fleet-suv-suburban-compressor-1.jpeg" alt="" /></a>
+	                    <figcaption>
+	                      <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                    </figcaption>
+	                  </figure>
+	                  <div class="card-body p-6">
+	                    <div class="post-header">
+	                      <div class="post-category">
+	                        <a href="#" class="hover" rel="category">SUV</a>
+	                      </div>
+	                      <!-- /.post-category -->
+	                      <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">Suburban
+</a></h2>
+	                    </div>
+	                    <!-- /.post-header -->
+	                    <div class="post-footer">
+	                      <ul class="post-meta d-flex mb-0">
+	                        <li class="post-date">6 x <i class="uil uil-user"></i>{{ __('home.pax') }}</li>
+	                        <li class="post-comments">6 x <i class="uil uil-suitcase"></i>{{ __('home.lug') }}</li>
+	                      </ul>
+	                      <!-- /.post-meta -->
+	                    </div>
+	                    <!-- /.post-footer -->
+	                  </div>
+	                  <!--/.card-body -->
+	                </div>
+	                <!-- /.card -->
+	              </article>
+	              <!-- /article -->
+	            </div>
+	            <!--/.swiper-slide -->
+
+
+<!--/.swiper-slide -->
+<div class="swiper-slide">
+	              <article>
+	                <div class="card shadow-lg">
+	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/fleet-suv-escalade-compressor-1.jpeg" srcset="./assets/img/photos/fleet-suv-escalade-compressor-1.jpeg" alt="" /></a>
+	                    <figcaption>
+	                      <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                    </figcaption>
+	                  </figure>
+	                  <div class="card-body p-6">
+	                    <div class="post-header">
+	                      <div class="post-category">
+	                        <a href="#" class="hover" rel="category">SUV</a>
+	                      </div>
+	                      <!-- /.post-category -->
+	                      <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">Escalade
+</a></h2>
+	                    </div>
+	                    <!-- /.post-header -->
+	                    <div class="post-footer">
+	                      <ul class="post-meta d-flex mb-0">
+	                        <li class="post-date">6 x <i class="uil uil-user"></i>{{ __('home.pax') }}</li>
+	                        <li class="post-comments">6 x <i class="uil uil-suitcase"></i>{{ __('home.lug') }}</li>
+	                      </ul>
+	                      <!-- /.post-meta -->
+	                    </div>
+	                    <!-- /.post-footer -->
+	                  </div>
+	                  <!--/.card-body -->
+	                </div>
+	                <!-- /.card -->
+	              </article>
+	              <!-- /article -->
+	            </div>
+	            <!--/.swiper-slide -->
+
+
+<!--/.swiper-slide -->
+<div class="swiper-slide">
+	              <article>
+	                <div class="card shadow-lg">
+	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/fleet-minicoach-sprinter-compressor.jpeg" srcset="./assets/img/photos/fleet-minicoach-sprinter-compressor.jpeg" alt="" /></a>
+	                    <figcaption>
+	                      <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                    </figcaption>
+	                  </figure>
+	                  <div class="card-body p-6">
+	                    <div class="post-header">
+	                      <div class="post-category">
+	                        <a href="#" class="hover" rel="category">MINICOACH</a>
+	                      </div>
+	                      <!-- /.post-category -->
+	                      <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">Sprinter
+</a></h2>
+	                    </div>
+	                    <!-- /.post-header -->
+	                    <div class="post-footer">
+	                      <ul class="post-meta d-flex mb-0">
+	                        <li class="post-date">16 x <i class="uil uil-user"></i>{{ __('home.pax') }}</li>
+	                        <li class="post-comments">10 x <i class="uil uil-suitcase"></i>{{ __('home.lug') }}</li>
+	                      </ul>
+	                      <!-- /.post-meta -->
+	                    </div>
+	                    <!-- /.post-footer -->
+	                  </div>
+	                  <!--/.card-body -->
+	                </div>
+	                <!-- /.card -->
+	              </article>
+	              <!-- /article -->
+	            </div>
+	            <!--/.swiper-slide -->
+
+
+				<div class="swiper-slide">
+	              <article>
+	                <div class="card shadow-lg">
+	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/fleet-coach-irizarpb-compressor-1.jpeg" srcset="./assets/img/photos/fleet-coach-irizarpb-compressor-1.jpeg" alt="" /></a>
+	                    <figcaption>
+	                      <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                    </figcaption>
+	                  </figure>
+	                  <div class="card-body p-6">
+	                    <div class="post-header">
+	                      <div class="post-category">
+	                        <a href="#" class="hover" rel="category">COACH</a>
+	                      </div>
+	                      <!-- /.post-category -->
+	                      <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">Scania Irizar PB
+
+</a></h2>
+	                    </div>
+	                    <!-- /.post-header -->
+	                    <div class="post-footer">
+	                      <ul class="post-meta d-flex mb-0">
+	                        <li class="post-date">47 x <i class="uil uil-user"></i>{{ __('home.pax') }}</li>
+	                        <li class="post-comments">47 x <i class="uil uil-suitcase"></i>{{ __('home.lug') }}</li>
+	                      </ul>
+	                      <!-- /.post-meta -->
+	                    </div>
+	                    <!-- /.post-footer -->
+	                  </div>
+	                  <!--/.card-body -->
+	                </div>
+	                <!-- /.card -->
+	              </article>
+	              <!-- /article -->
+	            </div>
+	            <!--/.swiper-slide -->
+
+	          </div>
+	          <!--/.swiper-wrapper -->
+	        </div>
+	        <!-- /.swiper -->
+	      </div>
+	      <!-- /.swiper-container -->
+	    </div>
+	    <!-- /.container -->
+	  </div>
+	  <!-- /.overflow-hidden -->
+	</section>
+	<!-- /section -->
 	<section class="wrapper image-wrapper bg-image bg-overlay text-white" data-image-src="./assets/img/photos/gs23_01.jpg">
 	  <div class="container py-14 py-md-17 text-center">
 	  <img src="./assets/img/icons/solid/employees.svg" class="svg-inject icon-svg icon-svg-xs solid-mono text-white fs-30 opacity-50" alt="" />
@@ -166,10 +580,10 @@
 	</section>
 	<!-- /section -->
 	<section class="wrapper bg-soft-primary">
-	  <div class="container py-14 py-md-16">
+	  <div class="container py-8 py-md-8">
 	    <div class="row">
 	      <div class="col-xl-9 col-xxl-7 mx-auto text-center">
-	        <i class="icn-flower text-leaf fs-30 opacity-25"></i>
+		  <img src="./assets/img/icons/solid/employees.svg" class="svg-inject icon-svg icon-svg-xs solid-mono text-leaf fs-30 " alt="" />
 	        <h2 class="display-5 text-center mt-2 mb-10">{{ __('home.wehave') }}</h2>
 	      </div>
 	      <!--/column -->
@@ -188,31 +602,31 @@
 	<!-- /section -->
 	<section class="wrapper bg-light">
 	  <div class="overflow-hidden">
-	    <div class="container py-14 py-md-16">
+	    <div class="container py-8 py-md-8">
 	      <div class="row">
 	        <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto text-center">
-	          <i class="icn-flower text-leaf fs-30 opacity-25"></i>
-	          <h2 class="display-5 text-center mt-2 mb-10">Some of wonderful love stories <br class="d-none d-md-block"> I witnessed and had the chance to capture</h2>
+			<img src="./assets/img/icons/lineal/paper-plane.svg" class="svg-inject icon-svg icon-svg-sm text-primary opacity-25" alt="" />
+	          <h2 class="display-5 text-center mt-2 mb-10">{{ __('home.ready') }}
+<br class="d-none d-md-block"> {{ __('home.explore') }}  </h2>
 	        </div>
 	        <!--/column -->
 	      </div>
 	      <!--/.row -->
-	      <div class="swiper-container grid-view nav-bottom nav-color mb-14 text-center" data-margin="30" data-dots="false" data-nav="true" data-items-md="2" data-items-xs="1">
+	      <div class="swiper-container grid-view nav-bottom nav-color mb-14 text-center" data-margin="30" data-dots="false" data-nav="true" data-items-md="5" data-items-xs="1">
 	        <div class="swiper overflow-visible pb-2">
 	          <div class="swiper-wrapper">
 	            <div class="swiper-slide">
 	              <div class="card shadow-lg">
 	                <figure class="card-img-top overlay overlay-1">
-	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/fc1.jpg" srcset="./assets/img/photos/fc1@2x.jpg 2x" alt="" /></a>
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/mex.jpeg" srcset="./assets/img/photos/mex.jpeg" alt="" /></a>
 	                  <figcaption>
-	                    <h5 class="from-top mb-0">View Gallery</h5>
+	                    <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
 	                  </figcaption>
 	                </figure>
 	                <div class="card-body p-6">
-	                  <h3 class="fs-21 mb-1">Lucy & David</h3>
+	                  <h3 class="fs-21 mb-1">Ciudad de México</h3>
 	                  <ul class="post-meta fs-16 mb-0">
-	                    <li>5 Photos</li>
-	                    <li>Wedding</li>
+	                    <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
 	                  </ul>
 	                </div>
 	                <!--/.card-body -->
@@ -223,16 +637,15 @@
 	            <div class="swiper-slide">
 	              <div class="card shadow-lg">
 	                <figure class="card-img-top overlay overlay-1">
-	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/fc2.jpg" srcset="./assets/img/photos/fc2@2x.jpg 2x" alt="" /></a>
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/punta.jpeg" srcset="./assets/img/photos/punta.jpeg" alt="" /></a>
 	                  <figcaption>
-	                    <h5 class="from-top mb-0">View Gallery</h5>
+	                    <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
 	                  </figcaption>
 	                </figure>
 	                <div class="card-body p-6">
-	                  <h3 class="fs-21 mb-1">Stacy & Thomas</h3>
+	                  <h3 class="fs-21 mb-1">Punta Cana</h3>
 	                  <ul class="post-meta fs-16 mb-0">
-	                    <li>8 Photos</li>
-	                    <li>Wedding</li>
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
 	                  </ul>
 	                </div>
 	                <!--/.card-body -->
@@ -243,16 +656,15 @@
 	            <div class="swiper-slide">
 	              <div class="card shadow-lg">
 	                <figure class="card-img-top overlay overlay-1">
-	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/fc3.jpg" srcset="./assets/img/photos/fc3@2x.jpg 2x" alt="" /></a>
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/mty.jpeg" srcset="./assets/img/photos/mty.jpeg" alt="" /></a>
 	                  <figcaption>
-	                    <h5 class="from-top mb-0">View Gallery</h5>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
 	                  </figcaption>
 	                </figure>
 	                <div class="card-body p-6">
-	                  <h3 class="fs-21 mb-1">Katherine & Jack</h3>
+	                  <h3 class="fs-21 mb-1">Monterrey</h3>
 	                  <ul class="post-meta fs-16 mb-0">
-	                    <li>7 Photos</li>
-	                    <li>Couples</li>
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
 	                  </ul>
 	                </div>
 	                <!--/.card-body -->
@@ -263,16 +675,15 @@
 	            <div class="swiper-slide">
 	              <div class="card shadow-lg">
 	                <figure class="card-img-top overlay overlay-1">
-	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/fc4.jpg" srcset="./assets/img/photos/fc4@2x.jpg 2x" alt="" /></a>
+	                  <a href="/contact"><img class="img-fluid" src="./assets/img/photos/sao.jpeg" srcset="./assets/img/photos/sao.jpeg" alt="" /></a>
 	                  <figcaption>
-	                    <h5 class="from-top mb-0">View Gallery</h5>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
 	                  </figcaption>
 	                </figure>
 	                <div class="card-body p-6">
-	                  <h3 class="fs-21 mb-1">Jolene & William</h3>
+	                  <h3 class="fs-21 mb-1">Sao Paulo</h3>
 	                  <ul class="post-meta fs-16 mb-0">
-	                    <li>9 Photos</li>
-	                    <li>Wedding</li>
+	                  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
 	                  </ul>
 	                </div>
 	                <!--/.card-body -->
@@ -283,16 +694,15 @@
 	            <div class="swiper-slide">
 	              <div class="card shadow-lg">
 	                <figure class="card-img-top overlay overlay-1">
-	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/fc5.jpg" srcset="./assets/img/photos/fc5@2x.jpg 2x" alt="" /></a>
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/cun.jpeg" srcset="./assets/img/photos/cun.jpeg" alt="" /></a>
 	                  <figcaption>
-	                    <h5 class="from-top mb-0">View Gallery</h5>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
 	                  </figcaption>
 	                </figure>
 	                <div class="card-body p-6">
-	                  <h3 class="fs-21 mb-1">Jenn & Richard</h3>
+	                  <h3 class="fs-21 mb-1">Cancún</h3>
 	                  <ul class="post-meta fs-16 mb-0">
-	                    <li>6 Photos</li>
-	                    <li>Engagement</li>
+						<li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
 	                  </ul>
 	                </div>
 	                <!--/.card-body -->
@@ -303,16 +713,15 @@
 	            <div class="swiper-slide">
 	              <div class="card shadow-lg">
 	                <figure class="card-img-top overlay overlay-1">
-	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/fc6.jpg" srcset="./assets/img/photos/fc6@2x.jpg 2x" alt="" /></a>
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/bogota.jpeg" srcset="./assets/img/photos/bogota.jpeg" alt="" /></a>
 	                  <figcaption>
-	                    <h5 class="from-top mb-0">View Gallery</h5>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
 	                  </figcaption>
 	                </figure>
 	                <div class="card-body p-6">
-	                  <h3 class="fs-21 mb-1">Gloria & Leo</h3>
+	                  <h3 class="fs-21 mb-1">Bogotá</h3>
 	                  <ul class="post-meta fs-16 mb-0">
-	                    <li>8 Photos</li>
-	                    <li>Wedding</li>
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
 	                  </ul>
 	                </div>
 	                <!--/.card-body -->
@@ -323,16 +732,621 @@
 	            <div class="swiper-slide">
 	              <div class="card shadow-lg">
 	                <figure class="card-img-top overlay overlay-1">
-	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/fc7.jpg" srcset="./assets/img/photos/fc7@2x.jpg 2x" alt="" /></a>
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/gdl.jpeg" srcset="./assets/img/photos/gdl.jpeg" alt="" /></a>
 	                  <figcaption>
-	                    <h5 class="from-top mb-0">View Gallery</h5>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
 	                  </figcaption>
 	                </figure>
 	                <div class="card-body p-6">
-	                  <h3 class="fs-21 mb-1">Grace & Finn</h3>
+	                  <h3 class="fs-21 mb-1">Guadalajara</h3>
 	                  <ul class="post-meta fs-16 mb-0">
-	                    <li>7 Photos</li>
-	                    <li>Engagement</li>
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/chile.jpeg" srcset="./assets/img/photos/chile.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Santiago de Chile</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/rep.jpeg" srcset="./assets/img/photos/rep.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Republica Dominicana</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/miami.jpeg" srcset="./assets/img/photos/miami.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Miami</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/ny.jpeg" srcset="./assets/img/photos/ny.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">New York</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/la.jpeg" srcset="./assets/img/photos/la.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Los Angeles</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/buenos.jpeg" srcset="./assets/img/photos/buenos.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Buenos Aires</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/puerto.jpeg" srcset="./assets/img/photos/puerto.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Puerto Vallarta</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/medellin.jpeg" srcset="./assets/img/photos/medellin.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Medellín</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/vegas.jpeg" srcset="./assets/img/photos/vegas.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Las Vegas</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/hawai.jpeg" srcset="./assets/img/photos/hawai.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Hawai</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/lima.jpeg" srcset="./assets/img/photos/lima.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Lima</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/orlando.jpeg" srcset="./assets/img/photos/orlando.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Orlando</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/atlanta.jpeg" srcset="./assets/img/photos/atlanta.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Atlanta</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/santo.jpeg" srcset="./assets/img/photos/santo.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Santo Domingo</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/cusco.jpeg" srcset="./assets/img/photos/cusco.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Cusco</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+
+				
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/panama.jpeg" srcset="./assets/img/photos/panama.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Panama</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/corea.jpeg" srcset="./assets/img/photos/corea.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Corea del Sur</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/guatemala.jpeg" srcset="./assets/img/photos/guatemala.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Guatemala</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/francia.jpeg" srcset="./assets/img/photos/francia.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Francia</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/rico.jpeg" srcset="./assets/img/photos/rico.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Puerto Rico</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/alemania.jpeg" srcset="./assets/img/photos/alemania.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Alemania</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/españa.jpeg" srcset="./assets/img/photos/españa.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">España</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/japon.jpeg" srcset="./assets/img/photos/japon.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Japón</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/dallas.jpeg" srcset="./assets/img/photos/dallas.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Dallas</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/sansalvador.jpeg" srcset="./assets/img/photos/sansalvador.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">San Salvador</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/montevideo.jpeg" srcset="./assets/img/photos/montevideo.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Monte Video</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<!--/.swiper-slide -->
+	            <div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/liberia.jpeg" srcset="./assets/img/photos/liberia.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Liberia Costa Rica</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/sanjose.jpeg" srcset="./assets/img/photos/sanjose.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">San José Costa Rica</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/rio.jpeg" srcset="./assets/img/photos/rio.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Rio de Janeiro</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+	                  </ul>
+	                </div>
+	                <!--/.card-body -->
+	              </div>
+	              <!-- /.card -->
+	            </div>
+	            <!--/.swiper-slide -->
+				<div class="swiper-slide">
+	              <div class="card shadow-lg">
+	                <figure class="card-img-top overlay overlay-1">
+	                  <a href="#"><img class="img-fluid" src="./assets/img/photos/puntaeste.jpeg" srcset="./assets/img/photos/puntaeste.jpeg" alt="" /></a>
+	                  <figcaption>
+					  <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
+	                  </figcaption>
+	                </figure>
+	                <div class="card-body p-6">
+	                  <h3 class="fs-21 mb-1">Punta Este</h3>
+	                  <ul class="post-meta fs-16 mb-0">
+					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
 	                  </ul>
 	                </div>
 	                <!--/.card-body -->
@@ -356,9 +1370,9 @@
 	  <div class="container py-14 py-md-17 text-center">
 	    <div class="row">
 	      <div class="col-xl-10 col-xxl-8 mx-auto text-center">
-	        <i class="icn-flower text-white fs-30 opacity-50"></i>
-	        <h2 class="display-4 text-white mt-2 mb-7">I'm here to capture your moments. Looking for a caring, fun, passionate photographer?</h2>
-	        <a href="#" class="btn btn-white rounded-pill mb-5">Contact Me</a>
+		    <i class="uil uil-bus-school text-white fs-50 opacity-50"></i>
+	        <h2 class="display-4 text-white mt-2 mb-7">{{ __('home.safety') }}</h2>
+	        <a href="#" class="btn btn-white rounded-pill mb-5">{{ __('home.contactus') }}</a>
 	      </div>
 	      <!--/column -->
 	    </div>
@@ -472,231 +1486,7 @@
 	  </div>
 	  <!-- /.container -->
 	</section>
-	<!-- /section -->
-	<section class="wrapper bg-soft-primary">
-	  <div class="overflow-hidden">
-	    <div class="container py-14 py-md-16">
-	      <div class="row">
-	        <div class="col-xl-7 col-xxl-6 mx-auto text-center">
-	          <i class="icn-flower text-leaf fs-30 opacity-25"></i>
-	          <h2 class="display-5 text-center mt-2 mb-10">Here are the latest posts from my blog that grabbed the most attention.</h2>
-	        </div>
-	        <!--/column -->
-	      </div>
-	      <!--/.row -->
-	      <div class="swiper-container nav-bottom nav-color mb-14" data-margin="30" data-dots="false" data-nav="true" data-items-lg="3" data-items-md="2" data-items-xs="1">
-	        <div class="swiper overflow-visible pb-2">
-	          <div class="swiper-wrapper">
-	            <div class="swiper-slide">
-	              <article>
-	                <div class="card shadow-lg">
-	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/b12.jpg" srcset="./assets/img/photos/b12@2x.jpg 2x" alt="" /></a>
-	                    <figcaption>
-	                      <h5 class="from-top mb-0">Read More</h5>
-	                    </figcaption>
-	                  </figure>
-	                  <div class="card-body p-6">
-	                    <div class="post-header">
-	                      <div class="post-category">
-	                        <a href="#" class="hover" rel="category">Wedding</a>
-	                      </div>
-	                      <!-- /.post-category -->
-	                      <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">Ligula tristique quis risus</a></h2>
-	                    </div>
-	                    <!-- /.post-header -->
-	                    <div class="post-footer">
-	                      <ul class="post-meta d-flex mb-0">
-	                        <li class="post-date"><i class="uil uil-calendar-alt"></i><span>14 Apr 2022</span></li>
-	                        <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>4</a></li>
-	                      </ul>
-	                      <!-- /.post-meta -->
-	                    </div>
-	                    <!-- /.post-footer -->
-	                  </div>
-	                  <!--/.card-body -->
-	                </div>
-	                <!-- /.card -->
-	              </article>
-	              <!-- /article -->
-	            </div>
-	            <!--/.swiper-slide -->
-	            <div class="swiper-slide">
-	              <article>
-	                <div class="card shadow-lg">
-	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/b13.jpg" srcset="./assets/img/photos/b13@2x.jpg 2x" alt="" /></a>
-	                    <figcaption>
-	                      <h5 class="from-top mb-0">Read More</h5>
-	                    </figcaption>
-	                  </figure>
-	                  <div class="card-body p-6">
-	                    <div class="post-header">
-	                      <div class="post-category">
-	                        <a href="#" class="hover" rel="category">Engagement</a>
-	                      </div>
-	                      <!-- /.post-category -->
-	                      <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">Nullam id dolor elit id nibh</a></h2>
-	                    </div>
-	                    <!-- /.post-header -->
-	                    <div class="post-footer">
-	                      <ul class="post-meta d-flex mb-0">
-	                        <li class="post-date"><i class="uil uil-calendar-alt"></i><span>29 Mar 2022</span></li>
-	                        <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>3</a></li>
-	                      </ul>
-	                      <!-- /.post-meta -->
-	                    </div>
-	                    <!-- /.post-footer -->
-	                  </div>
-	                  <!--/.card-body -->
-	                </div>
-	                <!-- /.card -->
-	              </article>
-	              <!-- /article -->
-	            </div>
-	            <!--/.swiper-slide -->
-	            <div class="swiper-slide">
-	              <article>
-	                <div class="card shadow-lg">
-	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/b14.jpg" srcset="./assets/img/photos/b14@2x.jpg 2x" alt="" /></a>
-	                    <figcaption>
-	                      <h5 class="from-top mb-0">Read More</h5>
-	                    </figcaption>
-	                  </figure>
-	                  <div class="card-body p-6">
-	                    <div class="post-header">
-	                      <div class="post-category">
-	                        <a href="#" class="hover" rel="category">Couples</a>
-	                      </div>
-	                      <!-- /.post-category -->
-	                      <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">Ultricies fusce porta elit</a></h2>
-	                    </div>
-	                    <!-- /.post-header -->
-	                    <div class="post-footer">
-	                      <ul class="post-meta d-flex mb-0">
-	                        <li class="post-date"><i class="uil uil-calendar-alt"></i><span>26 Feb 2022</span></li>
-	                        <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>6</a></li>
-	                      </ul>
-	                      <!-- /.post-meta -->
-	                    </div>
-	                    <!-- /.post-footer -->
-	                  </div>
-	                  <!--/.card-body -->
-	                </div>
-	                <!-- /.card -->
-	              </article>
-	              <!-- /article -->
-	            </div>
-	            <!--/.swiper-slide -->
-	            <div class="swiper-slide">
-	              <article>
-	                <div class="card shadow-lg">
-	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/b15.jpg" srcset="./assets/img/photos/b15@2x.jpg 2x" alt="" /></a>
-	                    <figcaption>
-	                      <h5 class="from-top mb-0">Read More</h5>
-	                    </figcaption>
-	                  </figure>
-	                  <div class="card-body p-6">
-	                    <div class="post-header">
-	                      <div class="post-category">
-	                        <a href="#" class="hover" rel="category">Engagement</a>
-	                      </div>
-	                      <!-- /.post-category -->
-	                      <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">Morbi leo risus porta eget</a></h2>
-	                    </div>
-	                    <!-- /.post-header -->
-	                    <div class="post-footer">
-	                      <ul class="post-meta d-flex mb-0">
-	                        <li class="post-date"><i class="uil uil-calendar-alt"></i><span>17 Jan 2022</span></li>
-	                        <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>3</a></li>
-	                      </ul>
-	                      <!-- /.post-meta -->
-	                    </div>
-	                    <!-- /.post-footer -->
-	                  </div>
-	                  <!--/.card-body -->
-	                </div>
-	                <!-- /.card -->
-	              </article>
-	              <!-- /article -->
-	            </div>
-	            <!--/.swiper-slide -->
-	            <div class="swiper-slide">
-	              <article>
-	                <div class="card shadow-lg">
-	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/b16.jpg" srcset="./assets/img/photos/b16@2x.jpg 2x" alt="" /></a>
-	                    <figcaption>
-	                      <h5 class="from-top mb-0">Read More</h5>
-	                    </figcaption>
-	                  </figure>
-	                  <div class="card-body p-6">
-	                    <div class="post-header">
-	                      <div class="post-category">
-	                        <a href="#" class="hover" rel="category">Couples</a>
-	                      </div>
-	                      <!-- /.post-category -->
-	                      <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">Nulla vitae elit libero</a></h2>
-	                    </div>
-	                    <!-- /.post-header -->
-	                    <div class="post-footer">
-	                      <ul class="post-meta d-flex mb-0">
-	                        <li class="post-date"><i class="uil uil-calendar-alt"></i><span>7 Jan 2022</span></li>
-	                        <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>1</a></li>
-	                      </ul>
-	                      <!-- /.post-meta -->
-	                    </div>
-	                    <!-- /.post-footer -->
-	                  </div>
-	                  <!--/.card-body -->
-	                </div>
-	                <!-- /.card -->
-	              </article>
-	              <!-- /article -->
-	            </div>
-	            <!--/.swiper-slide -->
-	            <div class="swiper-slide">
-	              <article>
-	                <div class="card shadow-lg">
-	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/b17.jpg" srcset="./assets/img/photos/b17@2x.jpg 2x" alt="" /></a>
-	                    <figcaption>
-	                      <h5 class="from-top mb-0">Read More</h5>
-	                    </figcaption>
-	                  </figure>
-	                  <div class="card-body p-6">
-	                    <div class="post-header">
-	                      <div class="post-category">
-	                        <a href="#" class="hover" rel="category">Wedding</a>
-	                      </div>
-	                      <!-- /.post-category -->
-	                      <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">Pharetra augue elit sem</a></h2>
-	                    </div>
-	                    <!-- /.post-header -->
-	                    <div class="post-footer">
-	                      <ul class="post-meta d-flex mb-0">
-	                        <li class="post-date"><i class="uil uil-calendar-alt"></i><span>2 Jan 2022</span></li>
-	                        <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>2</a></li>
-	                      </ul>
-	                      <!-- /.post-meta -->
-	                    </div>
-	                    <!-- /.post-footer -->
-	                  </div>
-	                  <!--/.card-body -->
-	                </div>
-	                <!-- /.card -->
-	              </article>
-	              <!-- /article -->
-	            </div>
-	            <!--/.swiper-slide -->
-	          </div>
-	          <!--/.swiper-wrapper -->
-	        </div>
-	        <!-- /.swiper -->
-	      </div>
-	      <!-- /.swiper-container -->
-	    </div>
-	    <!-- /.container -->
-	  </div>
-	  <!-- /.overflow-hidden -->
-	</section>
-	<!-- /section -->
+	
 @endsection
 @section('scripts')
 @endsection

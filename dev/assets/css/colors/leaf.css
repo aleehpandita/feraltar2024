@@ -223,7 +223,7 @@ blockquote,
   fill: #7cb798;
 }
 .shape.soft-primary .svg-fill {
-  fill: #f5faf7;
+  fill: #FFFCF6;
 }
 .shape.pale-primary .svg-fill {
   fill: #eaf3ef;
@@ -257,10 +257,10 @@ a.hover-3:before {
   background-color: #eaf3ef;
 }
 .bg-soft-primary {
-  background-color: #f5faf7 !important;
+  background-color: #FFFCF6 !important;
 }
 .text-soft-primary {
-  color: #f5faf7 !important;
+  color: #FFFCF6 !important;
 }
 .bg-pale-primary {
   background-color: #eaf3ef !important;
@@ -269,21 +269,21 @@ a.hover-3:before {
   color: #eaf3ef !important;
 }
 .bg-gradient-primary {
-  background: linear-gradient(180deg, #f5faf7, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, #FFFCF6, rgba(255, 255, 255, 0) 100%);
 }
 .bg-gradient-reverse-primary {
-  background: linear-gradient(0deg, #f5faf7, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(0deg, #FFFCF6, rgba(255, 255, 255, 0) 100%);
 }
 .border-soft-primary {
   border-color: #d8e9e0 !important;
 }
 .wrapper.bg-soft-primary.angled.lower-start:after,
 .wrapper.bg-soft-primary.angled.upper-start:before {
-  border-left-color: #f5faf7;
+  border-left-color: #FFFCF6;
 }
 .wrapper.bg-soft-primary.angled.lower-end:after,
 .wrapper.bg-soft-primary.angled.upper-end:before {
-  border-right-color: #f5faf7;
+  border-right-color: #FFFCF6;
 }
 .wrapper.bg-pale-primary.angled.lower-start:after,
 .wrapper.bg-pale-primary.angled.upper-start:before {

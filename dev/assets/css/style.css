@@ -23009,10 +23009,10 @@ figure img {
   color: #f1fbf8 !important;
 }
 .bg-soft-leaf {
-  background-color: #f5faf7 !important;
+  background-color: #FFFCF6 !important;
 }
 .text-soft-leaf {
-  color: #f5faf7 !important;
+  color: #FFFCF6 !important;
 }
 .bg-soft-aqua {
   background-color: #f2f8fb !important;
@@ -23216,10 +23216,10 @@ figure img {
   background: linear-gradient(0deg, #f1fbf8, rgba(255, 255, 255, 0) 100%);
 }
 .bg-gradient-leaf {
-  background: linear-gradient(180deg, #f5faf7, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, #FFFCF6, rgba(255, 255, 255, 0) 100%);
 }
 .bg-gradient-reverse-leaf {
-  background: linear-gradient(0deg, #f5faf7, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(0deg, #FFFCF6, rgba(255, 255, 255, 0) 100%);
 }
 .bg-gradient-aqua {
   background: linear-gradient(180deg, #f2f8fb, rgba(255, 255, 255, 0) 100%);
@@ -23531,11 +23531,11 @@ figure img {
 }
 .wrapper.bg-soft-leaf.angled.lower-start:after,
 .wrapper.bg-soft-leaf.angled.upper-start:before {
-  border-left-color: #f5faf7;
+  border-left-color: #FFFCF6;
 }
 .wrapper.bg-soft-leaf.angled.lower-end:after,
 .wrapper.bg-soft-leaf.angled.upper-end:before {
-  border-right-color: #f5faf7;
+  border-right-color: #FFFCF6;
 }
 .wrapper.bg-pale-leaf.angled.lower-start:after,
 .wrapper.bg-pale-leaf.angled.upper-start:before {
@@ -38122,7 +38122,7 @@ table.shopping-cart td {
   fill: #7cb798;
 }
 .shape.soft-leaf .svg-fill {
-  fill: #f5faf7;
+  fill: #FFFCF6;
 }
 .shape.pale-leaf .svg-fill {
   fill: #eaf3ef;
