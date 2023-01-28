@@ -770,7 +770,6 @@ var theme = {
             form.classList.add("was-validated");
             if(form.checkValidity() === true) {
               event.preventDefault();
-              console.log('llallaal')
               form.classList.remove("was-validated");
               // Send message only if the form has class .contact-form
               var isContactForm = form.classList.contains('contact-form');

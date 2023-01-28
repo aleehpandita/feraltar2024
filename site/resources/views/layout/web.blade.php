@@ -12,7 +12,7 @@ if (App::getLocale() == 'en') {
 }
 ?>
 <!DOCTYPE html>
-<html lang="{{App::getLocale()}}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
   <meta charset="utf-8">
@@ -142,12 +142,13 @@ if (App::getLocale() == 'en') {
       window.CSRF_TOKEN = '{{ csrf_token() }}';
     </script>
   @yield('head')
+  
 </head>
 
 <body>
   <div class="content-wrapper">
     <header class="wrapper bg-soft-primary">
-      <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-@yield('navBarStyle', 'dark') caret-none">
+      <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-@yield('navBarStyle', 'dark') ">
         <div class="container flex-lg-row flex-nowrap align-items-center">
           <div class="navbar-brand w-100">
             <a href="{{route(App::getLocale().'.home')}}">
@@ -157,15 +158,16 @@ if (App::getLocale() == 'en') {
           </div>
           <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
             <div class="offcanvas-header d-lg-none">
-              <h3 class="text-white fs-30 mb-0">Sandbox</h3>
+              <h3 class="text-white fs-30 mb-0">{{config('app.name')}}</h3>
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
               <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.services') }}">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.fleet') }}">Fleet</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">Reservations</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.about') }}">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.home') }}">{{ __('layout.Home') }}</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.services') }}">{{ __('layout.Services') }}</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.fleet') }}">{{ __('layout.Fleet') }}</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('layout.Reservations') }}</a></li> -->
+                <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.about') }}">{{ __('layout.About') }}</a></li>
                 @if (0==1)
                   <li class="nav-item dropdown dropdown-mega">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Demos</a>
@@ -552,14 +554,24 @@ if (App::getLocale() == 'en') {
               <!-- /.navbar-nav -->
               <div class="offcanvas-footer d-lg-none">
                 <div>
-                  <a href="mailto:first.last@email.com" class="link-inverse">info@email.com</a>
-                  <br /> 00 (123) 456 78 90 <br />
+                  <a href="mailto:{{ $SITE_CONFIGURATION->main_email }}" class="link-inverse">{{ $SITE_CONFIGURATION->main_email }}</a>
+                  <br /> USA / Canada <br />
+                  <a href="tel:{{$SITE_CONFIGURATION->usa_canada_toll_free}}">{{$SITE_CONFIGURATION->usa_canada_toll_free}}</a> <br />
+                  Mexico <br />
+                  <a href="tel:{{$SITE_CONFIGURATION->national_call_center}}">{{$SITE_CONFIGURATION->national_call_center}}</a> <br />
                   <nav class="nav social social-white mt-4">
-                    <a href="#"><i class="uil uil-twitter"></i></a>
-                    <a href="#"><i class="uil uil-facebook-f"></i></a>
-                    <a href="#"><i class="uil uil-dribbble"></i></a>
-                    <a href="#"><i class="uil uil-instagram"></i></a>
-                    <a href="#"><i class="uil uil-youtube"></i></a>
+                    @if (!empty($SITE_CONFIGURATION->twitter))
+                      <a href="{{$SITE_CONFIGURATION->twitter}}"><i class="uil uil-twitter"></i></a>
+                    @endif
+                    @if (!empty($SITE_CONFIGURATION->facebook))
+                      <a href="{{$SITE_CONFIGURATION->facebook}}"><i class="uil uil-facebook-f"></i></a>
+                    @endif
+                    @if (!empty($SITE_CONFIGURATION->instagram))
+                      <a href="{{$SITE_CONFIGURATION->instagram}}"><i class="uil uil-instagram"></i></a>
+                    @endif
+                    @if (!empty($SITE_CONFIGURATION->youtube))
+                      <a href="{{$SITE_CONFIGURATION->youtube}}"><i class="uil uil-youtube"></i></a>
+                    @endif
                   </nav>
                   <!-- /.social -->
                 </div>
@@ -571,20 +583,34 @@ if (App::getLocale() == 'en') {
           <!-- /.navbar-collapse -->
           <div class="navbar-other w-100 d-flex ms-auto">
             <ul class="navbar-nav flex-row align-items-center ms-auto">
+              <li class="nav-item dropdown language-select">
+                <a class="nav-link dropdown-item dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="uil uil-phone-volume"></i> <span class="d-none d-md-inline ms-1">{{ __('layout.call-us') }}</span></a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <span class="dropdown-item">USA / Canada</span>
+                    <a class="dropdown-item" href="tel:{{$SITE_CONFIGURATION->usa_canada_toll_free}}">{{$SITE_CONFIGURATION->usa_canada_toll_free}} </a>
+                  </li>
+                  <li class="nav-item"><hr class="my-0"></li>
+                  <li class="nav-item">
+                    <span class="dropdown-item">Mexico</span>
+                    <a class="dropdown-item" href="tel:{{$SITE_CONFIGURATION->usa_canada_toll_free}}">{{$SITE_CONFIGURATION->national_call_center}} </a>
+                  </li>
+                </ul>
+              </li>
               <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-info"><i class="uil uil-info-circle"></i>
               </a></li>
               <li class="nav-item dropdown language-select">
-                <a class="nav-link dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{$flag}}" width="18" height="11" alt=""> </a>
+                <a class="nav-link dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{$flag}}" width="18" height="11" alt=""> </a>
                 <ul class="dropdown-menu">
                   <li class="nav-item"><a class="dropdown-item" href="{{route($urlEn)}}"><img src="{{asset('assets/img/flags/us.png')}}" width="18" height="11" alt=""> </a></li>
                   <li class="nav-item"><a class="dropdown-item" href="{{route($urlEs)}}"><img src="{{asset('assets/img/flags/mx.png')}}" width="18" height="11" alt=""> </a></li>
                 </ul>
               </li>
             
-              <li class="nav-item offcanvas-body d-none  d-md-block "><a class="nav-link " href="{{route(App::getLocale().'.contact')}}"><small class="d-none d-lg-inline">Always at your service: </small><p>☎ 01-800-832-6889</p></a></li>
+              <!-- <li class="nav-item offcanvas-body d-none  d-md-block "><a class="nav-link " href="{{route(App::getLocale().'.contact')}}"><small class="d-none d-lg-inline">Always at your service: </small><p>☎ 01-800-832-6889</p></a></li> -->
             
               <li class="nav-item d-none d-md-block">
-                <a href="{{route(App::getLocale().'.contact')}}" class="btn btn-sm btn-primary rounded-pill">Contact</a>
+                <a href="{{route(App::getLocale().'.contact')}}#drop-us-line" class="btn btn-sm btn-primary rounded-pill">Contact</a>
               </li>
               <!-- <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-search"><i class="uil uil-search"></i></a></li> -->
               <li class="nav-item d-lg-none">
@@ -600,7 +626,7 @@ if (App::getLocale() == 'en') {
       <!-- /.navbar -->
       <div class="offcanvas offcanvas-end text-inverse" id="offcanvas-info" data-bs-scroll="true">
         <div class="offcanvas-header">
-          <h3 class="text-white fs-30 mb-0">Sandbox</h3>
+          <h3 class="text-white fs-30 mb-0">{{config('app.name')}}</h3>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body pb-6">
@@ -610,8 +636,12 @@ if (App::getLocale() == 'en') {
           <!-- /.widget -->
           <div class="widget mb-8">
             <h4 class="widget-title text-white mb-3">Contact Info</h4>
-            <address> Moonshine St. 14/05 <br /> Light City, London </address>
-            <a href="mailto:first.last@email.com">info2@email.com</a><br /> 00 (123) 456 78 90 ss
+            <address> {!! $SITE_CONFIGURATION->address !!}</address>
+            <a href="mailto:{{ $SITE_CONFIGURATION->main_email }}">{{ $SITE_CONFIGURATION->main_email }}</a>
+            <br /> USA / Canada <br />
+            <a href="tel:{{$SITE_CONFIGURATION->usa_canada_toll_free}}">{{$SITE_CONFIGURATION->usa_canada_toll_free}}</a> <br />
+            Mexico <br />
+            <a href="tel:{{$SITE_CONFIGURATION->national_call_center}}">{{$SITE_CONFIGURATION->national_call_center}}</a> <br />
           </div>
           <!-- /.widget -->
           <div class="widget mb-8">
@@ -625,13 +655,20 @@ if (App::getLocale() == 'en') {
           </div>
           <!-- /.widget -->
           <div class="widget">
-            <h4 class="widget-title text-white mb-3">Follow Us 2</h4>
+            <h4 class="widget-title text-white mb-3">Follow Us</h4>
             <nav class="nav social social-white">
-              <a href="#"><i class="uil uil-twitter"></i></a>
-              <a href="#"><i class="uil uil-facebook-f"></i></a>
-              <a href="#"><i class="uil uil-dribbble"></i></a>
-              <a href="#"><i class="uil uil-instagram"></i></a>
-              <a href="#"><i class="uil uil-youtube"></i></a>
+              @if (!empty($SITE_CONFIGURATION->twitter))
+                <a href="{{$SITE_CONFIGURATION->twitter}}"><i class="uil uil-twitter"></i></a>
+              @endif
+              @if (!empty($SITE_CONFIGURATION->facebook))
+                <a href="{{$SITE_CONFIGURATION->facebook}}"><i class="uil uil-facebook-f"></i></a>
+              @endif
+              @if (!empty($SITE_CONFIGURATION->instagram))
+                <a href="{{$SITE_CONFIGURATION->instagram}}"><i class="uil uil-instagram"></i></a>
+              @endif
+              @if (!empty($SITE_CONFIGURATION->youtube))
+                <a href="{{$SITE_CONFIGURATION->youtube}}"><i class="uil uil-youtube"></i></a>
+              @endif
             </nav>
             <!-- /.social -->
           </div>
@@ -662,14 +699,21 @@ if (App::getLocale() == 'en') {
       <div class="row gy-6 gy-lg-0">
         <div class="col-lg-4">
           <div class="widget">
-            <img class="mb-4" src="./assets/img/logo-light.png" srcset="./assets/img/logo-light@2x.png 2x" alt="" />
-            <p class="mb-4">© 2022 Sandbox. All rights reserved.</p>
+            <img class="mb-4" width="164" src="./assets/img/logo-light.png" srcset="./assets/img/logo-light@2x.png 2x" alt="" />
+            <p class="mb-4">© 2022 {{config('app.name')}}. All rights reserved.</p>
             <nav class="nav social social-white">
-              <a href="#"><i class="uil uil-twitter"></i></a>
-              <a href="#"><i class="uil uil-facebook-f"></i></a>
-              <a href="#"><i class="uil uil-dribbble"></i></a>
-              <a href="#"><i class="uil uil-instagram"></i></a>
-              <a href="#"><i class="uil uil-youtube"></i></a>
+              @if (!empty($SITE_CONFIGURATION->twitter))
+                <a href="{{$SITE_CONFIGURATION->twitter}}"><i class="uil uil-twitter"></i></a>
+              @endif
+              @if (!empty($SITE_CONFIGURATION->facebook))
+                <a href="{{$SITE_CONFIGURATION->facebook}}"><i class="uil uil-facebook-f"></i></a>
+              @endif
+              @if (!empty($SITE_CONFIGURATION->instagram))
+                <a href="{{$SITE_CONFIGURATION->instagram}}"><i class="uil uil-instagram"></i></a>
+              @endif
+              @if (!empty($SITE_CONFIGURATION->youtube))
+                <a href="{{$SITE_CONFIGURATION->youtube}}"><i class="uil uil-youtube"></i></a>
+              @endif
             </nav>
             <!-- /.social -->
           </div>
@@ -689,25 +733,15 @@ if (App::getLocale() == 'en') {
           <!-- /.widget -->
         </div>
         <!-- /column -->
-        <div class="col-md-4 col-lg-2">
-          <div class="widget">
-            <h4 class="widget-title mb-3 text-white">Learn More</h4>
-            <ul class="list-unstyled mb-0">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Our Story</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Features</a></li>
-            </ul>
-          </div>
-          <!-- /.widget -->
-        </div>
-        <!-- /column -->
-        <div class="col-md-4 col-lg-2">
+        <div class="col-md-8 col-lg-4">
           <div class="widget">
             <h4 class="widget-title mb-3 text-white">Get in Touch</h4>
-            <address>Moonshine St. 14/05 Light City, London, United Kingdom</address>
-            <a href="mailto:first.last@email.com">info@email.com</a><br /> 00 (123) 456 78 90
+            <address> {!! $SITE_CONFIGURATION->address !!}</address>
+            <a href="mailto:{{ $SITE_CONFIGURATION->main_email }}">{{ $SITE_CONFIGURATION->main_email }}</a>
+            <br /> USA / Canada <br />
+            <a href="tel:{{$SITE_CONFIGURATION->usa_canada_toll_free}}">{{$SITE_CONFIGURATION->usa_canada_toll_free}}</a> <br />
+            Mexico <br />
+            <a href="tel:{{$SITE_CONFIGURATION->national_call_center}}">{{$SITE_CONFIGURATION->national_call_center}}</a> <br />
           </div>
           <!-- /.widget -->
         </div>

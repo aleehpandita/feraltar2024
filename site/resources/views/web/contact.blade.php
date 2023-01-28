@@ -3,6 +3,51 @@
 @section('head')
   @parent
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.02.min.css">
+  <style>
+    .autocomplete > ul[hidden], .autocomplete > ul:empty {
+      display: block;
+      opacity: 0;
+      transform: scale(0);
+    }
+    .autocomplete > ul {
+      position: absolute;
+      max-height: 226px;
+      overflow-y: scroll;
+      box-sizing: border-box;
+      left: 0;
+      right: 0;
+      margin: 0.5rem 0 0 0;
+      padding: 0;
+      z-index: 1;
+      list-style: none;
+      border-radius: 0.6rem;
+      background-color: #fff;
+      border: 1px solid rgba(33, 33, 33, 0.07);
+      box-shadow: 0 3px 6px rgb(149 157 165 / 15%);
+      outline: none;
+      transition: opacity 0.15s ease-in-out;
+      -moz-transition: opacity 0.15s ease-in-out;
+      -webkit-transition: opacity 0.15s ease-in-out;
+    }
+    .autocomplete > ul > li:hover {
+      cursor: pointer;
+      background-color: rgba(255, 122, 122, 0.15);
+    }
+    .autocomplete > ul > li {
+      margin: 0.3rem;
+      padding: 0.3rem 0.5rem;
+      text-align: left;
+      font-size: 1rem;
+      color: #212121;
+      border-radius: 0.35rem;
+      background-color: rgba(255, 255, 255, 1);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transition: all 0.2s ease;
+    }
+  </style>
 @endsection
 @section('content')
   <section class="wrapper image-wrapper bg-image bg-overlay bg-overlay-400 text-white" data-image-src="./assets/img/photos/bg3.jpg">
@@ -27,7 +72,7 @@
   <!-- /section -->
   <section class="wrapper bg-light angled upper-end">
     <div class="container pb-11">
-      <div class="row mb-14 mb-md-16">
+      <div class="row">
         <div class="col-xl-10 mx-auto mt-n19">
           <div class="card">
             <div class="row gx-0">
@@ -55,7 +100,12 @@
                       <div class="icon text-primary fs-28 me-4 mt-n1"> <i class="uil uil-phone-volume"></i> </div>
                     </div>
                     <div>
-                      <h5 class="mb-1">{{ __('contact.Phone') }}</h5>
+                      <!-- <h5 class="mb-1">{{ __('contact.Phone') }}</h5> -->
+                      <h6>USA / CANADA Toll free:</h6>
+                      <p><a href="tel:{{$SITE_CONFIGURATION->usa_canada_toll_free}}">{{$SITE_CONFIGURATION->usa_canada_toll_free}}</a></p>
+                      <h6>National call center:</h6>
+                      <p><a href="tel:{{$SITE_CONFIGURATION->usa_canada_toll_free}}">{{$SITE_CONFIGURATION->national_call_}}</a></p>
+                      <h6>Ciudad de Mexico:</h6>
                       <p>
                         @php
                         $phones = explode(',', $SITE_CONFIGURATION->contact_phones);
@@ -94,14 +144,20 @@
         <!-- /column -->
       </div>
       <!-- /.row -->
-      <div class="row">
+      <div class="row pt-14 pt-md-16" id="drop-us-line">
         <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
           <h2 class="display-4 mb-3 text-center">{{ __('contact.Drop-Us-a-Line') }}</h2>
           <p class="lead text-center mb-10">{{ __('contact.Reach-out') }}</p>
-          <form class="contact-form needs-validation" method="post" action="{{route(App::getLocale().'.sendContact')}}" novalidate>
+          <form id="form" class="contact-form needs-validation" method="post" action="{{route(App::getLocale().'.sendContact')}}" novalidate>
             <input type="hidden" name="_token" value="{{ csrf_token() }}" />
             <div class="messages"></div>
             <div class="row gx-4">
+              <div class="col-md-12">
+                <div class="form-floating mb-4 autocomplete">
+                  <input id="autoComplete" type="search" class="form-control" placeholder="Hola">
+                  <label for="autoComplete">{{ __('contact.Destination') }} *</label>
+                </div>
+              </div>
               <div class="col-md-6">
                 <div class="form-floating mb-4">
                   <input id="form_name" type="text" name="name" class="form-control" placeholder="Jane" required>
@@ -200,4 +256,75 @@
   <!-- /section -->
 @endsection
 @section('scripts')
+<script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
+<script>
+  const autoCompleteJS = new autoComplete({
+    selector: "#autoComplete",
+    //placeHolder: "",
+    wrapper: false,
+    data: {
+      src: [
+        'CD Mexico', 'Monterrey', 'Guadalajara', 'Los cabos', 'Cancun', 'Vallarta',
+        'Republica  Dominicana', 'Santo Domingo', 'Punta Cana',
+        'Buenos aires',
+        'Sao paulo ',
+        'Río de Janeiro',
+        'Bogota',
+        'Medellin',
+        'Liberia ',
+        'San José en Costa rica',
+        'Santiago de chile',
+        'San salvador',
+        'Guatemala',
+        'Panamá',
+        'Puerto rico',
+        'Lima',
+        'Cusco',
+        'Miami',
+        'Orlando ',
+        'New York',
+        'Los Angeles',
+        'San Francisco',
+        'Atlanta',
+        'Hawai',
+        'Las vegas',
+        'Dallas',
+        'Monte video',
+        'Punta del Este en Uruguay',
+        'España',
+        'Francia',
+        'Alemania',
+        'Japón',
+        'Corea'
+      ],
+      cache: true,
+    },
+    resultsList: {
+      element: (list, data) => {
+        if (!data.results.length) {
+          // Create "No Results" message element
+          const message = document.createElement("div");
+          // Add class to the created element
+          message.setAttribute("class", "no_result");
+          // Add message text content
+          message.innerHTML = `<span>Found No Results for "${data.query}"</span>`;
+          // Append message element to the results list
+          list.prepend(message);
+        }
+      },
+      noResults: true,
+    },
+    resultItem: {
+      highlight: true
+    },
+    events: {
+      input: {
+        selection: (event) => {
+          const selection = event.detail.selection.value;
+          autoCompleteJS.input.value = selection;
+        }
+      }
+    }
+  });
+</script>
 @endsection
