@@ -21,4 +21,11 @@ return [
 	'email'=>'Email',
 	'messageOk'=>'Hemos recibido sus datos, tan pronto como sea posible uno de nuestros agentes lo contactara.',
 	'messageOk'=>'He have received your information, we will contact you as soon as posible.',
+	'Pickup'=>'Pickup',
+	'Pickup Date'=>'Pickup Date',
+	'Dropoff'=>'Dropoff',
+	'Dropoff Date'=>'Dropoff Date',
+	'Destination'=>'Destination',
+	'Please wait'=>'Please wait',
+	'Passengers'=>'Passengers',
 ];

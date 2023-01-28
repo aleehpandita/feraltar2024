@@ -47,6 +47,57 @@
       text-overflow: ellipsis;
       transition: all 0.2s ease;
     }
+    .autocomplete > ul > .no_result {
+      padding: 0.3rem 0.5rem;
+    }
+    .form-floating>.input-group>.form-control {
+      padding-bottom: 0;
+      line-height: 1.25;
+    }
+    .form-floating>.input-group>.form-control::placeholder {
+      color: transparent;
+    }
+    .form-floating>.input-group>label {
+      padding-top: 0.65rem;
+    }
+
+    .form-floating>.input-group>label {
+      color: #959ca9;
+      font-size: .75rem;
+    }
+    .form-floating>.input-group>label {
+      position: absolute;
+      top: 0;
+      left: 54px;
+      width: 100%;
+      height: 100%;
+      padding: 0.6rem 1rem;
+      overflow: hidden;
+      text-align: start;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      pointer-events: none;
+      border: 1px solid transparent;
+      transform-origin: 0 0;
+      transition: opacity .1s ease-in-out,transform .1s ease-in-out;
+    }
+    .form-floating>.input-group>.form-control:focus~label, .form-floating>.input-group>.form-control:not(:placeholder-shown)~label {
+      opacity: 1;
+      transform: scale(.8) translateY(-0.4rem) translateX(0.2rem);
+    }
+    .form-floating .input-group>.form-control:focus, .input-group>.form-select:focus {
+      z-index: 0;
+    }
+    .was-validated .form-floating .input-group>.form-control:not(:focus):valid{
+      z-index: 0;
+    }
+    .was-validated .form-floating .input-group>.form-control:not(:focus):invalid {
+      z-index: 0;
+    }
+    /*.form-floating>.input-group>.form-control:not(:placeholder-shown) {
+      padding-top: 1rem;
+      padding-bottom: 0.2rem;
+    }*/
   </style>
 @endsection
 @section('content')
@@ -154,9 +205,86 @@
             <div class="row gx-4">
               <div class="col-md-12">
                 <div class="form-floating mb-4 autocomplete">
-                  <input id="autoComplete" type="search" class="form-control" placeholder="Hola">
+                  <input id="autoComplete" name="destination" type="search" class="form-control" placeholder="Hola">
                   <label for="autoComplete">{{ __('contact.Destination') }} *</label>
                 </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-4">
+                  <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1"><i class="uil uil-location-point"></i></span>
+                    <input id="pickup" type="text" name="pickup" class="form-control" placeholder="Jane" required>
+                    <label for="pickup">{{ __('contact.Pickup') }} *</label>
+                  </div>
+                  <div class="valid-feedback"> {{ __('contact.Looks good') }} </div>
+                  <div class="invalid-feedback"> {{ __('contact.Enter Pickup') }} </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-4">
+                  <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1"><i class="uil uil-calendar-alt"></i></span>
+                    <input id="pickup_date" type="text" name="pickup_date" class="form-control" placeholder="Jane" required>
+                    <label for="pickup_date">{{ __('contact.Pickup Date') }} *</label>
+                  </div>
+                  <div class="valid-feedback"> {{ __('contact.Looks good') }} </div>
+                  <div class="invalid-feedback"> {{ __('contact.Enter Pickup Date') }} </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-4">
+                  <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1"><i class="uil uil-location-point"></i></span>
+                    <input id="dropoff" type="text" name="dropoff" class="form-control" placeholder="Jane" required>
+                    <label for="dropoff">{{ __('contact.Dropoff') }} *</label>
+                  </div>
+                  <div class="valid-feedback"> {{ __('contact.Looks good') }} </div>
+                  <div class="invalid-feedback"> {{ __('contact.Enter Dropoff') }} </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-4">
+                  <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1"><i class="uil uil-calendar-alt"></i></span>
+                    <input id="dropoff_date" type="text" name="dropoff_date" class="form-control" placeholder="Jane" required>
+                    <label for="dropoff_date">{{ __('contact.Dropoff Date') }} *</label>
+                  </div>
+                  <div class="valid-feedback"> {{ __('contact.Looks good') }} </div>
+                  <div class="invalid-feedback"> {{ __('contact.Enter Dropoff Date') }} </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating mb-4">
+                  <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1"><i class="uil uil-users-alt"></i></span>
+                    <select class="form-select" id="pax" name="pax" required>
+                      <option value="" selected>{{ __('contact.Passengers') }}</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="+10">+10</option>
+                    </select>
+                    <!-- <label for="dropoff_date">{{ __('contact.Dropoff Date') }} *</label> -->
+                  </div>
+                  <div class="valid-feedback"> {{ __('contact.Looks good') }} </div>
+                  <div class="invalid-feedback"> {{ __('contact.Enter Dropoff Date') }} </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked"> Roundtrip </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <hr class="my-4">
               </div>
               <div class="col-md-6">
                 <div class="form-floating mb-4">
@@ -201,7 +329,7 @@
                       data-callback="onSubmit"
                       data-size="invisible">
                 </div>
-                <input type="submit" class="btn btn-primary rounded-pill btn-send mb-3" value="{{ __('contact.Send message') }}">
+                <input id="btn-submit" type="submit" class="btn btn-primary rounded-pill btn-send mb-3" value="{{ __('contact.Please wait') }}">
                 <p class="text-muted"><strong>*</strong> {{ __('contact.fields required') }}</p>
               </div>
               <!-- /column -->
@@ -258,7 +386,7 @@
 @section('scripts')
 <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
 <script>
-  const autoCompleteJS = new autoComplete({
+  /*const autoCompleteJS = new autoComplete({
     selector: "#autoComplete",
     //placeHolder: "",
     wrapper: false,
@@ -325,6 +453,9 @@
         }
       }
     }
+  });*/
+  document.addEventListener("DOMContentLoaded", function(event) { 
+    document.getElementById('btn-submit').value = '{{ __('contact.Send message') }}'
   });
 </script>
 @endsection
