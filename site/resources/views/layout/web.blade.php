@@ -697,10 +697,10 @@ if (App::getLocale() == 'en') {
   <footer class="bg-dark text-inverse">
     <div class="container py-13 py-md-15">
       <div class="row gy-6 gy-lg-0">
-        <div class="col-lg-4">
+        <div class="col-lg-3">
           <div class="widget">
             <img class="mb-4" width="164" src="./assets/img/logo-light.png" srcset="./assets/img/logo-light@2x.png 2x" alt="" />
-            <p class="mb-4">© 2022 {{config('app.name')}}. All rights reserved.</p>
+            <p class="mb-4">© 2023 {{config('app.name')}}. All rights reserved.</p>
             <nav class="nav social social-white">
               @if (!empty($SITE_CONFIGURATION->twitter))
                 <a href="{{$SITE_CONFIGURATION->twitter}}"><i class="uil uil-twitter"></i></a>
@@ -720,22 +720,64 @@ if (App::getLocale() == 'en') {
           <!-- /.widget -->
         </div>
         <!-- /column -->
-        <div class="col-md-4 col-lg-2 offset-lg-2">
+        <!-- /column -->
+        <div class="col-md-3 col-lg-2">
           <div class="widget">
-            <h4 class="widget-title mb-3 text-white">Need Help?</h4>
+            <h4 class="widget-title mb-3 text-white">{{ __('layout.desti') }}</h4>
             <ul class="list-unstyled mb-0">
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Get Started</a></li>
-              <li><a href="#">Terms of Use</a></li>
-              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">CDMX</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Monterrey</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">San Miguel de Allende</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Los Cabos</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Tijuana</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Cancún</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Guadalajara</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Puerto Vallarta</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Costa Rica</a></li>
             </ul>
           </div>
           <!-- /.widget -->
         </div>
         <!-- /column -->
-        <div class="col-md-8 col-lg-4">
+         <!-- /column -->
+         <div class="col-md-3 col-lg-2">
           <div class="widget">
-            <h4 class="widget-title mb-3 text-white">Get in Touch</h4>
+            <ul class="list-unstyled mb-0">
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Guatemala</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">San Salvador</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Puerto Rico</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Panama</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Buenos Aires</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Bogotá</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Medellín</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Uruguay</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Perú</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Rio de Janeiro</a></li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <div class="col-md-3 col-lg-2">
+          <div class="widget">
+            <ul class="list-unstyled mb-0">
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Orlando</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">New York</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Las Vegas</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Francia</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">España</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Atlanta</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Dallas</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Alemania</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Japón</a></li>
+              <li><a href="{{ route(App::getLocale().'.contact') }}">Sao Paulo</a></li>
+            
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /column -->
+        <div class="col-md-3 col-lg-3">
+          <div class="widget">
+            <h4 class="widget-title mb-3 text-white">{{ __('layout.get') }}</h4>
             <address> {!! $SITE_CONFIGURATION->address !!}</address>
             <a href="mailto:{{ $SITE_CONFIGURATION->main_email }}">{{ $SITE_CONFIGURATION->main_email }}</a>
             <br /> USA / Canada <br />
