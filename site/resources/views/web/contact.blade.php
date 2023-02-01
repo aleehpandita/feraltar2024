@@ -99,6 +99,10 @@
       padding-bottom: 0.2rem;
     }*/
   </style>
+
+
+  <!-- Tempus Dominus Styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@eonasdan/tempus-dominus@6.2.10/dist/css/tempus-dominus.min.css" crossorigin="anonymous">
 @endsection
 @section('content')
   <section class="wrapper image-wrapper bg-image bg-overlay bg-overlay-400 text-white" data-image-src="./assets/img/photos/bg3.jpg">
@@ -205,14 +209,14 @@
             <div class="row gx-4">
               <div class="col-md-12">
                 <div class="form-floating mb-4 autocomplete">
-                  <input id="autoComplete" name="destination" type="search" class="form-control" placeholder="Hola">
+                  <input id="autoComplete" name="destination" type="search" class="form-control" placeholder="Hola" required>
                   <label for="autoComplete">{{ __('contact.Destination') }} *</label>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <div class="form-floating mb-4">
                   <div class="input-group">
-                    <span class="input-group-text" id="basic-addon1"><i class="uil uil-location-point"></i></span>
+                    <span class="input-group-text" id="pickup-addon1"><i class="uil uil-location-point"></i></span>
                     <input id="pickup" type="text" name="pickup" class="form-control" placeholder="Jane" required>
                     <label for="pickup">{{ __('contact.Pickup') }} *</label>
                   </div>
@@ -220,10 +224,10 @@
                   <div class="invalid-feedback"> {{ __('contact.Enter Pickup') }} </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <div class="form-floating mb-4">
                   <div class="input-group">
-                    <span class="input-group-text" id="basic-addon1"><i class="uil uil-calendar-alt"></i></span>
+                    <span class="input-group-text" id="pickup_date-addon1"><i class="uil uil-calendar-alt"></i></span>
                     <input id="pickup_date" type="text" name="pickup_date" class="form-control" placeholder="Jane" required>
                     <label for="pickup_date">{{ __('contact.Pickup Date') }} *</label>
                   </div>
@@ -231,10 +235,21 @@
                   <div class="invalid-feedback"> {{ __('contact.Enter Pickup Date') }} </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <div class="form-floating mb-4">
                   <div class="input-group">
-                    <span class="input-group-text" id="basic-addon1"><i class="uil uil-location-point"></i></span>
+                    <span class="input-group-text" id="arrvial_flight-addon1"><i class="uil uil-plane-arrival"></i></span>
+                    <input id="arrival_flight" type="text" name="arrival_flight" class="form-control" placeholder="Jane" >
+                    <label for="arrival_flight">{{ __('contact.Arrival Flight') }}</label>
+                  </div>
+                  <div class="valid-feedback"> {{ __('contact.Looks good') }} </div>
+                  <!-- <div class="invalid-feedback"> {{ __('contact.Enter Pickup Date') }} </div> -->
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-floating mb-4">
+                  <div class="input-group">
+                    <span class="input-group-text" id="dropoff-addon1"><i class="uil uil-location-point"></i></span>
                     <input id="dropoff" type="text" name="dropoff" class="form-control" placeholder="Jane" required>
                     <label for="dropoff">{{ __('contact.Dropoff') }} *</label>
                   </div>
@@ -242,15 +257,26 @@
                   <div class="invalid-feedback"> {{ __('contact.Enter Dropoff') }} </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <div class="form-floating mb-4">
                   <div class="input-group">
-                    <span class="input-group-text" id="basic-addon1"><i class="uil uil-calendar-alt"></i></span>
+                    <span class="input-group-text" id="dropoff_date-addon1"><i class="uil uil-calendar-alt"></i></span>
                     <input id="dropoff_date" type="text" name="dropoff_date" class="form-control" placeholder="Jane" required>
                     <label for="dropoff_date">{{ __('contact.Dropoff Date') }} *</label>
                   </div>
                   <div class="valid-feedback"> {{ __('contact.Looks good') }} </div>
                   <div class="invalid-feedback"> {{ __('contact.Enter Dropoff Date') }} </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-floating mb-4">
+                  <div class="input-group">
+                    <span class="input-group-text" id="departure_flight-addon1"><i class="uil uil-plane-departure"></i></span>
+                    <input id="departure_flight" type="text" name="departure_flight" class="form-control" placeholder="Jane">
+                    <label for="departure_flight">{{ __('contact.Departure Flight') }}</label>
+                  </div>
+                  <div class="valid-feedback"> {{ __('contact.Looks good') }} </div>
+                  <!-- <div class="invalid-feedback"> {{ __('contact.Enter Dropoff Date') }} </div> -->
                 </div>
               </div>
               <div class="col-md-6">
@@ -279,7 +305,7 @@
               </div>
               <div class="col-6">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <input class="form-check-input" name="roundtrip" type="checkbox" value="1" id="flexCheckChecked" checked>
                   <label class="form-check-label" for="flexCheckChecked"> Roundtrip </label>
                 </div>
               </div>
@@ -385,8 +411,77 @@
 @endsection
 @section('scripts')
 <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@eonasdan/tempus-dominus@6.2.10/dist/js/tempus-dominus.min.js" crossorigin="anonymous"></script>
 <script>
-  /*const autoCompleteJS = new autoComplete({
+  function onSubmit(token) {
+    const form = document.getElementById('form')
+    var data = new FormData(form);
+    var entries = data.entries()
+    var rqData = {}
+    var alertClass = 'alert-danger';
+    Loader.open()
+    for (const pair of entries) {
+      rqData[pair[0]] = pair[1]
+    }
+    fetch(form.getAttribute('action'), {
+      method: "post",
+      body: JSON.stringify(rqData),
+      headers: {
+        'X-CSRF-TOKEN': window.CSRF_TOKEN,
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+    }).then((response) => {
+      if(response.ok) {
+        alertClass = 'alert-success';
+      }
+      return response.json();
+      //return response.text();
+    }).then((data) => {
+      var alertBox = '<div class="alert ' + alertClass + ' alert-dismissible fade show"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' + data.message + '</div>';
+      if(alertClass && data.message) {
+        form.querySelector(".messages").insertAdjacentHTML('beforeend', alertBox);
+        form.reset();
+        grecaptcha.reset();
+        Loader.close()
+      }
+    }).catch((err) => {
+      console.log(err);
+      Loader.close()
+    });
+    
+  }
+</script>
+
+<script>
+  new tempusDominus.TempusDominus(document.getElementById('pickup_date'), {
+    //put your config here
+    display:{
+      sideBySide: true,
+      buttons:{
+        close:true,
+      },
+      icons: {
+        close: 'uil uil-times-square'
+      },
+    }
+  });
+  new tempusDominus.TempusDominus(document.getElementById('dropoff_date'), {
+    //put your config here
+    display:{
+      sideBySide: true,
+      buttons:{
+        close:true,
+      },
+      icons: {
+        close: 'uil uil-times-square'
+      },
+    }
+  });
+
+  const autoCompleteJS = new autoComplete({
     selector: "#autoComplete",
     //placeHolder: "",
     wrapper: false,
@@ -453,7 +548,8 @@
         }
       }
     }
-  });*/
+  });
+
   document.addEventListener("DOMContentLoaded", function(event) { 
     document.getElementById('btn-submit').value = '{{ __('contact.Send message') }}'
   });

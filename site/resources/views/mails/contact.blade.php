@@ -27,6 +27,38 @@
       <tr>
         <td style="padding:10px 0px;text-align: left;">{{ __('contact.email') }}: <strong><?php echo $rq->get('email') ?></strong></td>
       </tr>
+      <tr><td><div style="border-bottom: 1px solid #cacaca; margin: 10px 0px;"></div></td></tr>
+      <tr>
+        <td style="padding:10px 0px;text-align: left;">{{ __('contact.Destination') }}: <strong><?php echo $rq->get('destination') ?></strong></td>
+      </tr>
+      <tr><td><div style="border-bottom: 1px solid #cacaca; margin: 10px 0px;"></div></td></tr>
+      <tr>
+        <td style="padding:10px 0px;text-align: left;">{{ __('contact.service') }}: <strong><?php echo $rq->get('roundtrip') ? __('contact.roundtrip') : __('contact.oneway') ?></strong></td>
+      </tr>
+      <tr><td><div style="border-bottom: 1px solid #cacaca; margin: 10px 0px;"></div></td></tr>
+      <tr>
+        <td style="padding:10px 0px;text-align: left;">{{ __('contact.Pickup') }}: <strong><?php echo $rq->get('pickup') ?></strong></td>
+      </tr>
+      <tr><td><div style="border-bottom: 1px solid #cacaca; margin: 10px 0px;"></div></td></tr>
+      <tr>
+        <td style="padding:10px 0px;text-align: left;">{{ __('contact.Pickup Date') }}: <strong><?php echo $rq->get('pickup_date') ?></strong></td>
+      </tr>
+      <tr><td><div style="border-bottom: 1px solid #cacaca; margin: 10px 0px;"></div></td></tr>
+      <tr>
+        <td style="padding:10px 0px;text-align: left;">{{ __('contact.Arrival Flight') }}: <strong><?php echo $rq->get('arrival_flight') ?></strong></td>
+      </tr>
+      <tr><td><div style="border-bottom: 1px solid #cacaca; margin: 10px 0px;"></div></td></tr>
+      <tr>
+        <td style="padding:10px 0px;text-align: left;">{{ __('contact.Dropoff') }}: <strong><?php echo $rq->get('dropoff') ?></strong></td>
+      </tr>
+      <tr><td><div style="border-bottom: 1px solid #cacaca; margin: 10px 0px;"></div></td></tr>
+      <tr>
+        <td style="padding:10px 0px;text-align: left;">{{ __('contact.Dropoff Date') }}: <strong><?php echo $rq->get('dropoff_date') ?></strong></td>
+      </tr>
+      <tr><td><div style="border-bottom: 1px solid #cacaca; margin: 10px 0px;"></div></td></tr>
+      <tr>
+        <td style="padding:10px 0px;text-align: left;">{{ __('contact.Departure Flight') }}: <strong><?php echo $rq->get('departure_flight') ?></strong></td>
+      </tr>
       <tr>
         <td colspan="2">
           <div style="border-bottom: 1px solid #cacaca; margin: 10px 0px;"></div>

@@ -28,4 +28,10 @@ return [
 	'Destination'=>'Destination',
 	'Please wait'=>'Please wait',
 	'Passengers'=>'Passengers',
+	'Arrival Flight'=>'Arrival Flight',
+	'Departure Flight'=>'Departure Flight',
+	'roundtrip'=>'Roundtrip',
+	'oneway'=>'One way',
+	'service'=>'Service',
+	'message'=>'Message',
 ];
