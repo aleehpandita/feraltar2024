@@ -5,7 +5,7 @@ return [
 	'Contact'=>'Contact',
 	'Address'=>'Address',
 	'Phone'=>'Phone',
-	'Drop-Us-a-Line'=>'Drop Us a Line',
+	'Drop-Us-a-Line'=>"Can't find the perfect car?",
 	'Reach-out'=>'Reach out to us from our contact form and we will get back to you shortly.',
 	'First Name'=>'First Name',
 	'Enter First Name'=>'Please enter your first name.',
@@ -34,4 +34,5 @@ return [
 	'oneway'=>'One way',
 	'service'=>'Service',
 	'message'=>'Message',
+	'Passengers'=>'Passengers'
 ];

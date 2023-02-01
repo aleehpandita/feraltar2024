@@ -7,4 +7,7 @@ return [
 	'Reservations'=> 'Reservations',
 	'About'=> 'About',
 	'ut'=> '',
+	'need'=>'Need Help?',
+	'get'=>'Get in Touch',
+	'desti'=>'Destinations'
 ];

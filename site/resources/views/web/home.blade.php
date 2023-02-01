@@ -59,9 +59,9 @@
 	      <div class="col-sm-8 col-md-6 col-lg-4 mx-auto">
 	        <div class="card shadow-lg">
 	          <figure class="card-img-top overlay overlay-1">
-	            <a href="#"><img class="img-fluid" src="./assets/img/photos/fs1.jpg" srcset="./assets/img/photos/fs1@2x.jpg 2x" alt="" /></a>
+	            <a href="#"><img class="img-fluid" src="./assets/img/photos/fs1.jpg" srcset="./assets/img/photos/fs1.jpg" alt="" /></a>
 	            <figcaption>
-	              <h5 class="from-top mb-0">View Details</h5>
+	              <h5 class="from-top mb-0">{{ __('home.view') }}</h5>
 	            </figcaption>
 	          </figure>
 	          <div class="card-body p-6">
@@ -75,13 +75,13 @@
 	      <div class="col-sm-8 col-md-6 col-lg-4 mx-auto">
 	        <div class="card shadow-lg">
 	          <figure class="card-img-top overlay overlay-1">
-	            <a href="#"><img class="img-fluid" src="./assets/img/photos/fs2.jpg" srcset="./assets/img/photos/fs2@2x.jpg 2x" alt="" /></a>
+	            <a href="#"><img class="img-fluid" src="./assets/img/photos/fs2.jpg" srcset="./assets/img/photos/fs2.jpg" alt="" /></a>
 	            <figcaption>
-	              <h5 class="from-top mb-0">View Details</h5>
+	              <h5 class="from-top mb-0">{{ __('home.view') }}</h5>
 	            </figcaption>
 	          </figure>
 	          <div class="card-body p-6">
-	            <h3 class="fs-21 mb-0">Luxury Transportation</h3>
+	            <h3 class="fs-21 mb-0">{{ __('home.luxury') }}</h3>
 	          </div>
 	          <!--/.card-body -->
 	        </div>
@@ -91,9 +91,9 @@
 	      <div class="col-sm-8 col-md-6 col-lg-4 mx-auto">
 	        <div class="card shadow-lg">
 	          <figure class="card-img-top overlay overlay-1">
-	            <a href="#"><img class="img-fluid" src="./assets/img/photos/fs3.jpg" srcset="./assets/img/photos/fs3@2x.jpg 2x" alt="" /></a>
+	            <a href="#"><img class="img-fluid" src="./assets/img/photos/fs3.jpg" srcset="./assets/img/photos/fs3.jpg" alt="" /></a>
 	            <figcaption>
-	              <h5 class="from-top mb-0">View Details</h5>
+	              <h5 class="from-top mb-0">{{ __('home.view') }}</h5>
 	            </figcaption>
 	          </figure>
 	          <div class="card-body p-6">
@@ -529,15 +529,15 @@
 	  <img src="./assets/img/icons/solid/employees.svg" class="svg-inject icon-svg icon-svg-xs solid-mono text-white fs-30 opacity-50" alt="" />
 	    <div class="row mt-3">
 	      <div class="col-xl-9 col-xxl-8 mx-auto">
-	        <div class="swiper-container dots-light dots-closer mb-6" data-margin="30" data-dots="true">
+	        <div class="swiper-container dots-light dots-closer mb-6" data-margin="30" data-dots="true" data-swiper='{"speed":"400", "spaceBetween":"40"}'>
 	          <div class="swiper">
 	            <div class="swiper-wrapper">
 	              <div class="swiper-slide">
 	                <blockquote class="border-0 fs-24 mb-0">
-	                  <p>“Fusce dapibus tellus ac cursus commodo, tortor mauris condimentum nibh fermentum massa, justo sit amet vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus.”</p>
+	                  <p>{{ __('home.clients') }}</p>
 	                  <div class="blockquote-details justify-content-center">
 	                    <div class="info p-0">
-	                      <h6 class="mb-0 text-white">Julia & David</h6>
+	                      <h6 class="mb-0 text-white">{{ __('home.service') }}</h6>
 	                    </div>
 	                  </div>
 	                </blockquote>
@@ -545,10 +545,10 @@
 	              <!--/.swiper-slide -->
 	              <div class="swiper-slide">
 	                <blockquote class="border-0 fs-24 mb-0">
-	                  <p>“Fusce dapibus tellus ac cursus commodo, tortor mauris condimentum nibh fermentum massa, justo sit amet vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus.”</p>
+	                  <p>{{ __('home.selection') }} </p>
 	                  <div class="blockquote-details justify-content-center">
 	                    <div class="info p-0">
-	                      <h6 class="mb-0 text-white">Jolene & Andrea</h6>
+	                      <h6 class="mb-0 text-white">{{ __('home.unique') }}</h6>
 	                    </div>
 	                  </div>
 	                </blockquote>
@@ -556,10 +556,10 @@
 	              <!--/.swiper-slide -->
 	              <div class="swiper-slide">
 	                <blockquote class="border-0 fs-24 mb-0">
-	                  <p>“Fusce dapibus tellus ac cursus commodo, tortor mauris condimentum nibh fermentum massa, justo sit amet vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus.”</p>
+	                  <p>{{ __('home.wepride') }}</p>
 	                  <div class="blockquote-details justify-content-center">
 	                    <div class="info p-0">
-	                      <h6 class="mb-0 text-white">Eve & Will</h6>
+	                      <h6 class="mb-0 text-white">{{ __('home.tradi') }}</h6>
 	                    </div>
 	                  </div>
 	                </blockquote>
@@ -591,7 +591,7 @@
 	    <!--/.row -->
 	    <div class="row text-center">
 	      <div class="col-xl-9 mx-auto">
-	        <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="94837904"></div>
+	        <div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="793483613"></div>
 	      </div>
 	      <!--/column -->
 	    </div>
@@ -1382,30 +1382,30 @@
 	</section>
 	<!-- /section -->
 	<section class="wrapper bg-light">
-	  <div class="container pt-12 pt-md-14 pb-14 pb-md-16">
+	  <div class="container pt-6 pt-md-7 pb-14 pb-md-16">
 	    <div class="row gx-md-8 gx-xl-12 gy-6 align-items-center">
 	      <div class="col-md-8 col-lg-6 mx-auto">
-	        <div class="img-mask mask-1"><img src="./assets/img/photos/about29.jpg" srcset="./assets/img/photos/about29@2x.jpg 2x" alt="" /></div>
+	        <div class="img-mask mask-1"><img src="./assets/img/photos/about29.jpg" srcset="./assets/img/photos/about29.jpg 2x" alt="" /></div>
 	      </div>
 	      <!--/column -->
 	      <div class="col-lg-6">
-	        <h2 class="display-5 mb-5">Hi, I'm Julia, a documentary wedding and couples photographer currently working from and based in London.</h2>
-	        <p class="mb-6">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio. Sed posuere consectetur est at lobortis facilisis in.</p>
+	        <h2 class="display-5 mb-5">{{ __('home.hello') }}</h2>
+	        <p class="mb-6"></p>
 	        <div class="row counter-wrapper gy-6">
-	          <div class="col-md-4">
+	          <div class="col-md-6">
 	            <h3 class="counter">500K+</h3>
-	            <p>Shots Taken</p>
+	            <p>{{ __('home.prov') }}</p>
 	          </div>
 	          <!--/column -->
-	          <div class="col-md-4">
+	          <div class="col-md-6">
 	            <h3 class="counter">500+</h3>
-	            <p>Happy Clients</p>
+	            <p>{{ __('home.happy') }}</p>
 	          </div>
 	          <!--/column -->
-	          <div class="col-md-4">
+	          <!-- <div class="col-md-4">
 	            <h3 class="counter">25</h3>
 	            <p>Awards Won</p>
-	          </div>
+	          </div> -->
 	          <!--/column -->
 	        </div>
 	        <!--/.row -->
@@ -1413,52 +1413,57 @@
 	      <!--/column -->
 	    </div>
 	    <!-- /.row -->
-	    <div class="row gx-md-8 gx-xl-12 gy-6 mt-8">
+	    <div class="row gx-md-8 gx-xl-12 gy-6 mt-2">
 	      <div class="col-lg-4">
-	        <h3>My Skills</h3>
-	        <p>Etiam porta sem malesuada magna mollis euismod. Praesent commodo cursus magna vel consectetur purus sit amet fermentum.</p>
+	        <!-- <h3>My Skills</h3> -->
+	        <p>{{ __('home.wewill') }}</p>
 	        <ul class="progress-list">
 	          <li>
-	            <p>Photoshop</p>
+	            <p>{{ __('home.confi') }}</p>
 	            <div class="progressbar line soft-primary" data-value="100"></div>
 	          </li>
 	          <li>
-	            <p>Final Cut</p>
-	            <div class="progressbar line soft-primary" data-value="80"></div>
+	            <p>{{ __('home.acce') }}</p>
+	            <div class="progressbar line soft-primary" data-value="100"></div>
 	          </li>
 	          <li>
-	            <p>Motion Video</p>
-	            <div class="progressbar line soft-primary" data-value="85"></div>
+	            <p>{{ __('home.perfe') }}</p>
+	            <div class="progressbar line soft-primary" data-value="100"></div>
 	          </li>
-	          <li>
+	          <!-- <li>
 	            <p>Manupilation</p>
 	            <div class="progressbar line soft-primary" data-value="75"></div>
-	          </li>
+	          </li> -->
 	        </ul>
 	        <!-- /.progress-list -->
 	      </div>
 	      <!-- /column -->
-	      <div class="col-lg-4">
+	      <div class="col-lg-4 text-justify">
 	        <h3>Why Choose Me?</h3>
-	        <p>Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Nullam id dolor id nibh ultricies. Cras mattis consectetur purus amet fermentum.</p>
+	        <p class="text-justify">{{ __('home.business') }}</p>
 	        <ul class="icon-list bullet-bg bullet-soft-primary">
-	          <li><i class="uil uil-check"></i>Aenean eu leo quam pellentesque.</li>
-	          <li><i class="uil uil-check"></i>Nullam quis risus eget urna mollis.</li>
-	          <li><i class="uil uil-check"></i>Donec id elit non mi porta gravida.</li>
-	          <li><i class="uil uil-check"></i>Fusce dapibus tellus ac commodo.</li>
-	          <li><i class="uil uil-check"></i>Cras justo odio dapibus ac facilisis in.</li>
+			  <li><i class="uil uil-check"></i>{{ __('home.hon') }}</li>
+			  <li><i class="uil uil-check"></i>{{ __('home.pun') }}</li>
+			  <li><i class="uil uil-check"></i>{{ __('home.sec') }}</li>
+	          <li><i class="uil uil-check"></i>{{ __('home.res') }}</li>
+				
+				<li><i class="uil uil-check"></i>{{ __('home.gra') }}</li>
+	          <li><i class="uil uil-check"></i>{{ __('home.clean') }}</li>
+	          <li><i class="uil uil-check"></i>{{ __('home.ethics') }}</li>
+	          <li><i class="uil uil-check"></i>{{ __('home.prese') }}</li>
+				
 	        </ul>
 	      </div>
 	      <!-- /column -->
 	      <div class="col-lg-4">
-	        <h3>My Process</h3>
+	        <h3>{{ __('home.process') }}</h3>
 	        <div class="d-flex flex-row mb-5">
 	          <div>
 	            <span class="icon btn btn-circle btn-soft-primary pe-none mt-1 me-5"><span class="number fs-18">1</span></span>
 	          </div>
 	          <div>
-	            <h5 class="mb-1">Collect Ideas</h5>
-	            <p class="mb-0">Nulla vitae elit libero pharetra augue dapibus. Praesent commodo cursus.</p>
+	            <h5 class="mb-1">{{ __('home.how') }}</h5>
+	            <p class="mb-0">{{ __('home.this') }}</p>
 	          </div>
 	        </div>
 	        <div class="d-flex flex-row mb-5">
@@ -1466,8 +1471,8 @@
 	            <span class="icon btn btn-circle btn-soft-primary pe-none mt-1 me-5"><span class="number fs-18">2</span></span>
 	          </div>
 	          <div>
-	            <h5 class="mb-1">Data Analysis</h5>
-	            <p class="mb-0">Vivamus sagittis lacus vel augue laoreet. Etiam porta sem malesuada magna.</p>
+	            <h5 class="mb-1">{{ __('home.easy') }}</h5>
+	            <p class="mb-0">{{ __('home.fill') }}</p>
 	          </div>
 	        </div>
 	        <div class="d-flex flex-row">
@@ -1475,8 +1480,8 @@
 	            <span class="icon btn btn-circle btn-soft-primary pe-none mt-1 me-5"><span class="number fs-18">3</span></span>
 	          </div>
 	          <div>
-	            <h5 class="mb-1">Finalize Product</h5>
-	            <p class="mb-0">Cras mattis consectetur purus sit amet. Aenean lacinia bibendum nulla sed.</p>
+	            <h5 class="mb-1">{{ __('home.enjoytitle') }}</h5>
+	            <p class="mb-0">{{ __('home.enjoy') }}</p>
 	          </div>
 	        </div>
 	      </div>
