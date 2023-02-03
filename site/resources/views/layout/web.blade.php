@@ -1,6 +1,7 @@
 <?php
 
 $currentRoute = Route::currentRouteName();
+$params = Route::getCurrentRoute()->parameters();
 $flag = url('assets/img/flags/us.png');
 if (App::getLocale() == 'en') {
   $urlEs = str_replace('en.', 'es.', $currentRoute);
@@ -602,8 +603,8 @@ if (App::getLocale() == 'en') {
               <li class="nav-item dropdown language-select">
                 <a class="nav-link dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{$flag}}" width="18" height="11" alt=""> </a>
                 <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="dropdown-item" href="{{route($urlEn)}}"><img src="{{asset('assets/img/flags/us.png')}}" width="18" height="11" alt=""> </a></li>
-                  <li class="nav-item"><a class="dropdown-item" href="{{route($urlEs)}}"><img src="{{asset('assets/img/flags/mx.png')}}" width="18" height="11" alt=""> </a></li>
+                  <li class="nav-item"><a class="dropdown-item" href="{{route($urlEn, $params)}}"><img src="{{asset('assets/img/flags/us.png')}}" width="18" height="11" alt=""> </a></li>
+                  <li class="nav-item"><a class="dropdown-item" href="{{route($urlEs, $params)}}"><img src="{{asset('assets/img/flags/mx.png')}}" width="18" height="11" alt=""> </a></li>
                 </ul>
               </li>
             
@@ -723,7 +724,7 @@ if (App::getLocale() == 'en') {
         <!-- /column -->
         <div class="col-md-3 col-lg-2">
           <div class="widget">
-            <h4 class="widget-title mb-3 text-white">{{ __('layout.desti') }}</h4>
+            <h4 class="widget-title mb-3 text-white"><a href="{{ route(App::getLocale().'.destinations') }}">{{ __('layout.desti') }}</a></h4>
             <ul class="list-unstyled mb-0">
               <li><a href="{{ route(App::getLocale().'.contact') }}">CDMX</a></li>
               <li><a href="{{ route(App::getLocale().'.contact') }}">Monterrey</a></li>

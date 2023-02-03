@@ -27,6 +27,18 @@ class WebController extends Controller
     {
         return view('web.fleet');
     }
+    public function destinations()
+    {
+        $destinations = \App\Models\Destination::where('lang', \App::getLocale())->get();
+        return view('web.destinations', compact('destinations'));
+    }
+    public function destinationSlug($slug)
+    {
+        $destination = \App\Models\Destination::where('lang', \App::getLocale())
+            ->where('slug', $slug)
+            ->firstOrFail();
+        return view('web.destinationSlug', compact('destination'));
+    }
     public function sendContact(Request $rq)
     {
         ##dd($rq->all());

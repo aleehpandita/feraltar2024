@@ -19,6 +19,8 @@ Route::middleware('setlocale:en')->name('en.')->group(function () {
     Route::get('/about', [WebController::class, 'about'])->name('about');
     Route::get('/services', [WebController::class, 'services'])->name('services');
     Route::get('/fleet', [WebController::class, 'fleet'])->name('fleet');
+    Route::get('/destinations', [WebController::class, 'destinations'])->name('destinations');
+    Route::get('/destinations/{slug}', [WebController::class, 'destinationSlug'])->name('destinationSlug');
 
     // Route::get('/', function () {
     //     return view('welcome');
@@ -31,5 +33,7 @@ Route::middleware('setlocale:es')->name('es.')->prefix('es')->group(function () 
     Route::post('/send-contact', [WebController::class, 'sendContact'])->name('sendContact');
     Route::get('/servicios', [WebController::class, 'services'])->name('services');
     Route::get('/flotilla', [WebController::class, 'fleet'])->name('fleet');
+    Route::get('/destinos', [WebController::class, 'destinations'])->name('destinations');
+    Route::get('/destinos/{slug}', [WebController::class, 'destinationSlug'])->name('destinationSlug');
 });
 /*;*/
