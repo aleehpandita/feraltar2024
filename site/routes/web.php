@@ -19,17 +19,8 @@ Route::middleware('setlocale:en')->name('en.')->group(function () {
     Route::get('/about', [WebController::class, 'about'])->name('about');
     Route::get('/services', [WebController::class, 'services'])->name('services');
     Route::get('/fleet', [WebController::class, 'fleet'])->name('fleet');
-    Route::get('destinations/{slug}', [WebController::class, '{slug}'])->name('{slug}');
-    Route::get('/destinations/{slug}', 
-    [WebController::class, '{slug}'])->name('monterrey');
-    // Route::get('/cdmx', [WebController::class, 'cdmx'])->name('cdmx');
-    // Route::get('/guadalajara', [WebController::class, 'guadalajara'])->name('guadalajara');
-    // Route::get('/monterrey', [WebController::class, 'monterrey'])->name('monterrey');
-    // Route::get('/loscabos', [WebController::class, 'loscabos'])->name('loscabos');
-    // Route::get('/cancun', [WebController::class, 'cancun'])->name('cancun');
-    // Route::get('/puertovallarta', [WebController::class, 'puertovallarta'])->name('puertovallarta');
-    // Route::get('/tijuana', [WebController::class, 'tijuana'])->name('tijuana');
-    // Route::get('/sanmiguel', [WebController::class, 'sanmiguel'])->name('sanmiguel');
+    Route::get('/destinations', [WebController::class, 'destinations'])->name('destinations');
+    Route::get('/destinations/{slug}', [WebController::class, 'destinationSlug'])->name('destinationSlug');
 
     // Route::get('/', function () {
     //     return view('welcome');
@@ -42,13 +33,7 @@ Route::middleware('setlocale:es')->name('es.')->prefix('es')->group(function () 
     Route::post('/send-contact', [WebController::class, 'sendContact'])->name('sendContact');
     Route::get('/servicios', [WebController::class, 'services'])->name('services');
     Route::get('/flotilla', [WebController::class, 'fleet'])->name('fleet');
-    Route::get('/cdmx', [WebController::class, 'cdmx'])->name('cdmx');
-    Route::get('/guadalajara', [WebController::class, 'guadalajara'])->name('guadalajara');
-    Route::get('/monterrey', [WebController::class, 'monterrey'])->name('monterrey');
-    Route::get('/loscaboss', [WebController::class, 'loscabos'])->name('loscabos');
-    Route::get('/cancun', [WebController::class, 'cancun'])->name('cancun');
-    Route::get('/puertovallarta', [WebController::class, 'puertovallarta'])->name('puertovallarta');
-    Route::get('/tijuana', [WebController::class, 'tijuana'])->name('tijuana');
-    Route::get('/sanmiguel', [WebController::class, 'sanmiguel'])->name('sanmiguel');
+    Route::get('/destinos', [WebController::class, 'destinations'])->name('destinations');
+    Route::get('/destinos/{slug}', [WebController::class, 'destinationSlug'])->name('destinationSlug');
 });
 /*;*/

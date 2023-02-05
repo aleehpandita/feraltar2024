@@ -27,39 +27,17 @@ class WebController extends Controller
     {
         return view('web.fleet');
     }
-    public function cdmx()
+    public function destinations()
     {
-        return view('web.cdmx');
+        $destinations = \App\Models\Destination::where('lang', \App::getLocale())->get();
+        return view('web.destinations', compact('destinations'));
     }
-    public function monterrey()
+    public function destinationSlug($slug)
     {
-        $destination = 'Monterrey';
-        $pic = 'mty';
-        return view('web.monterrey',['pic' => $pic,'destination'=>$destination]);
-    }
-    public function guadalajara()
-    {
-        return view('web.guadalajara');
-    }
-    public function loscabos()
-    {
-        return view('web.loscabos');
-    }
-    public function cancun()
-    {
-        return view('web.cancun');
-    }
-    public function sanmiguel()
-    {
-        return view('web.sanmiguel');
-    }
-    public function tijuana()
-    {
-        return view('web.tijuana');
-    }
-    public function puertovallarta()
-    {
-        return view('web.puertovallarta');
+        $destination = \App\Models\Destination::where('lang', \App::getLocale())
+            ->where('slug', $slug)
+            ->firstOrFail();
+        return view('web.destinationSlug', compact('destination'));
     }
     public function sendContact(Request $rq)
     {
