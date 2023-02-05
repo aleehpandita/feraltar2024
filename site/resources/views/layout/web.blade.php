@@ -148,12 +148,12 @@ if (App::getLocale() == 'en') {
 <body>
   <div class="content-wrapper">
     <header class="wrapper bg-soft-primary">
-      <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-@yield('navBarStyle', 'dark') ">
+      <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-@yield('navBarStyle', 'dark')  caret-one">
         <div class="container flex-lg-row flex-nowrap align-items-center">
           <div class="navbar-brand w-100">
             <a href="{{route(App::getLocale().'.home')}}">
-              <img width="164" class="logo-dark" src="{{ asset('/assets/img/logo-dark.png') }}" srcset="./assets/img/logo-dark@2x.png 2x" alt="" />
-              <img width="164" class="logo-light" src="{{ asset('/assets/img/logo-light.png') }}" srcset="./assets/img/logo-light@2x.png 2x" alt="" />
+              <img width="164" class="logo-dark"  src="{{ asset('/assets/img/logo-dark.png') }}" srcset="./assets/img/logo-dark.png 2x" alt="" />
+              <img width="164" class="logo-light" src="{{ asset('/assets/img/logo-light.png') }}" srcset="./assets/img/logo-light.png 2x" alt="" />
             </a>
           </div>
           <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
@@ -168,6 +168,73 @@ if (App::getLocale() == 'en') {
                 <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.fleet') }}">{{ __('layout.Fleet') }}</a></li>
                 <!-- <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('layout.Reservations') }}</a></li> -->
                 <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.about') }}">{{ __('layout.About') }}</a></li>
+                <li class="nav-item dropdown dropdown-mega">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Destination</a>
+                  <ul class="dropdown-menu mega-menu">
+                    <li class="mega-menu-content">
+                      <div class="row gx-0 gx-lg-3">
+                        <div class="col-lg-4">
+                          
+                        <h6 class="dropdown-header">México</h6>
+                            <ul class="list-unstyled cc-2 pb-lg-1">
+                              <li><a class="dropdown-item" href="">Ciudad de México</a></li>
+                         
+                            <li><a class="dropdown-item" href="">Monterrey</a></li>
+                            <li><a class="dropdown-item" href="">Guadalajara</a></li>
+                            <li><a class="dropdown-item" href="">Los Cabos</a></li>
+                            <li><a class="dropdown-item" href="">Cancún</a></li>
+                            <li><a class="dropdown-item" href="">Puerto Vallarta</a></li>
+                            <li><a class="dropdown-item" href="">Tijuana</a></li>
+                            <li><a class="dropdown-item" href="">San Miguel de Allende</a></li>
+                          </ul>
+                          <h6 class="dropdown-header mt-lg-6">USA</h6>
+                          <ul class="list-unstyled cc-2">
+                            <li><a class="dropdown-item" href="./docs/styleguide/colors.html">Orlando</a></li>
+                            <li><a class="dropdown-item" href="./docs/styleguide/fonts.html">Dallas</a></li>
+                            <li><a class="dropdown-item" href="./docs/styleguide/icons-svg.html">Las Vegas</a></li>
+                            <li><a class="dropdown-item" href="./docs/styleguide/icons-font.html">Los Angeles</a></li>
+                            <li><a class="dropdown-item" href="./docs/styleguide/illustrations.html">New York</a></li>
+                            <li><a class="dropdown-item" href="./docs/styleguide/backgrounds.html">Atlanta</a></li>
+                            <li><a class="dropdown-item" href="./docs/styleguide/misc.html">Miami</a></li>  
+                          </ul>
+                        </div>
+                        <!--/column -->
+                        <div class="col-lg-8">
+                          <h6 class="dropdown-header">Rest of the World</h6>
+                          <ul class="list-unstyled cc-3">
+                            <li><a class="dropdown-item" href="./docs/elements/accordion.html">Alemania</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/alerts.html">Japón</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/animations.html">Puerto Rico</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/avatars.html">España</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/background.html">Francia</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/badges.html">Bogotá</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/buttons.html">Punta Cana</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/card.html">Panama</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/carousel.html">Santiago de Chile</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/dividers.html">Lima</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/form-elements.html">Cusco</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/image-hover.html">Hawaii</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/image-mask.html">Buenos Aires</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/lightbox.html">Liberia Costa Rica</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/player.html">San José Costa Rica</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/modal.html">Rio de Janeiro</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/pagination.html">República Cominicana</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/progressbar.html">Punta del Este Uruguay</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/shadows.html">Santo Domingo</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/shapes.html">Medillín</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/tables.html">Guatemala</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/tabs.html">San Salvador</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/text-animations.html">Montevideo</a></li>
+                          </ul>
+                        </div>
+                        <!--/column -->
+                      </div>
+                      <!--/.row -->
+                    </li>
+                    <!--/.mega-menu-content-->
+                  </ul>
+                  <!--/.dropdown-menu -->
+                </li>
                 @if (0==1)
                   <li class="nav-item dropdown dropdown-mega">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Demos</a>
@@ -484,14 +551,14 @@ if (App::getLocale() == 'en') {
                     <!--/.dropdown-menu -->
                   </li>
                   <li class="nav-item dropdown dropdown-mega">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Documentation</a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Destinations</a>
                     <ul class="dropdown-menu mega-menu">
                       <li class="mega-menu-content">
                         <div class="row gx-0 gx-lg-3">
                           <div class="col-lg-4">
-                            <h6 class="dropdown-header">Usage</h6>
+                            <h6 class="dropdown-header">México</h6>
                             <ul class="list-unstyled cc-2 pb-lg-1">
-                              <li><a class="dropdown-item" href="./docs/index.html">Get Started</a></li>
+                              <li><a class="dropdown-item" href="./docs/index.html">Ciudad de México</a></li>
                               <li><a class="dropdown-item" href="./docs/forms.html">Forms</a></li>
                               <li><a class="dropdown-item" href="./docs/faq.html">FAQ</a></li>
                               <li><a class="dropdown-item" href="./docs/changelog.html">Changelog</a></li>
@@ -725,7 +792,7 @@ if (App::getLocale() == 'en') {
           <div class="widget">
             <h4 class="widget-title mb-3 text-white">{{ __('layout.desti') }}</h4>
             <ul class="list-unstyled mb-0">
-              <li><a href="{{ route(App::getLocale().'.contact') }}">CDMX</a></li>
+              <li><a href="">CDMX</a></li>
               <li><a href="{{ route(App::getLocale().'.contact') }}">Monterrey</a></li>
               <li><a href="{{ route(App::getLocale().'.contact') }}">San Miguel de Allende</a></li>
               <li><a href="{{ route(App::getLocale().'.contact') }}">Los Cabos</a></li>

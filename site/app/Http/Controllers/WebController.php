@@ -27,6 +27,40 @@ class WebController extends Controller
     {
         return view('web.fleet');
     }
+    public function cdmx()
+    {
+        return view('web.cdmx');
+    }
+    public function monterrey()
+    {
+        $destination = 'Monterrey';
+        $pic = 'mty';
+        return view('web.monterrey',['pic' => $pic,'destination'=>$destination]);
+    }
+    public function guadalajara()
+    {
+        return view('web.guadalajara');
+    }
+    public function loscabos()
+    {
+        return view('web.loscabos');
+    }
+    public function cancun()
+    {
+        return view('web.cancun');
+    }
+    public function sanmiguel()
+    {
+        return view('web.sanmiguel');
+    }
+    public function tijuana()
+    {
+        return view('web.tijuana');
+    }
+    public function puertovallarta()
+    {
+        return view('web.puertovallarta');
+    }
     public function sendContact(Request $rq)
     {
         ##dd($rq->all());

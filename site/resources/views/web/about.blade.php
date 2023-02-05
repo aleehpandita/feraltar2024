@@ -32,38 +32,46 @@
 		</section>
 		<!-- /section -->
 		<section class="wrapper bg-light angled upper-end lower-end">
-			<div class="container py-14 py-md-16">
+			<div class="container py-6 py-md-6">
 				<div class="row gx-lg-8 gx-xl-12 gy-10 mb-14 mb-md-17 align-items-center">
 					<div class="col-lg-6 position-relative order-lg-2">
 						<div class="shape bg-dot primary rellax w-16 h-20" data-rellax-speed="1" style="top: 3rem; left: 5.5rem"></div>
 						<div class="overlap-grid overlap-grid-2">
 							<div class="item">
-								<figure class="rounded shadow"><img src="@@webRoot/assets/img/photos/about2.jpg" srcset="@@webRoot/assets/img/photos/about2@2x.jpg 2x" alt=""></figure>
+								<figure class="rounded shadow"><img src="../assets/img/photos/about2.jpg" srcset="../assets/img/photos/about2.jpg" alt=""></figure>
 							</div>
 							<div class="item">
-								<figure class="rounded shadow"><img src="@@webRoot/assets/img/photos/about3.jpg" srcset="@@webRoot/assets/img/photos/about3@2x.jpg 2x" alt=""></figure>
+								<figure class="rounded shadow"><img src="../assets/img/photos/about3.jpg" srcset="@@webRoot/assets/img/photos/about3@2x.jpg 2x" alt=""></figure>
 							</div>
 						</div>
 					</div>
 					<!--/column -->
 					<div class="col-lg-6">
-						<img src="@@webRoot/assets/img/icons/lineal/megaphone.svg" class="svg-inject icon-svg icon-svg-md mb-4" alt="" />
-						<h2 class="display-4 mb-3">Who Are We?</h2>
-						<p class="lead fs-lg">We are a digital and branding company that believes in the power of creative strategy and along with great design.</p>
-						<p class="mb-6">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+						<img src="../assets/img/icons/lineal/megaphone.svg" class="svg-inject icon-svg icon-svg-md mb-4" alt="" />
+						<h2 class="display-4 mb-3">{{ __('about.who') }}</h2>
+						<p class="lead fs-lg">Godandi was born in 1952 to create unique experiences of excellence, in what refers to integral services of Reception, logistics and executive ground transportation, in Mexico and the world.
+</p>
+						<p class="mb-6">
+						Godandi owns a wide variety of luxury cars and SUVs ready to exceed your expectations.</p>
 						<div class="row gy-3 gx-xl-8">
 							<div class="col-xl-6">
 								<ul class="icon-list bullet-bg bullet-soft-primary mb-0">
-									<li><span><i class="uil uil-check"></i></span><span>Aenean eu leo quam ornare curabitur blandit tempus.</span></li>
-									<li class="mt-3"><span><i class="uil uil-check"></i></span><span>Nullam quis risus eget urna mollis ornare donec elit.</span></li>
+									<li><span><i class="uil uil-check"></i></span><span>Luxury cars
+</span></li>
+									<li class="mt-3"><span><i class="uil uil-check"></i></span><span>Fully personalized treatmen</span></li>
+									<li class="mt-3"><span><i class="uil uil-check"></i></span><span>Premium Clients
+</span></li>
 								</ul>
 							</div>
 							<!--/column -->
 							<div class="col-xl-6">
 								<ul class="icon-list bullet-bg bullet-soft-primary mb-0">
-									<li><span><i class="uil uil-check"></i></span><span>Etiam porta sem malesuada magna mollis euismod.</span></li>
-									<li class="mt-3"><span><i class="uil uil-check"></i></span><span>Fermentum massa vivamus faucibus amet euismod.</span></li>
+									<li><span><i class="uil uil-check"></i></span><span>All risk Insurance included</span></li>
+									<li class="mt-3"><span><i class="uil uil-check"></i></span><span>Bilingual driver
+</span></li><li class="mt-3"><span><i class="uil uil-check"></i></span><span>Personalized service
+</span></li>
 								</ul>
+
 							</div>
 							<!--/column -->
 						</div>
@@ -74,8 +82,9 @@
 				<!--/.row -->
 				<div class="row mb-5">
 					<div class="col-md-10 col-xl-8 col-xxl-7 mx-auto text-center">
-						<img src="@@webRoot/assets/img/icons/lineal/list.svg" class="svg-inject icon-svg icon-svg-md mb-4" alt="" />
-						<h2 class="display-4 mb-4 px-lg-14">Here are 3 working steps to organize our business projects.</h2>
+						<img src="../assets/img/icons/lineal/list.svg" class="svg-inject icon-svg icon-svg-md mb-4" alt="" />
+						<h2 class="display-4 mb-4 px-lg-14">We give our best for all our customers.
+</h2>
 					</div>
 					<!-- /column -->
 				</div>
@@ -89,8 +98,8 @@
 										<span class="icon btn btn-circle btn-lg btn-soft-primary pe-none me-4"><span class="number">01</span></span>
 									</div>
 									<div>
-										<h4 class="mb-1">Collect Ideas</h4>
-										<p class="mb-0">Nulla vitae elit libero pharetra augue dapibus.</p>
+										<h4 class="mb-1">Select Service</h4>
+										<p class="mb-0">Choose the option that better adjusts to your needs.</p>
 									</div>
 								</div>
 							</div>
@@ -104,8 +113,8 @@
 										<span class="icon btn btn-circle btn-lg btn-soft-primary pe-none me-4"><span class="number">02</span></span>
 									</div>
 									<div>
-										<h4 class="mb-1">Data Analysis</h4>
-										<p class="mb-0">Vivamus sagittis lacus vel augue laoreet.</p>
+										<h4 class="mb-1">Fill form</h4>
+										<p class="mb-0">Please make sure select the arrival date that your flight lands in your Destination</p>
 									</div>
 								</div>
 							</div>
@@ -119,8 +128,8 @@
 										<span class="icon btn btn-circle btn-lg btn-soft-primary pe-none me-4"><span class="number">03</span></span>
 									</div>
 									<div>
-										<h4 class="mb-1">Finalize Product</h4>
-										<p class="mb-0">Cras mattis consectetur purus sit amet.</p>
+										<h4 class="mb-1">Service Follow-up</h4>
+										<p class="mb-0">We will reach out to you for further assistance and follow up</p>
 									</div>
 								</div>
 							</div>
@@ -131,10 +140,9 @@
 					<!--/column -->
 					<div class="col-lg-6">
 						<h2 class="display-6 mb-3">How It Works?</h2>
-						<p class="lead fs-lg pe-lg-5">Find out everything you need to know and more about how we create our business process models.</p>
-						<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare.</p>
-						<p class="mb-6">Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis.</p>
-						<a href="#" class="btn btn-primary rounded-pill mb-0">Learn More</a>
+						<p class="lead fs-lg pe-lg-5">Our luxury transportation services are best suited to any occasion with the latest technology, per our market's needs. Along with our vehicles, our team is developing due to daily experience to give you the experience you deserve. </p>
+						<!-- <p class="mb-6">Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis.</p>-->
+						<a href="#" class="btn btn-primary rounded-pill mb-0">{{ __('home.info') }}</a> 
 					</div>
 					<!--/column -->
 				</div>
@@ -144,11 +152,11 @@
 		</section>
 		<!-- /section -->
 		<section class="wrapper bg-soft-primary">
-			<div class="container pt-16 pb-14 pb-md-0">
+			<div class="container pt-6 pb-14 pb-md-0">
 				<div class="row gx-lg-8 gx-xl-0 align-items-center">
 					<div class="col-md-5 col-lg-5 col-xl-4 offset-xl-1 d-none d-md-flex position-relative align-self-end">
 						<div class="shape rounded-circle bg-pale-primary rellax w-21 h-21 d-md-none d-lg-block" data-rellax-speed="1" style="top: 7rem; left: 1rem"></div>
-						<figure><img src="@@webRoot/assets/img/photos/co1.png" srcset="@@webRoot/assets/img/photos/co1@2x.png 2x" alt=""></figure>
+						<figure><img src="../assets/img/photos/co1.png" srcset="../assets/img/photos/co1.png" alt=""></figure>
 					</div>
 					<!--/column -->
 					<div class="col-md-7 col-lg-6 col-xl-6 col-xxl-5 offset-xl-1">
@@ -157,11 +165,11 @@
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
 										<blockquote class="icon fs-lg">
-											<p>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio consectetur nulla dapibus curabitur blandit.”</p>
+											<p>With Godandi&Sons, renting a luxury vehicle is simple, thanks to our online booking platform. Online luxury vehicle rentals allow you to learn more about the location, select the ideal rental time for your trip, and customize your exotic car rental with our available add-ons. </p>
 											<div class="blockquote-details">
 												<div class="info ps-0">
-													<h5 class="mb-1">Coriss Ambady</h5>
-													<p class="mb-0">Financial Analyst</p>
+													<!-- <h5 class="mb-1">Coriss Ambady</h5>
+													<p class="mb-0">Financial Analyst</p> -->
 												</div>
 											</div>
 										</blockquote>
@@ -169,23 +177,23 @@
 									<!--/.swiper-slide -->
 									<div class="swiper-slide">
 										<blockquote class="icon fs-lg">
-											<p>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio consectetur adipiscing dapibus curabitur blandit.”</p>
+											<p>We are committed to providing an unparalleled customer experience with each of our luxury vehicles and services, striving to meet the highest standards and exceed customer expectations.</p>
 											<div class="blockquote-details">
-												<div class="info ps-0">
+												<!-- <div class="info ps-0">
 													<h5 class="mb-1">Cory Zamora</h5>
 													<p class="mb-0">Marketing Specialist</p>
-												</div>
+												</div> -->
 											</div>
 										</blockquote>
 									</div>
 									<!--/.swiper-slide -->
 									<div class="swiper-slide">
 										<blockquote class="icon fs-lg">
-											<p>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio consectetur adipiscing dapibus curabitur blandit.”</p>
+											<p>A selection of the best vehicles for booking, the training of our staff, and the aid of the latest technologies give way to unique experiences for our select clients</p>
 											<div class="blockquote-details">
 												<div class="info ps-0">
-													<h5 class="mb-1">Nikolas Brooten</h5>
-													<p class="mb-0">Sales Manager</p>
+													<!-- <h5 class="mb-1">Nikolas Brooten</h5>
+													<p class="mb-0">Sales Manager</p> -->
 												</div>
 											</div>
 										</blockquote>
@@ -205,194 +213,36 @@
 			<!-- /.container -->
 		</section>
 		<!-- /section -->
-		<section class="wrapper bg-light">
-			<div class="container py-14 py-md-16">
-				<div class="row mb-3">
-					<div class="col-md-10 col-xl-9 col-xxl-7 mx-auto text-center">
-						<img src="@@webRoot/assets/img/icons/lineal/team.svg" class="svg-inject icon-svg icon-svg-md mb-4" alt="" />
-						<h2 class="display-4 mb-3 px-lg-14">Save your time and money by choosing our professional team.</h2>
-					</div>
-					<!--/column -->
-				</div>
-				<!--/.row -->
-				<div class="position-relative">
-					<div class="shape rounded-circle bg-soft-yellow rellax w-16 h-16" data-rellax-speed="1" style="bottom: 0.5rem; right: -1.7rem;"></div>
-					<div class="shape rounded-circle bg-line red rellax w-16 h-16" data-rellax-speed="1" style="top: 0.5rem; left: -1.7rem;"></div>
-					<div class="swiper-container dots-closer mb-6" data-margin="0" data-dots="true" data-items-xxl="4" data-items-xl="3" data-items-lg="3" data-items-md="2" data-items-xs="1">
-						<div class="swiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="item-inner">
-										<div class="card">
-											<div class="card-body">
-												<img class="rounded-circle w-15 mb-4" src="@@webRoot/assets/img/avatars/te1.jpg" srcset="@@webRoot/assets/img/avatars/te1@2x.jpg 2x" alt="" />
-												<h4 class="mb-1">Coriss Ambady</h4>
-												<div class="meta mb-2">Financial Analyst</div>
-												<p class="mb-2">Fermentum massa justo sit amet risus morbi leo.</p>
-												<nav class="nav social mb-0">
-													<a href="#"><i class="uil uil-twitter"></i></a>
-													<a href="#"><i class="uil uil-facebook-f"></i></a>
-													<a href="#"><i class="uil uil-dribbble"></i></a>
-												</nav>
-												<!-- /.social -->
-											</div>
-											<!--/.card-body -->
-										</div>
-										<!-- /.card -->
-									</div>
-									<!-- /.item-inner -->
-								</div>
-								<!--/.swiper-slide -->
-								<div class="swiper-slide">
-									<div class="item-inner">
-										<div class="card">
-											<div class="card-body">
-												<img class="rounded-circle w-15 mb-4" src="@@webRoot/assets/img/avatars/te2.jpg" srcset="@@webRoot/assets/img/avatars/te2@2x.jpg 2x" alt="" />
-												<h4 class="mb-1">Cory Zamora</h4>
-												<div class="meta mb-2">Marketing Specialist</div>
-												<p class="mb-2">Fermentum massa justo sit amet risus morbi leo.</p>
-												<nav class="nav social mb-0">
-													<a href="#"><i class="uil uil-twitter"></i></a>
-													<a href="#"><i class="uil uil-facebook-f"></i></a>
-													<a href="#"><i class="uil uil-dribbble"></i></a>
-												</nav>
-												<!-- /.social -->
-											</div>
-											<!--/.card-body -->
-										</div>
-										<!-- /.card -->
-									</div>
-									<!-- /.item-inner -->
-								</div>
-								<!--/.swiper-slide -->
-								<div class="swiper-slide">
-									<div class="item-inner">
-										<div class="card">
-											<div class="card-body">
-												<img class="rounded-circle w-15 mb-4" src="@@webRoot/assets/img/avatars/te3.jpg" srcset="@@webRoot/assets/img/avatars/te3@2x.jpg 2x" alt="" />
-												<h4 class="mb-1">Nikolas Brooten</h4>
-												<div class="meta mb-2">Sales Manager</div>
-												<p class="mb-2">Fermentum massa justo sit amet risus morbi leo.</p>
-												<nav class="nav social mb-0">
-													<a href="#"><i class="uil uil-twitter"></i></a>
-													<a href="#"><i class="uil uil-facebook-f"></i></a>
-													<a href="#"><i class="uil uil-dribbble"></i></a>
-												</nav>
-												<!-- /.social -->
-											</div>
-											<!--/.card-body -->
-										</div>
-										<!-- /.card -->
-									</div>
-									<!-- /.item-inner -->
-								</div>
-								<!--/.swiper-slide -->
-								<div class="swiper-slide">
-									<div class="item-inner">
-										<div class="card">
-											<div class="card-body">
-												<img class="rounded-circle w-15 mb-4" src="@@webRoot/assets/img/avatars/te4.jpg" srcset="@@webRoot/assets/img/avatars/te4@2x.jpg 2x" alt="" />
-												<h4 class="mb-1">Jackie Sanders</h4>
-												<div class="meta mb-2">Investment Planner</div>
-												<p class="mb-2">Fermentum massa justo sit amet risus morbi leo.</p>
-												<nav class="nav social mb-0">
-													<a href="#"><i class="uil uil-twitter"></i></a>
-													<a href="#"><i class="uil uil-facebook-f"></i></a>
-													<a href="#"><i class="uil uil-dribbble"></i></a>
-												</nav>
-												<!-- /.social -->
-											</div>
-											<!--/.card-body -->
-										</div>
-										<!-- /.card -->
-									</div>
-									<!-- /.item-inner -->
-								</div>
-								<!--/.swiper-slide -->
-								<div class="swiper-slide">
-									<div class="item-inner">
-										<div class="card">
-											<div class="card-body">
-												<img class="rounded-circle w-15 mb-4" src="@@webRoot/assets/img/avatars/te5.jpg" srcset="@@webRoot/assets/img/avatars/te5@2x.jpg 2x" alt="" />
-												<h4 class="mb-1">Laura Widerski</h4>
-												<div class="meta mb-2">Sales Specialist</div>
-												<p class="mb-2">Fermentum massa justo sit amet risus morbi leo.</p>
-												<nav class="nav social mb-0">
-													<a href="#"><i class="uil uil-twitter"></i></a>
-													<a href="#"><i class="uil uil-facebook-f"></i></a>
-													<a href="#"><i class="uil uil-dribbble"></i></a>
-												</nav>
-												<!-- /.social -->
-											</div>
-											<!--/.card-body -->
-										</div>
-										<!-- /.card -->
-									</div>
-									<!-- /.item-inner -->
-								</div>
-								<!--/.swiper-slide -->
-								<div class="swiper-slide">
-									<div class="item-inner">
-										<div class="card">
-											<div class="card-body">
-												<img class="rounded-circle w-15 mb-4" src="@@webRoot/assets/img/avatars/te6.jpg" srcset="@@webRoot/assets/img/avatars/te6@2x.jpg 2x" alt="" />
-												<h4 class="mb-1">Tina Geller</h4>
-												<div class="meta mb-2">Financial Analyst</div>
-												<p class="mb-2">Fermentum massa justo sit amet risus morbi leo.</p>
-												<nav class="nav social mb-0">
-													<a href="#"><i class="uil uil-twitter"></i></a>
-													<a href="#"><i class="uil uil-facebook-f"></i></a>
-													<a href="#"><i class="uil uil-dribbble"></i></a>
-												</nav>
-												<!-- /.social -->
-											</div>
-											<!--/.card-body -->
-										</div>
-										<!-- /.card -->
-									</div>
-									<!-- /.item-inner -->
-								</div>
-								<!--/.swiper-slide -->
-							</div>
-							<!--/.swiper-wrapper -->
-						</div>
-						<!-- /.swiper -->
-					</div>
-					<!-- /.swiper-container -->
-				</div>
-				<!-- /.position-relative -->
-			</div>
-			<!-- /.container -->
-		</section>
+	
 		<!-- /section -->
 		<section class="wrapper bg-soft-primary">
-			<div class="container py-14 py-md-16">
+			<div class="container py-6 py-md-16">
 				<div class="row mb-10">
 					<div class="col-xl-10 mx-auto">
 						<div class="row align-items-center counter-wrapper gy-6 text-center">
-							<div class="col-md-3">
-								<img src="@@webRoot/assets/img/icons/lineal/check.svg" class="svg-inject icon-svg icon-svg-lg text-primary mb-3" alt="" />
+							<div class="col-md-4">
+								<img src="../assets/img/icons/lineal/check.svg" class="svg-inject icon-svg icon-svg-lg text-primary mb-3" alt="" />
 								<h3 class="counter">7518</h3>
-								<p>Completed Projects</p>
+								<p>Bookings</p>
 							</div>
 							<!--/column -->
-							<div class="col-md-3">
-								<img src="@@webRoot/assets/img/icons/lineal/user.svg" class="svg-inject icon-svg icon-svg-lg text-primary mb-3" alt="" />
+							<div class="col-md-4">
+								<img src="../assets/img/icons/lineal/user.svg" class="svg-inject icon-svg icon-svg-lg text-primary mb-3" alt="" />
 								<h3 class="counter">3472</h3>
 								<p>Satisfied Customers</p>
 							</div>
 							<!--/column -->
-							<div class="col-md-3">
-								<img src="@@webRoot/assets/img/icons/lineal/briefcase-2.svg" class="svg-inject icon-svg icon-svg-lg text-primary mb-3" alt="" />
+							<div class="col-md-4">
+								<img src="../assets/img/icons/lineal/briefcase-2.svg" class="svg-inject icon-svg icon-svg-lg text-primary mb-3" alt="" />
 								<h3 class="counter">2184</h3>
 								<p>Expert Employees</p>
 							</div>
 							<!--/column -->
-							<div class="col-md-3">
-								<img src="@@webRoot/assets/img/icons/lineal/award-2.svg" class="svg-inject icon-svg icon-svg-lg text-primary mb-3" alt="" />
+							<!-- <div class="col-md-3">
+								<img src="../assets/img/icons/lineal/award-2.svg" class="svg-inject icon-svg icon-svg-lg text-primary mb-3" alt="" />
 								<h3 class="counter">4523</h3>
 								<p>Awards Won</p>
-							</div>
+							</div> -->
 							<!--/column -->
 						</div>
 						<!--/.row -->
@@ -405,15 +255,15 @@
 		</section>
 		<!-- /section -->
 		<section class="wrapper bg-light angled upper-end lower-end">
-			<div class="container pt-18 pb-14 pt-md-19 pb-md-16">
+			<div class="container pt-6 pb-14 pt-md-8 pb-md-16">
 				<div class="row gx-md-8 gx-xl-12 gy-10 align-items-center">
 					<div class="col-md-8 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1 position-relative">
 						<div class="shape bg-dot primary rellax w-17 h-21" data-rellax-speed="1" style="top: -2rem; left: -1.4rem;"></div>
-						<figure class="rounded"><img src="@@webRoot/assets/img/photos/about4.jpg" srcset="@@webRoot/assets/img/photos/about4@2x.jpg 2x" alt=""></figure>
+						<figure class="rounded"><img src="../assets/img/photos/about4.jpg" srcset="../assets/img/photos/about4.jpg" alt=""></figure>
 					</div>
 					<!--/column -->
 					<div class="col-lg-6">
-						<img src="@@webRoot/assets/img/icons/lineal/telemarketer.svg" class="svg-inject icon-svg icon-svg-md mb-4" alt="" />
+						<img src="../assets/img/icons/lineal/telemarketer.svg" class="svg-inject icon-svg icon-svg-md mb-4" alt="" />
 						<h2 class="display-4 mb-8">Convinced yet? Let's make something great together.</h2>
 						<div class="d-flex flex-row">
 							<div>
@@ -429,8 +279,32 @@
 								<div class="icon text-primary fs-28 me-6 mt-n1"> <i class="uil uil-phone-volume"></i> </div>
 							</div>
 							<div>
-								<h5 class="mb-1">Phone</h5>
-								<p>00 (123) 456 78 90</p>
+							<h5 class="mb-1">Phone</h5>
+								<p>+52 (55) 5654 0089</p>
+								<p>+52 (55) 5740 1466</p>
+								<p>+52 (55) 4754 5981</p>
+							</div>
+
+						</div>
+							<div class="d-flex flex-row">
+						<div>
+								<div class="icon text-primary fs-28 me-6 mt-n1"> <i class="uil uil-phone-volume"></i> </div>
+							</div>
+							
+							<div>
+								<h5 class="mb-1">NATIONAL CALL CENTER</h5>
+								<p>01-800-832-6889</p>
+							</div>
+						</div>
+
+						<div class="d-flex flex-row">
+						<div>
+								<div class="icon text-primary fs-28 me-6 mt-n1"> <i class="uil uil-phone-volume"></i> </div>
+							</div>
+							
+							<div>
+								<h5 class="mb-1">USA / CANADA TOLL FREE:</h5>
+								<p>1-800-704-2942</p>
 							</div>
 						</div>
 						<div class="d-flex flex-row">
@@ -439,7 +313,9 @@
 							</div>
 							<div>
 								<h5 class="mb-1">E-mail</h5>
-								<p class="mb-0"><a href="mailto:sandbox@email.com" class="link-body">sandbox@email.com</a></p>
+								<p class="mb-0"><a href="mailto:info@godandiandsons.com" class="link-body">info@godandiandsons.com</a></p>
+								<p class="mb-0"><a href="mailto:reserve@godandiandsons.com" class="link-body"> reserve@godandiandsons.com</a></p>
+								<p class="mb-0"><a href="mailto:info@godandi.globalm" class="link-body">info@godandi.global</a></p>
 							</div>
 						</div>
 					</div>

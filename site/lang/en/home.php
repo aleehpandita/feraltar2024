@@ -16,7 +16,7 @@ return [
     'explore'=>'Explore Our Destinations',
     'book'=>'Book now',
     'info'=>'More information',
-    'welcome'=>'Welcome to the best luxury transportation company. AIRPORT TRANSFERS, LIMO & CAR SERVICE',
+    'welcome'=>'Welcome to the best luxury transportation company.',
     'offer'=>'An outstanding private transfer service focused on customer safety and satisfaction',
     'contactus'=>'Contact Us',
     'pax'=>'Passangers',
