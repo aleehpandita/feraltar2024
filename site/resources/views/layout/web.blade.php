@@ -203,11 +203,7 @@ if (App::getLocale() == 'en') {
                         <div class="col-lg-8">
                           <h6 class="dropdown-header">Rest of the World</h6>
                           <ul class="list-unstyled cc-3">
-                            <li><a class="dropdown-item" href="./docs/elements/accordion.html">Alemania</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/alerts.html">Japón</a></li>
                             <li><a class="dropdown-item" href="./docs/elements/animations.html">Puerto Rico</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/avatars.html">España</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/background.html">Francia</a></li>
                             <li><a class="dropdown-item" href="./docs/elements/badges.html">Bogotá</a></li>
                             <li><a class="dropdown-item" href="./docs/elements/buttons.html">Punta Cana</a></li>
                             <li><a class="dropdown-item" href="./docs/elements/card.html">Panama</a></li>
@@ -831,12 +827,8 @@ if (App::getLocale() == 'en') {
               <li><a href="{{ route(App::getLocale().'.contact') }}">Orlando</a></li>
               <li><a href="{{ route(App::getLocale().'.contact') }}">New York</a></li>
               <li><a href="{{ route(App::getLocale().'.contact') }}">Las Vegas</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Francia</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">España</a></li>
               <li><a href="{{ route(App::getLocale().'.contact') }}">Atlanta</a></li>
               <li><a href="{{ route(App::getLocale().'.contact') }}">Dallas</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Alemania</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Japón</a></li>
               <li><a href="{{ route(App::getLocale().'.contact') }}">Sao Paulo</a></li>
             
           </div>

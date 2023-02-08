@@ -513,12 +513,7 @@
         'Las vegas',
         'Dallas',
         'Monte video',
-        'Punta del Este en Uruguay',
-        'España',
-        'Francia',
-        'Alemania',
-        'Japón',
-        'Corea'
+        'Punta del Este en Uruguay'
       ],
       cache: true,
     },
