@@ -5,64 +5,42 @@
 @endsection
 @section('content')
 <section class="wrapper bg-dark">
-      <div class="swiper-container swiper-thumbs-container swiper-fullscreen nav-dark swiper-container-0" data-margin="0" data-autoplay="true" data-autoplaytime="7000" data-nav="true" data-dots="false" data-items="1" data-thumbs="true">
-        <div class="swiper-main"><div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-          <div class="swiper-wrapper" style="cursor: grab; transform: translate3d(-4320px, 0px, 0px); transition-duration: 500ms;" id="swiper-wrapper-5ee3a3a79ef941d4" aria-live="off">
-            <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/slide2.jpg" style="background-image: url(&quot;./assets/img/photos/slide2.jpg&quot;); width: 1440px;" role="group" aria-label="1 / 4"></div>
-            <!-- <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg29.jpg" style="background-image: url(&quot;./assets/img/photos/bg29.jpg&quot;); width: 1440px;" role="group" aria-label="2 / 4"></div>
-            <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image swiper-slide-prev" data-image-src="./assets/img/photos/bg30.jpg" style="background-image: url(&quot;./assets/img/photos/bg30.jpg&quot;); width: 1440px;" role="group" aria-label="3 / 4"></div>
-            <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image swiper-slide-active" data-image-src="./assets/img/photos/bg31.jpg" style="background-image: url(&quot;./assets/img/photos/bg31.jpg&quot;); width: 1440px;" role="group" aria-label="4 / 4"></div> -->
-          </div>
-          <!--/.swiper-wrapper -->
-        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div><div class="swiper-controls"><div class="swiper-navigation"><div class="swiper-button swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-5ee3a3a79ef941d4" aria-disabled="false"></div><div class="swiper-button swiper-button-next swiper-button-disabled" tabindex="-1" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5ee3a3a79ef941d4" aria-disabled="true"></div></div></div></div>
-        <!-- /.swiper -->
-        <div class="swiper swiper-thumbs swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-          <!-- <div class="swiper-wrapper" id="swiper-wrapper-addea772d7bf0bef" aria-live="polite" style="transform: translate3d(0px, 0px, 0px); transition-duration: 500ms;">
-            <div class="swiper-slide swiper-slide-visible swiper-slide-active" style="width: 40px; margin-right: 10px;" role="group" aria-label="1 / 4"><img src="./assets/img/photos/bg28-th.jpg" srcset="./assets/img/photos/bg28-th@2x.jpg 2x" alt=""></div>
-            <div class="swiper-slide swiper-slide-visible swiper-slide-next" style="width: 40px; margin-right: 10px;" role="group" aria-label="2 / 4"><img src="./assets/img/photos/bg29-th.jpg" srcset="./assets/img/photos/bg29-th@2x.jpg 2x" alt=""></div>
-            <div class="swiper-slide swiper-slide-visible" style="width: 40px; margin-right: 10px;" role="group" aria-label="3 / 4"><img src="./assets/img/photos/bg30-th.jpg" srcset="./assets/img/photos/bg30-th@2x.jpg 2x" alt=""></div>
-            <div class="swiper-slide swiper-slide-visible swiper-slide-thumb-active" role="group" aria-label="4 / 4" style="width: 40px; margin-right: 10px;"><img src="./assets/img/photos/bg31-th.jpg" srcset="./assets/img/photos/bg31-th@2x.jpg 2x" alt=""></div>
-          </div> -->
-          <!--/.swiper-wrapper -->
-        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-        <!-- /.swiper -->
-        
-        <!-- /.swiper-static -->
-      </div>
-      <!-- /.swiper-container -->
-    </section>
-	<!-- <section class="wrapper bg-dark">
-	  <div class="swiper-container swiper-thumbs-container swiper-fullscreen nav-dark" data-margin="0" data-autoplay="true" data-autoplaytime="7000" data-nav="true" data-dots="false" data-items="1" data-thumbs="true">
-	    <div class="swiper">
-	      <div class="swiper-wrapper">
-	        <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/1_.jpg"></div>
-	        <!-- <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg29.jpg"></div>
-	        <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg30.jpg"></div>
-	        <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg31.jpg"></div> -->
-	      </div>
-	      <!--/.swiper-wrapper -->
+  <div class="swiper-container swiper-thumbs-container swiper-fullscreen nav-dark swiper-container-0" data-margin="0" data-autoplay="true" data-autoplaytime="7000" data-nav="true" data-dots="false" data-items="1" data-thumbs="true">
+  	<div class="swiper-main">
+  		<div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+	  		<div class="swiper-wrapper" style="cursor: grab; transform: translate3d(-4320px, 0px, 0px); transition-duration: 500ms;" id="swiper-wrapper-5ee3a3a79ef941d4" aria-live="off">
+	  			<div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/slide2.jpg" style="background-image: url(&quot;./assets/img/photos/slide2.jpg&quot;); width: 1440px;" role="group" aria-label="1 / 4"></div>
+	  		</div>
+	  		<!--/.swiper-wrapper -->
+	      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
 	    </div>
-	    <!-- /.swiper -->
-	   
-	    <!-- /.swiper -->
-	    <div class="swiper-static">
-	      <div class="container h-100 d-flex align-items-center justify-content-center">
-	        <div class="row">
-	          <div class="col-lg-12 mx-auto mt-n20 text-center">
-	            <h1 class="fs-19 text-uppercase ls-xl text-white mb-3 animate__animated animate__zoomIn animate__delay-1s d-none d-md-block">{{ __('home.title1') }} <br/> {{ __('home.title1-1') }} </h1>
-	            <h2 class="display-1 fs-60 text-white mb-0 animate__animated animate__zoomIn animate__delay-2s">{{ __('home.home-h1') }}</h2>
-				<a href="{{route(App::getLocale().'.contact')}}" class="btn btn-sm btn-primary rounded-pill">{{ __('home.need') }}</a>
-	          </div>
-	          <!-- /column -->
-	        </div>
-	        <!-- /.row -->
-	      </div>
-	      <!-- /.container -->
+	    <div class="swiper-controls">
+	     	<div class="swiper-navigation">
+	     		<div class="swiper-button swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-5ee3a3a79ef941d4" aria-disabled="false"></div>
+	     		<div class="swiper-button swiper-button-next swiper-button-disabled" tabindex="-1" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5ee3a3a79ef941d4" aria-disabled="true"></div>
+	     	</div>
 	    </div>
-	    <!-- /.swiper-static -->
 	  </div>
-	  <!-- /.swiper-container -->
-	</section> 
+    <div class="swiper swiper-thumbs swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+    	<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+    </div>
+    <!-- /.swiper -->
+    <div class="swiper-static">
+      <div class="container h-100 d-flex align-items-center justify-content-center">
+        <div class="row">
+          <div class="col-lg-12 mx-auto mt-n20 text-center">
+            <h1 class="fs-19 text-uppercase ls-xl text-white mb-3 animate__animated animate__zoomIn animate__delay-1s d-none d-md-block">{{ __('home.title1') }} <br/> {{ __('home.title1-1') }} </h1>
+            <h2 class="display-1 fs-60 text-white mb-0 animate__animated animate__zoomIn animate__delay-2s">{{ __('home.home-h1') }}</h2>
+            <a href="{{route(App::getLocale().'.contact')}}" class="btn btn-sm btn-primary rounded-pill">{{ __('home.need') }}</a>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+  </div>
+</section>
 	<!-- /section -->
 	<section class="wrapper bg-light">
 	  <div class="container py-14 py-md-6">
