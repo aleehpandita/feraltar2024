@@ -9,7 +9,7 @@
         <div class="swiper-main"><div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
           <div class="swiper-wrapper" style="cursor: grab; transform: translate3d(-4320px, 0px, 0px); transition-duration: 500ms;" id="swiper-wrapper-5ee3a3a79ef941d4" aria-live="off">
             <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/slide2.jpg" style="background-image: url(&quot;./assets/img/photos/slide2.jpg&quot;); width: 1440px;" role="group" aria-label="1 / 4"></div>
-            <!-- <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/bg29.jpg" style="background-image: url(&quot;./assets/img/photos/bg29.jpg&quot;); width: 1440px;" role="group" aria-label="2 / 4"></div>
+            <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/cc1.jpg" style="background-image: url(&quot;./assets/img/photos/cc1.jpg&quot;); width: 1440px;" role="group" aria-label="2 / 4"></div><!-- 
             <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image swiper-slide-prev" data-image-src="./assets/img/photos/bg30.jpg" style="background-image: url(&quot;./assets/img/photos/bg30.jpg&quot;); width: 1440px;" role="group" aria-label="3 / 4"></div>
             <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image swiper-slide-active" data-image-src="./assets/img/photos/bg31.jpg" style="background-image: url(&quot;./assets/img/photos/bg31.jpg&quot;); width: 1440px;" role="group" aria-label="4 / 4"></div> -->
           </div>
@@ -116,7 +116,7 @@
 	            </figcaption>
 	          </figure>
 	          <div class="card-body p-6">
-	            <h3 class="fs-21 mb-0">Security Services</h3>
+	            <h3 class="fs-21 mb-0">{{ __('home.secx') }}</h3>
 	          </div>
 	          <!--/.card-body -->
 	        </div>

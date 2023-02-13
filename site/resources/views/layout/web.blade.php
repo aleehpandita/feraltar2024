@@ -178,50 +178,49 @@ if (App::getLocale() == 'en') {
                           
                         <h6 class="dropdown-header">México</h6>
                             <ul class="list-unstyled cc-2 pb-lg-1">
-                              <li><a class="dropdown-item" href="">Ciudad de México</a></li>
+                              <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/cdmx">Ciudad de México</a></li>
                          
-                            <li><a class="dropdown-item" href="">Monterrey</a></li>
-                            <li><a class="dropdown-item" href="">Guadalajara</a></li>
-                            <li><a class="dropdown-item" href="">Los Cabos</a></li>
-                            <li><a class="dropdown-item" href="">Cancún</a></li>
-                            <li><a class="dropdown-item" href="">Puerto Vallarta</a></li>
-                            <li><a class="dropdown-item" href="">Tijuana</a></li>
-                            <li><a class="dropdown-item" href="">San Miguel de Allende</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/monterrey">Monterrey</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/Guadalajara">Guadalajara</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/los-cabos">Los Cabos</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/cancun">Cancún</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/puerto-vallarta">Puerto Vallarta</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/tijuana">Tijuana</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/san-miguel-de-allende">San Miguel de Allende</a></li>
                           </ul>
                           <h6 class="dropdown-header mt-lg-6">USA</h6>
                           <ul class="list-unstyled cc-2">
-                            <li><a class="dropdown-item" href="./docs/styleguide/colors.html">Orlando</a></li>
-                            <li><a class="dropdown-item" href="./docs/styleguide/fonts.html">Dallas</a></li>
-                            <li><a class="dropdown-item" href="./docs/styleguide/icons-svg.html">Las Vegas</a></li>
-                            <li><a class="dropdown-item" href="./docs/styleguide/icons-font.html">Los Angeles</a></li>
-                            <li><a class="dropdown-item" href="./docs/styleguide/illustrations.html">New York</a></li>
-                            <li><a class="dropdown-item" href="./docs/styleguide/backgrounds.html">Atlanta</a></li>
-                            <li><a class="dropdown-item" href="./docs/styleguide/misc.html">Miami</a></li>  
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/orlando">Orlando</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/dallas">Dallas</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/las-vegas">Las Vegas</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/los-angeles">Los Angeles</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/new-york">New York</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/cdmx">Atlanta</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/miami">Miami</a></li>  
                           </ul>
                         </div>
                         <!--/column -->
                         <div class="col-lg-8">
                           <h6 class="dropdown-header">Rest of the World</h6>
                           <ul class="list-unstyled cc-3">
-                            <li><a class="dropdown-item" href="./docs/elements/animations.html">Puerto Rico</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/badges.html">Bogotá</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/buttons.html">Punta Cana</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/card.html">Panama</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/carousel.html">Santiago de Chile</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/dividers.html">Lima</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/form-elements.html">Cusco</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/image-hover.html">Hawaii</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/image-mask.html">Buenos Aires</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/lightbox.html">Liberia Costa Rica</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/player.html">San José Costa Rica</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/modal.html">Rio de Janeiro</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/pagination.html">República Cominicana</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/progressbar.html">Punta del Este Uruguay</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/shadows.html">Santo Domingo</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/shapes.html">Medillín</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/tables.html">Guatemala</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/tabs.html">San Salvador</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/text-animations.html">Montevideo</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/puerto-rico">Puerto Rico</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/bogota">Bogotá</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/punta-cana">Punta Cana</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/panama">Panama</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/chile">Santiago de Chile</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/peru">Lima</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/peru">Cusco</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/buenos-aires">Buenos Aires</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/costa-rica">Liberia Costa Rica</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/costa-rica">San José Costa Rica</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/rio-de-janeiro">Rio de Janeiro</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/republica-dominicana">República Dominicana</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/uruguay">Punta del Este Uruguay</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/republica-dominicana">Santo Domingo</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/medellin">Medellín</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/guatemala">Guatemala</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/san-salvador">San Salvador</a></li>
+                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/uruguay">Montevideo</a></li>
                           </ul>
                         </div>
                         <!--/column -->
@@ -789,15 +788,15 @@ if (App::getLocale() == 'en') {
           <div class="widget">
             <h4 class="widget-title mb-3 text-white"><a href="{{ route(App::getLocale().'.destinations') }}">{{ __('layout.desti') }}</a></h4>
             <ul class="list-unstyled mb-0">
-              <li><a href="">CDMX</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Monterrey</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">San Miguel de Allende</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Los Cabos</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Tijuana</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Cancún</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Guadalajara</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Puerto Vallarta</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Costa Rica</a></li>
+              <li><a href="{{ route(App::getLocale().'.destinations') }}/cdmx">CDMX</a></li>
+              <li><a href="{{ route(App::getLocale().'.destinations') }}/monterrey">Monterrey</a></li>
+              <li><a href="{{ route(App::getLocale().'.destinations') }}/san-miguel-de-allende">San Miguel de Allende</a></li>
+              <li><a href="{{ route(App::getLocale().'.destinations') }}/los-cabos">Los Cabos</a></li>
+              <li><a href="{{ route(App::getLocale().'.destinations') }}/tijuana">Tijuana</a></li>
+              <li><a href="{{ route(App::getLocale().'.destinations') }}/cancun">Cancún</a></li>
+              <li><a href="{{ route(App::getLocale().'.destinations') }}/guadalajara">Guadalajara</a></li>
+              <li><a href="{{ route(App::getLocale().'.destinations') }}/puerto-vallarta">Puerto Vallarta</a></li>
+              <li><a href="{{ route(App::getLocale().'.destinations') }}/costa-rica">Costa Rica</a></li>
             </ul>
           </div>
           <!-- /.widget -->
@@ -807,16 +806,16 @@ if (App::getLocale() == 'en') {
          <div class="col-md-3 col-lg-2">
           <div class="widget">
             <ul class="list-unstyled mb-0">
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Guatemala</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">San Salvador</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Puerto Rico</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Panama</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Buenos Aires</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Bogotá</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Medellín</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Uruguay</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Perú</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Rio de Janeiro</a></li>
+              <li><a href="{{ route(App::getLocale().'.destinations') }}/guatemala">Guatemala</a></li>
+              <li><a href="{{ route(App::getLocale().'.destinations') }}/san-salvador">San Salvador</a></li>
+              <li><a href="{{ route(App::getLocale().'.destinations') }}/puerto-rico">Puerto Rico</a></li>
+              <li><a href="{{ route(App::getLocale().'.destinations') }}/panama">Panama</a></li>
+              <li><a href="{{ route(App::getLocale().'.destinations') }}/buenos-aires">Buenos Aires</a></li>
+              <li><a href="{{ route(App::getLocale().'.destinations') }}/bogota">Bogotá</a></li>
+              <li><a href="{{ route(App::getLocale().'.destinations') }}/medellin">Medellín</a></li>
+              <li><a href="{{ route(App::getLocale().'.destinations') }}/uruguay">Uruguay</a></li>
+              <li><a href="{{ route(App::getLocale().'.destinations') }}/peru">Perú</a></li>
+              <li><a href="{{ route(App::getLocale().'.destinations') }}/rio-de-janeiro">Rio de Janeiro</a></li>
             </ul>
           </div>
           <!-- /.widget -->

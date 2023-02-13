@@ -7,11 +7,11 @@
 @section('content')
   <section class="section-frame overflow-hidden">
     <div class="wrapper bg-soft-primary">
-      <div class="container py-12 py-md-16 text-center">
+      <div class="container py-16 py-md-16 text-center">
         <div class="row">
           <div class="col-md-7 col-lg-6 col-xl-5 mx-auto">
-            <h1 class="display-1 mb-3">Destinations</h1>
-            <p class="lead px-lg-5 px-xxl-8 mb-1">Welcome to our journal. Here you can find the latest company news and business articles.</p>
+            <h1 class="display-1 mb-3">{{ __('destinations.desti') }}</h1>
+            <p class="lead mb-1">{{ __('destinations.text2') }}</p>
           </div>
           <!-- /column -->
         </div>
@@ -22,7 +22,7 @@
     <!-- /.wrapper -->
   </section>
   <section class="wrapper bg-light">
-  <div class="container py-14 py-md-16">
+  <div class="container py-8 py-md-7">
     <!-- <div class="row">
       <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto">
         <h2 class="fs-15 text-uppercase text-primary text-center">Our News</h2>
@@ -40,7 +40,7 @@
                 <div class="card">
                   <figure class="card-img-top overlay overlay-1 hover-scale"><a href="{{ route(App::getLocale().'.destinationSlug', ['slug'=>$d->slug]) }}"> <img src="{{ asset($d->main_image) }}" alt="" /></a>
                     <figcaption>
-                      <h5 class="from-top mb-0">Read More</h5>
+                      <h5 class="from-top mb-0">{{ __('destinations.read') }}</h5>
                     </figcaption>
                   </figure>
                   <div class="card-body">
@@ -52,8 +52,8 @@
                       <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">{{ $d->name }}</a></h2>
                     </div>
                     <!-- /.post-header -->
-                    <div class="post-content">
-                      <p>Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras imperdiet nun eu dolor.</p>
+                    <div class="post-content text-justify">
+                      <p>{{ __('destinations.text') }} {{ __('destinations.let') }} <b>{{ $d->name }} </b> {{ __('destinations.unfo') }}.</p>
                     </div>
                     <!-- /.post-content -->
                   </div>

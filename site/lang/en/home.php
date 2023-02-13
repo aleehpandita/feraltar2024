@@ -52,5 +52,7 @@ return [
     'easy'=>'Easy Booking',
     'fill'=>"Fill out the form, don't forget to write your drop-off location, select your travel date and complete the booking",
     'how'=>'How it works',
-    'this'=>'This is a private and secure ground transportation service. Each reservation is checked by a team that checks the airline, flight number, destination, and other details of the booking.'
+    'this'=>'This is a private and secure ground transportation service. Each reservation is checked by a team that checks the airline, flight number, destination, and other details of the booking.',
+    'secx'=>'Security Services',
+    'ax1'=>'Airport Concierge'
 ];
