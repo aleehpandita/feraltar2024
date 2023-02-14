@@ -4,6 +4,17 @@
 @section('head')
 @endsection
 @section('content')
+@php
+$words = [
+ __('cuidando'),
+ __('protegiendo'),
+ __('transportando'),
+ __('atendiendo'),
+ __('recibiendo'),
+ __('trasladando'),
+ __('moviendo')
+]
+@endphp
 <section class="wrapper bg-dark">
   <div class="swiper-container swiper-thumbs-container swiper-fullscreen nav-dark swiper-container-0" data-margin="0" data-autoplay="true" data-autoplaytime="7000" data-nav="true" data-dots="false" data-items="1" data-thumbs="true">
   	<div class="swiper-main">
@@ -29,8 +40,8 @@
       <div class="container h-100 d-flex align-items-center justify-content-center">
         <div class="row">
           <div class="col-lg-12 mx-auto mt-n20 text-center">
-            <h1 class="fs-19 text-uppercase ls-xl text-white mb-3 animate__animated animate__zoomIn animate__delay-1s d-none d-md-block">{{ __('home.title1') }} <br/> {{ __('home.title1-1') }} </h1>
-            <h2 class="display-1 fs-60 text-white mb-0 animate__animated animate__zoomIn animate__delay-2s">{{ __('home.home-h1') }}</h2>
+            <h1 class="fs-19 text-uppercase ls-xl text-white mb-3 animate__animated animate__zoomIn animate__delay-1s d-none d-md-block">{{ __('home.title1') }}  </h1>
+            <h2 class="display-2 fs-60_rm text-white mb-0 animate__animated animate__zoomIn animate__delay-2s">{!! __('home.home-h1', ['words' => json_encode($words)]) !!}</h2>
             <a href="{{route(App::getLocale().'.contact')}}" class="btn btn-sm btn-primary rounded-pill">{{ __('home.need') }}</a>
           </div>
           <!-- /column -->
@@ -1437,4 +1448,5 @@
 	
 @endsection
 @section('scripts')
+
 @endsection

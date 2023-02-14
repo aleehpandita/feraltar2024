@@ -6,6 +6,8 @@ return [
     'title1'=> 'We specialize in luxury transportation',
     'title1-1'=>'An outstanding private transfer service',
     'home-h1'=>'THE ONLY & ONE TRANSPORTATION SERVICES YOU DESERVE',
+    'title1'=> 'QUIEN VIAJA A MÉXICO Y LATINOAMÉRICA ESTÁ MÁS SEGURO SI NOSOTROS LO TRANSPORTAMOS',
+    'home-h1'=>'Somos excelentes <span class="text-primary animate__animated" data-i="0" data-words=\':words\'>cuidando</span> viajeros muy importantes',
     'need'=>'NEED A RIDE?',
     'wehave'=>'We have professional drivers and exclusive cars for you to have a VIP transfer with a high quality service.',
     'concierge'=>'AIRPORT CONCIERGE',
@@ -52,5 +54,11 @@ return [
     'easy'=>'Easy Booking',
     'fill'=>"Fill out the form, don't forget to write your drop-off location, select your travel date and complete the booking",
     'how'=>'How it works',
-    'this'=>'This is a private and secure ground transportation service. Each reservation is checked by a team that checks the airline, flight number, destination, and other details of the booking.'
+    'this'=>'This is a private and secure ground transportation service. Each reservation is checked by a team that checks the airline, flight number, destination, and other details of the booking.',
+    'protegiendo' => 'protegiendo',
+    'transportando' => 'transportando',
+    'atendiendo' => 'atendiendo',
+    'recibiendo' => 'recibiendo',
+    'trasladando' => 'trasladando',
+    'moviendo' => 'moviendo',
 ];
