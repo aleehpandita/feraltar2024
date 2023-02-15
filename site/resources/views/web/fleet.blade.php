@@ -45,7 +45,7 @@
       <div class="col-lg-6 position-relative">
          <div class="shape bg-line leaf rounded-circle rellax w-17 h-17" data-rellax-speed="1" style="top: -2rem; right: -0.6rem;"></div>
          <div class="shape bg-pale-violet rounded-circle rellax w-17 h-17" data-rellax-speed="1" style="bottom: -2rem; left: -0.4rem;"></div>
-         <figure class="rounded mb-0"><img src="./assets/img/photos/suv2.png" srcset="./assets/img/photos/suv2.png" alt=""></figure>
+         <figure class="rounded mb-0"><img src="{{ asset('assets/img/photos/suv2.png') }}" srcset="{{ asset('assets/img/photos/suv2.png') }}" alt=""></figure>
       </div>
       <!--/column -->
       <div class="col-lg-6">
@@ -92,11 +92,11 @@
       </div>
       <div class="col-lg-6">
          <div class="shape bg-pale-violet rounded-circle rellax w-17 h-17" data-rellax-speed="1" style="bottom: -2rem; left: -0.4rem;"></div>
-         <figure class="rounded mb-0"><img src="./assets/img/photos/fleet-suv-viano.png" srcset="./assets/img/photos/fleet-suv-viano.png" alt=""></figure>
+         <figure class="rounded mb-0"><img src="{{ asset('assets/img/photos/fleet-suv-viano.png') }}" srcset="{{ asset('assets/img/photos/fleet-suv-viano.png') }}" alt=""></figure>
       </div>
       <div class="col-lg-6 position-relative">
          <div class="shape bg-pale-red rounded-circle rellax w-17 h-17" data-rellax-speed="1" style="bottom: -2rem; right: -0.4rem;"></div>
-         <figure class="rounded mb-0"><img src="./assets/img/photos/fleet-suv-escalade-compressor-1-removebg-preview.png" srcset="./assets/img/photos/fleet-suv-escalade-compressor-1-removebg-preview.png" alt=""></figure>
+         <figure class="rounded mb-0"><img src="{{ asset('assets/img/photos/fleet-suv-escalade-compressor-1-removebg-preview.png') }}" srcset="{{ asset('assets/img/photos/fleet-suv-escalade-compressor-1-removebg-preview.png') }}" alt=""></figure>
       </div>
       <!--/column -->
       <div class="col-lg-6">
@@ -125,7 +125,7 @@
    <!--/.row -->
    <div class="row gx-lg-8 item gx-xl-12 gy-5 align-items-center sedan">
    <div class="col-lg-6 order-lg-2 position-relative">
-      <figure class="rounded mb-0"><img alt="mercedes s alado" src="./assets/img/photos/mercedes-e.png" srcset="./assets/img/photos/mercedes-e.png" alt=""></figure>
+      <figure class="rounded mb-0"><img alt="mercedes s alado" src="{{ asset('assets/img/photos/mercedes-e.png') }}" srcset="{{ asset('assets/img/photos/mercedes-e.png') }}" alt=""></figure>
    </div>
    <!--/column -->
    <div class="col-lg-6">
@@ -152,7 +152,7 @@
    </div>
    <!--/column -->
    <div class="col-lg-6 position-relative">
-      <figure class="rounded mb-0"> <img src="./assets/img/photos/mercedes-s.png" srcset="./assets/img/photos/mercedes-s.png" alt=""></figure>
+      <figure class="rounded mb-0"> <img src="{{ asset('assets/img/photos/mercedes-s.png') }}" srcset="{{ asset('assets/img/photos/mercedes-s.png') }}" alt=""></figure>
    </div>
    <div class="col-lg-6 order-lg-2">
       <h3 class="display-4 mb-4">Mercedes E Class</h3>
@@ -193,11 +193,11 @@
       </div>
    </div>
    <div class="col-lg-6 order-lg-2">
-      <figure class="rounded mb-0"><img src="./assets/img/photos/mercedes-c.png" srcset="./assets/img/photos/mercedes-c.png" alt=""></figure>
+      <figure class="rounded mb-0"><img src="{{ asset('assets/img/photos/mercedes-c.png') }}" srcset="{{ asset('assets/img/photos/mercedes-c.png') }}" alt=""></figure>
    </div>
    <!--/.row -->
    <div class="col-lg-6 order-lg-2">
-      <figure class="rounded mb-0"><img src="./assets/img/photos/bmw.png" srcset="./assets/img/photos/bmw.png" alt=""></figure>
+      <figure class="rounded mb-0"><img src="{{ asset('assets/img/photos/bmw.png') }}" srcset="{{ asset('assets/img/photos/bmw.png') }}" alt=""></figure>
    </div>
    <div class="col-lg-6 order-lg-2">
       <h3 class="display-4 mb-4">7 Series BMW</h3>
@@ -238,10 +238,10 @@
       </div>
    </div>
    <div class="col-lg-6 order-lg-2">
-      <figure class="rounded mb-0"><img src="./assets/img/photos/jaguar.png" srcset="./assets/img/photos/jaguar.png" alt=""></figure>
+      <figure class="rounded mb-0"><img src="{{ asset('assets/img/photos/jaguar.png') }}" srcset="{{ asset('assets/img/photos/jaguar.png') }}" alt=""></figure>
    </div>
    <div class="col-lg-6 order-lg-2">
-      <figure class="rounded mb-0"><img src="./assets/img/photos/acura.png" srcset="./assets/img/photos/acura.png" alt=""></figure>
+      <figure class="rounded mb-0"><img src="{{ asset('assets/img/photos/acura.png') }}" srcset="{{ asset('assets/img/photos/acura.png') }}" alt=""></figure>
    </div>
    <div class="col-lg-6 order-lg-2">
       <h3 class="display-4 mb-4">Acura TL</h3>
@@ -287,7 +287,7 @@
         <div class="col-lg-6 order-lg-2">
             <div class="shape bg-line aqua rounded-circle rellax w-17 h-17" data-rellax-speed="1" style="top: -2rem; left: -0.6rem;"></div>
           <div class="shape bg-pale-red rounded-circle rellax w-17 h-17" data-rellax-speed="1" style="bottom: -2rem; right: -0.4rem;"></div>
-          <figure class="rounded mb-0"><img src="./assets/img/photos/sprinter.png" srcset="./assets/img/photos/sprinter.png" alt=""></figure>
+          <figure class="rounded mb-0"><img src="{{ asset('assets/img/photos/sprinter.png') }}" srcset="{{ asset('assets/img/photos/sprinter.png') }}" alt=""></figure>
         </div>
    </div>
 
@@ -295,7 +295,7 @@
    <div class="col-lg-6 order-lg-2">
             <div class="shape bg-line aqua rounded-circle rellax w-17 h-17" data-rellax-speed="1" style="top: -2rem; left: -0.6rem;"></div>
           <div class="shape bg-pale-red rounded-circle rellax w-17 h-17" data-rellax-speed="1" style="bottom: -2rem; right: -0.4rem;"></div>
-          <figure class="rounded mb-0"><img src="./assets/img/photos/scania.png" srcset="./assets/img/photos/scania.png" alt=""></figure>
+          <figure class="rounded mb-0"><img src="{{ asset('assets/img/photos/scania.png') }}" srcset="{{ asset('assets/img/photos/scania.png') }}" alt=""></figure>
         </div>
         <div class="col-lg-6 order-lg-2">
         <h3 class="display-4 mb-4">Scania Irizar PB</h3>

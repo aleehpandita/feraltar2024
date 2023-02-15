@@ -2,7 +2,7 @@
 @section('title', __('home.home'))
 @section('head')
 @parent
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.02.min.css">
 <style>
    .autocomplete > ul[hidden], .autocomplete > ul:empty {
@@ -68,7 +68,6 @@
    position: absolute;
    top: 0;
    left: 54px;
-   width: 100%;
    height: 100%;
    padding: 0.6rem 1rem;
    overflow: hidden;
@@ -102,7 +101,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@eonasdan/tempus-dominus@6.2.10/dist/css/tempus-dominus.min.css" crossorigin="anonymous">
 @endsection
 @section('content')
-<section class="wrapper image-wrapper bg-image bg-overlay bg-overlay-400 text-white" data-image-src="./assets/img/photos/slide5.jpg">
+<section class="wrapper image-wrapper bg-image bg-overlay bg-overlay-400 text-white" data-image-src="{{ asset('assets/img/photos/slide5.jpg') }}">
    <div class="container pt-17 pb-20 pt-md-19 pb-md-21 text-center">
       <div class="row">
          <div class="col-lg-8 mx-auto">
@@ -168,7 +167,6 @@
                            <label for="arrival_flight">{{ __('contact.Arrival Flight') }}</label>
                         </div>
                         <div class="valid-feedback"> {{ __('contact.Looks good') }} </div>
-                        <!-- <div class="invalid-feedback"> {{ __('contact.Enter Pickup Date') }} </div> -->
                      </div>
                   </div>
                   <div class="col-md-4">
@@ -222,7 +220,6 @@
                               <option value="10">10</option>
                               <option value="+10">+10</option>
                            </select>
-                           <!-- <label for="dropoff_date">{{ __('contact.Dropoff Date') }} *</label> -->
                         </div>
                         <div class="valid-feedback"> {{ __('contact.Looks good') }} </div>
                         <div class="invalid-feedback"> {{ __('contact.Enter Dropoff Date') }} </div>
@@ -336,7 +333,7 @@
   <div class="container py-14 py-md-16">
     <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
       <div class="col-lg-7">
-        <figure><img class="w-auto" src="./assets/img/illustrations/i5.png" srcset="./assets/img/illustrations/i5@2x.png 2x" alt="" /></figure>
+        <figure><img class="w-auto" src="{{ asset('assets/img/illustrations/i5.png') }}" srcset="{{ asset('assets/img/illustrations/i5@2x.png') }} 2x" alt="" /></figure>
       </div>
       <!--/column -->
       <div class="col-lg-5">

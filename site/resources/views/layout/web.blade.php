@@ -11,6 +11,9 @@ if (App::getLocale() == 'en') {
   $urlEn = str_replace('es.', 'en.', $currentRoute);
   $flag = url('assets/img/flags/mx.png');
 }
+$mxDestinations = \App\Models\Destination::where('country', 'mx')->where('lang', App::getLocale())->get();
+$usDestinations = \App\Models\Destination::where('country', 'us')->where('lang', App::getLocale())->get();
+$restDestinations = \App\Models\Destination::where('country', null)->where('lang', App::getLocale())->get();
 ?>
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
@@ -149,7 +152,7 @@ if (App::getLocale() == 'en') {
 <body>
   <div class="content-wrapper">
     <header class="wrapper bg-soft-primary">
-      <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-@yield('navBarStyle', 'dark')  caret-one">
+      <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-@yield('navBarStyle', 'dark') caret-one">
         <div class="container flex-lg-row flex-nowrap align-items-center">
           <div class="navbar-brand w-100">
             <a href="{{route(App::getLocale().'.home')}}">
@@ -169,6 +172,7 @@ if (App::getLocale() == 'en') {
                 <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.fleet') }}">{{ __('layout.Fleet') }}</a></li>
                 <!-- <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('layout.Reservations') }}</a></li> -->
                 <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.about') }}">{{ __('layout.About') }}</a></li>
+                <li class="nav-item d-md-none"><a class="nav-link" href="{{route(App::getLocale().'.contact')}}#drop-us-line" class="btn btn-sm btn-primary rounded-pill">Contact</a></li>
                 <li class="nav-item dropdown dropdown-mega">
                   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Destination</a>
                   <ul class="dropdown-menu mega-menu">
@@ -177,50 +181,27 @@ if (App::getLocale() == 'en') {
                         <div class="col-lg-4">
                           
                         <h6 class="dropdown-header">México</h6>
-                            <ul class="list-unstyled cc-2 pb-lg-1">
-                              <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/cdmx">Ciudad de México</a></li>
-                         
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/monterrey">Monterrey</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/Guadalajara">Guadalajara</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/los-cabos">Los Cabos</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/cancun">Cancún</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/puerto-vallarta">Puerto Vallarta</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/tijuana">Tijuana</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/san-miguel-de-allende">San Miguel de Allende</a></li>
+                          <ul class="list-unstyled cc-2 pb-lg-1">
+                            <?php foreach ($mxDestinations as $key => $d): ?>
+                              <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/{{$d->slug}}">{{$d->name}}</a></li>
+                            <?php endforeach ?>
+                            
+                            
                           </ul>
                           <h6 class="dropdown-header mt-lg-6">USA</h6>
                           <ul class="list-unstyled cc-2">
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/orlando">Orlando</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/dallas">Dallas</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/las-vegas">Las Vegas</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/los-angeles">Los Angeles</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/new-york">New York</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/cdmx">Atlanta</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/miami">Miami</a></li>  
+                            <?php foreach ($usDestinations as $key => $d): ?>
+                              <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/{{$d->slug}}">{{$d->name}}</a></li>
+                            <?php endforeach ?>
                           </ul>
                         </div>
                         <!--/column -->
                         <div class="col-lg-8">
                           <h6 class="dropdown-header">Rest of the World</h6>
                           <ul class="list-unstyled cc-3">
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/puerto-rico">Puerto Rico</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/bogota">Bogotá</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/punta-cana">Punta Cana</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/panama">Panama</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/chile">Santiago de Chile</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/peru">Lima</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/peru">Cusco</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/buenos-aires">Buenos Aires</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/costa-rica">Liberia Costa Rica</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/costa-rica">San José Costa Rica</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/rio-de-janeiro">Rio de Janeiro</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/republica-dominicana">República Dominicana</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/uruguay">Punta del Este Uruguay</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/republica-dominicana">Santo Domingo</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/medellin">Medellín</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/guatemala">Guatemala</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/san-salvador">San Salvador</a></li>
-                            <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/uruguay">Montevideo</a></li>
+                            <?php foreach ($restDestinations as $key => $d): ?>
+                              <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/{{$d->slug}}">{{$d->name}}</a></li>
+                            <?php endforeach ?>
                           </ul>
                         </div>
                         <!--/column -->
@@ -784,56 +765,34 @@ if (App::getLocale() == 'en') {
         </div>
         <!-- /column -->
         <!-- /column -->
-        <div class="col-md-3 col-lg-2">
-          <div class="widget">
-            <h4 class="widget-title mb-3 text-white"><a href="{{ route(App::getLocale().'.destinations') }}">{{ __('layout.desti') }}</a></h4>
-            <ul class="list-unstyled mb-0">
-              <li><a href="{{ route(App::getLocale().'.destinations') }}/cdmx">CDMX</a></li>
-              <li><a href="{{ route(App::getLocale().'.destinations') }}/monterrey">Monterrey</a></li>
-              <li><a href="{{ route(App::getLocale().'.destinations') }}/san-miguel-de-allende">San Miguel de Allende</a></li>
-              <li><a href="{{ route(App::getLocale().'.destinations') }}/los-cabos">Los Cabos</a></li>
-              <li><a href="{{ route(App::getLocale().'.destinations') }}/tijuana">Tijuana</a></li>
-              <li><a href="{{ route(App::getLocale().'.destinations') }}/cancun">Cancún</a></li>
-              <li><a href="{{ route(App::getLocale().'.destinations') }}/guadalajara">Guadalajara</a></li>
-              <li><a href="{{ route(App::getLocale().'.destinations') }}/puerto-vallarta">Puerto Vallarta</a></li>
-              <li><a href="{{ route(App::getLocale().'.destinations') }}/costa-rica">Costa Rica</a></li>
-            </ul>
+        <div class="col-md-12 col-lg-6">
+          <div class="row gx-0 gx-lg-3">
+            <div class="col-md-6 col-lg-4">
+              <h6 class="dropdown-header">México</h6>
+              <ul class="list-unstyled cc-1 pb-lg-1">
+                <?php foreach ($mxDestinations as $key => $d): ?>
+                  <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/{{$d->slug}}">{{$d->name}}</a></li>
+                <?php endforeach ?>
+              </ul>
+              <h6 class="dropdown-header mt-lg-6">USA</h6>
+              <ul class="list-unstyled cc-1">
+                <?php foreach ($usDestinations as $key => $d): ?>
+                  <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/{{$d->slug}}">{{$d->name}}</a></li>
+                <?php endforeach ?>
+              </ul>
+            </div>
+            <!--/column -->
+            <div class="col-md-6 col-lg-8">
+              <h6 class="dropdown-header">Rest of the World</h6>
+              <ul class="list-unstyled cc-2">
+                <?php foreach ($restDestinations as $key => $d): ?>
+                  <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/{{$d->slug}}">{{$d->name}}</a></li>
+                <?php endforeach ?>
+              </ul>
+            </div>
+            <!--/column -->
           </div>
-          <!-- /.widget -->
         </div>
-        <!-- /column -->
-         <!-- /column -->
-         <div class="col-md-3 col-lg-2">
-          <div class="widget">
-            <ul class="list-unstyled mb-0">
-              <li><a href="{{ route(App::getLocale().'.destinations') }}/guatemala">Guatemala</a></li>
-              <li><a href="{{ route(App::getLocale().'.destinations') }}/san-salvador">San Salvador</a></li>
-              <li><a href="{{ route(App::getLocale().'.destinations') }}/puerto-rico">Puerto Rico</a></li>
-              <li><a href="{{ route(App::getLocale().'.destinations') }}/panama">Panama</a></li>
-              <li><a href="{{ route(App::getLocale().'.destinations') }}/buenos-aires">Buenos Aires</a></li>
-              <li><a href="{{ route(App::getLocale().'.destinations') }}/bogota">Bogotá</a></li>
-              <li><a href="{{ route(App::getLocale().'.destinations') }}/medellin">Medellín</a></li>
-              <li><a href="{{ route(App::getLocale().'.destinations') }}/uruguay">Uruguay</a></li>
-              <li><a href="{{ route(App::getLocale().'.destinations') }}/peru">Perú</a></li>
-              <li><a href="{{ route(App::getLocale().'.destinations') }}/rio-de-janeiro">Rio de Janeiro</a></li>
-            </ul>
-          </div>
-          <!-- /.widget -->
-        </div>
-        <div class="col-md-3 col-lg-2">
-          <div class="widget">
-            <ul class="list-unstyled mb-0">
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Orlando</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">New York</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Las Vegas</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Atlanta</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Dallas</a></li>
-              <li><a href="{{ route(App::getLocale().'.contact') }}">Sao Paulo</a></li>
-            
-          </div>
-          <!-- /.widget -->
-        </div>
-        <!-- /column -->
         <div class="col-md-3 col-lg-3">
           <div class="widget">
             <h4 class="widget-title mb-3 text-white">{{ __('layout.get') }}</h4>
