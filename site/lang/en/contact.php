@@ -36,7 +36,9 @@ return [
 	'message'=>'Message',
 	'Passengers'=>'Passengers',
 	'contacttext'=>'Godandi&Sons is open twenty-four hours a day, seven days a week, and our executive office team is always on hand to take calls and provide solutions to any problems or queries you may have.
-	Contact one, book one.
-	
-	'
+	Contact one, book one.',
+	'wearetru'=>'We are trusted by over 5000+ clients. Join them now and be transportated by the best luxury transportation.',
+	'compl1'=>'Completed Transfers',
+	'sat1'=>'Satisfied Customers',
+	'exp1'=>'Expert Employees'
 ];

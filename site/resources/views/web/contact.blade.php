@@ -102,7 +102,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@eonasdan/tempus-dominus@6.2.10/dist/css/tempus-dominus.min.css" crossorigin="anonymous">
 @endsection
 @section('content')
-<section class="wrapper image-wrapper bg-image bg-overlay bg-overlay-400 text-white" data-image-src="./assets/img/photos/bg3.jpg">
+<section class="wrapper image-wrapper bg-image bg-overlay bg-overlay-400 text-white" data-image-src="./assets/img/photos/slide5.jpg">
    <div class="container pt-17 pb-20 pt-md-19 pb-md-21 text-center">
       <div class="row">
          <div class="col-lg-8 mx-auto">
@@ -297,10 +297,10 @@
 </section>
 <!-- /section -->
 <section class="wrapper image-wrapper bg-auto no-overlay bg-image text-center bg-map" data-image-src="./assets/img/map.png">
-   <div class="container pt-0 pb-14 pt-md-16 pb-md-18">
+   <div class="container pt-0 pb-14 pt-md-6 pb-md-4">
       <div class="row">
          <div class="col-lg-9 col-xxl-8 mx-auto">
-            <h3 class="display-4 mb-8 px-xl-12">We are trusted by over 5000+ clients. Join them now and grow your business.</h3>
+            <h3 class="display-4 mb-8 px-xl-12">{{ __('contact.wearetru') }}</h3>
          </div>
          <!-- /.row -->
       </div>
@@ -310,17 +310,17 @@
             <div class="row align-items-center counter-wrapper gy-4 gy-md-0">
                <div class="col-md-4 text-center">
                   <h3 class="counter counter-lg text-primary">7518</h3>
-                  <p>Completed Projects</p>
+                  <p>{{ __('contact.compl1') }}</p>
                </div>
                <!--/column -->
                <div class="col-md-4 text-center">
                   <h3 class="counter counter-lg text-primary">5472</h3>
-                  <p>Satisfied Customers</p>
+                  <p>{{ __('contact.sat1') }}</p>
                </div>
                <!--/column -->
                <div class="col-md-4 text-center">
                   <h3 class="counter counter-lg text-primary">2184</h3>
-                  <p>Expert Employees</p>
+                  <p>{{ __('contact.exp1') }}</p>
                </div>
                <!--/column -->
             </div>

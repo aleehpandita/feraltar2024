@@ -123,7 +123,7 @@
 	    <div class="row">
 	      <div class="col-lg-12 col-xl-10 col-xxl-7 mx-auto text-center">
 		  <img src="../../assets/img/icons/lineal/stars.svg" class="svg-inject icon-svg icon-svg-sm text-primary text-leaf fs-30 opacity-25" alt="" />
-	        <h2 class="display-5 text-center mt-2 mb-10">{{ __('home.welcome') }}</h2>
+	        <h2 class="display-5 text-center mt-2 mb-10">{!! __('home.welcome') !!}</h2>
 	      </div>
 	      <!--/column -->
 	    </div>
