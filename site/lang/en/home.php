@@ -2,11 +2,13 @@
 
 return [
 
-    'home' => 'Home',
+    'home' => 'Luxury Private Transportation - Premium Private, Safe and Worry-free Transfers',
     'title1'=> 'We specialize in luxury transportation',
     'title1-1'=>'An outstanding private transfer service',
     'home-h1'=>'THE ONLY & ONE TRANSPORTATION SERVICES YOU DESERVE',
-    'need'=>'NEED A RIDE?',
+    'title1'=> 'THOSE TRAVELING TO MEXICO AND LATIN AMERICA ARE SAFER IF WE TRANSPORT THEM.',
+    'home-h1'=>'We are excellent <span class="text-primary animate__animated" data-i="0" data-words=\':words\'>caring</span> for important travelers',
+    'need'=>'<b>NEED A RIDE?</b>',
     'wehave'=>'We have professional drivers and exclusive cars for you to have a VIP transfer with a high quality service.',
     'concierge'=>'AIRPORT CONCIERGE',
     'luxury'=>'LUXURY TRANSPORTATION',
@@ -16,7 +18,7 @@ return [
     'explore'=>'Explore Our Destinations',
     'book'=>'Book now',
     'info'=>'More information',
-    'welcome'=>'Welcome to the best luxury transportation company.',
+    'welcome'=>'Welcome to the <span class="text-primary">best luxury transportation</span> company.',
     'offer'=>'An outstanding private transfer service focused on customer safety and satisfaction',
     'contactus'=>'Contact Us',
     'pax'=>'Passangers',
@@ -54,5 +56,14 @@ return [
     'how'=>'How it works',
     'this'=>'This is a private and secure ground transportation service. Each reservation is checked by a team that checks the airline, flight number, destination, and other details of the booking.',
     'secx'=>'Security Services',
-    'ax1'=>'Airport Concierge'
+    'ax1'=>'Airport Concierge',
+    'protegiendo' => 'protecting',
+    'transportando' => 'transporting',
+    'atendiendo' => 'attending',
+    'recibiendo' => 'receiving',
+    'trasladando' => 'moving',
+    'moviendo' => 'moving', 
+    'cuidando'=>'caring',
+    'keywords'=>'Airport Luxury Transportation, Private Transfers, Premium and VIP transportation',
+    'description'=>'Airport Luxury Transportation, book the most reliable and secure Airport transfer. Official Luxury Airport Transfers'
 ];

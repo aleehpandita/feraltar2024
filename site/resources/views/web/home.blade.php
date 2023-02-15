@@ -1,15 +1,31 @@
 @extends('layout.web')
 @section('title', __('home.home'))
+@section('keywords', __('home.keywords'))
+@section('description', __('home.description'))
 @section('navBarStyle', 'dark')
 @section('head')
 @endsection
 @section('content')
+@php
+$words = [
+ __('home.protegiendo'),
+ __('home.transportando'),
+ __('home.atendiendo'),
+ __('home.recibiendo'),
+ __('home.trasladando'),
+ __('home.moviendo'),
+ __('home.cuidando')
+]
+@endphp
 <section class="wrapper bg-dark">
   <div class="swiper-container swiper-thumbs-container swiper-fullscreen nav-dark swiper-container-0" data-margin="0" data-autoplay="true" data-autoplaytime="7000" data-nav="true" data-dots="false" data-items="1" data-thumbs="true">
   	<div class="swiper-main">
   		<div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
 	  		<div class="swiper-wrapper" style="cursor: grab; transform: translate3d(-4320px, 0px, 0px); transition-duration: 500ms;" id="swiper-wrapper-5ee3a3a79ef941d4" aria-live="off">
-	  			<div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/slide2.jpg" style="background-image: url(&quot;./assets/img/photos/slide2.jpg&quot;); width: 1440px;" role="group" aria-label="1 / 4"></div>
+	  			
+				  <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/slide5.jpg" style="background-image: url(&quot;./assets/img/photos/slide5.jpg&quot;); width: 1440px;" role="group" aria-label="1 / 4"></div>
+				  <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/slide2.jpg" style="background-image: url(&quot;./assets/img/photos/slide2.jpg&quot;); width: 1440px;" role="group" aria-label="1 / 4"></div>
+				  
 	  		</div>
 	  		<!--/.swiper-wrapper -->
 	      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
@@ -28,10 +44,10 @@
     <div class="swiper-static">
       <div class="container h-100 d-flex align-items-center justify-content-center">
         <div class="row">
-          <div class="col-lg-12 mx-auto mt-n20 text-center">
-            <h1 class="fs-19 text-uppercase ls-xl text-white mb-3 animate__animated animate__zoomIn animate__delay-1s d-none d-md-block">{{ __('home.title1') }} <br/> {{ __('home.title1-1') }} </h1>
-            <h2 class="display-1 fs-60 text-white mb-0 animate__animated animate__zoomIn animate__delay-2s">{{ __('home.home-h1') }}</h2>
-            <a href="{{route(App::getLocale().'.contact')}}" class="btn btn-sm btn-primary rounded-pill">{{ __('home.need') }}</a>
+          <div class="col-lg-12 mx-auto  text-center">
+            <h1 class="fs-19 text-uppercase ls-xl text-white mb-3 animate__animated animate__zoomIn animate__delay-1s d-none d-md-block">{{ __('home.title1') }}  </h1>
+            <h2 class="display-2 fs-60_rm text-white mb-0 animate__animated animate__zoomIn animate__delay-2s">{!! __('home.home-h1', ['words' => json_encode($words)]) !!}</h2>
+            <a href="{{route(App::getLocale().'.contact')}}" class="btn btn-sm btn-primary rounded-pill mt-12">{!! __('home.need') !!}</a>
           </div>
           <!-- /column -->
         </div>
@@ -43,11 +59,11 @@
 </section>
 	<!-- /section -->
 	<section class="wrapper bg-light">
-	  <div class="container py-14 py-md-6">
+	  <div class="container py-6 py-md-6">
 	    <div class="row">
 	      <div class="col-lg-12 col-xl-10 col-xxl-7 mx-auto text-center">
 		  <img src="./assets/img/icons/lineal/stars.svg" class="svg-inject icon-svg icon-svg-sm text-primary text-leaf fs-30 opacity-25" alt="" />
-	        <h2 class="display-5 text-center mt-2 mb-10">{{ __('home.welcome') }}</h2>
+	        <h2 class="display-5 text-center mt-2 mb-10">{!! __('home.welcome') !!}</h2>
 	      </div>
 	      <!--/column -->
 	    </div>
@@ -56,13 +72,13 @@
 	      <div class="col-sm-8 col-md-6 col-lg-4 mx-auto">
 	        <div class="card shadow-lg">
 	          <figure class="card-img-top overlay overlay-1">
-	            <a href="#"><img class="img-fluid" src="./assets/img/photos/fs1.jpg" srcset="./assets/img/photos/fs1.jpg" alt="" /></a>
+	            <a href="{{ route(App::getLocale().'.services') }}"><img class="img-fluid" src="./assets/img/photos/fs1.jpg" srcset="./assets/img/photos/fs1.jpg" alt="" /></a>
 	            <figcaption>
 	              <h5 class="from-top mb-0">{{ __('home.view') }}</h5>
 	            </figcaption>
 	          </figure>
 	          <div class="card-body p-6">
-	            <h3 class="fs-21 mb-0">Airport Concierge</h3>
+	            <h3 class="fs-21 mb-0">{{ __('home.concierge') }}</h3>
 	          </div>
 	          <!--/.card-body -->
 	        </div>
@@ -72,7 +88,7 @@
 	      <div class="col-sm-8 col-md-6 col-lg-4 mx-auto">
 	        <div class="card shadow-lg">
 	          <figure class="card-img-top overlay overlay-1">
-	            <a href="#"><img class="img-fluid" src="./assets/img/photos/fs2.jpg" srcset="./assets/img/photos/fs2.jpg" alt="" /></a>
+	            <a href="{{ route(App::getLocale().'.services') }}"><img class="img-fluid" src="./assets/img/photos/fs2.jpg" srcset="./assets/img/photos/fs2.jpg" alt="" /></a>
 	            <figcaption>
 	              <h5 class="from-top mb-0">{{ __('home.view') }}</h5>
 	            </figcaption>
@@ -88,7 +104,7 @@
 	      <div class="col-sm-8 col-md-6 col-lg-4 mx-auto">
 	        <div class="card shadow-lg">
 	          <figure class="card-img-top overlay overlay-1">
-	            <a href="#"><img class="img-fluid" src="./assets/img/photos/fs3.jpg" srcset="./assets/img/photos/fs3.jpg" alt="" /></a>
+	            <a href="{{ route(App::getLocale().'.services') }}"><img class="img-fluid" src="./assets/img/photos/fs3.jpg" srcset="./assets/img/photos/fs3.jpg" alt="" /></a>
 	            <figcaption>
 	              <h5 class="from-top mb-0">{{ __('home.view') }}</h5>
 	            </figcaption>
@@ -125,7 +141,7 @@
 	            <div class="swiper-slide">
 	              <article>
 	                <div class="card shadow-lg">
-	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/fleet-sedan-mercedes-s-class.jpeg" srcset="./assets/img/photos/fleet-sedan-mercedes-s-class.jpeg" alt="" /></a>
+	                  <figure class="card-img-top overlay overlay-1"><a href="{{ route(App::getLocale().'.fleet') }}"> <img src="./assets/img/photos/fleet-sedan-mercedes-s-class.jpeg" srcset="./assets/img/photos/fleet-sedan-mercedes-s-class.jpeg" alt="" /></a>
 	                    <figcaption>
 	                      <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
 	                    </figcaption>
@@ -159,7 +175,7 @@
 	            <div class="swiper-slide">
 	              <article>
 	                <div class="card shadow-lg">
-	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/fleet-sedan-mercedes-e-class-compressor.jpeg" srcset="./assets/img/photos/fleet-sedan-mercedes-e-class-compressor.jpeg" alt="" /></a>
+	                  <figure class="card-img-top overlay overlay-1"><a href="{{ route(App::getLocale().'.fleet') }}"> <img src="./assets/img/photos/fleet-sedan-mercedes-e-class-compressor.jpeg" srcset="./assets/img/photos/fleet-sedan-mercedes-e-class-compressor.jpeg" alt="" /></a>
 	                    <figcaption>
 	                      <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
 	                    </figcaption>
@@ -193,7 +209,7 @@
 	            <div class="swiper-slide">
 	              <article>
 	                <div class="card shadow-lg">
-	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/fleet-sedan-mercedes-c-class-compressor.jpeg" srcset="./assets/img/photos/fleet-sedan-mercedes-c-class-compressor.jpeg" alt="" /></a>
+	                  <figure class="card-img-top overlay overlay-1"><a href="{{ route(App::getLocale().'.fleet') }}"> <img src="./assets/img/photos/fleet-sedan-mercedes-c-class-compressor.jpeg" srcset="./assets/img/photos/fleet-sedan-mercedes-c-class-compressor.jpeg" alt="" /></a>
 	                    <figcaption>
 	                      <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
 	                    </figcaption>
@@ -227,7 +243,7 @@
 	            <div class="swiper-slide">
 	              <article>
 	                <div class="card shadow-lg">
-	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/fleet-sedan-bmw-compressor.jpeg" srcset="./assets/img/photos/fleet-sedan-bmw-compressor.jpeg" alt="" /></a>
+	                  <figure class="card-img-top overlay overlay-1"><a href="{{ route(App::getLocale().'.fleet') }}"> <img src="./assets/img/photos/fleet-sedan-bmw-compressor.jpeg" srcset="./assets/img/photos/fleet-sedan-bmw-compressor.jpeg" alt="" /></a>
 	                    <figcaption>
 	                      <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
 	                    </figcaption>
@@ -261,7 +277,7 @@
 	            <div class="swiper-slide">
 	              <article>
 	                <div class="card shadow-lg">
-	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/fleet-sedan-jaguar-compressor.jpeg" srcset="./assets/img/photos/fleet-sedan-jaguar-compressor.jpeg" alt="" /></a>
+	                  <figure class="card-img-top overlay overlay-1"><a href="{{ route(App::getLocale().'.fleet') }}"> <img src="./assets/img/photos/fleet-sedan-jaguar-compressor.jpeg" srcset="./assets/img/photos/fleet-sedan-jaguar-compressor.jpeg" alt="" /></a>
 	                    <figcaption>
 	                      <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
 	                    </figcaption>
@@ -295,7 +311,7 @@
 	            <div class="swiper-slide">
 	              <article>
 	                <div class="card shadow-lg">
-	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/fleet-sedan-acura-compressor-1.jpeg" srcset="./assets/img/photos/fleet-sedan-acura-compressor-1.jpeg" alt="" /></a>
+	                  <figure class="card-img-top overlay overlay-1"><a href="{{ route(App::getLocale().'.fleet') }}"> <img src="./assets/img/photos/fleet-sedan-acura-compressor-1.jpeg" srcset="./assets/img/photos/fleet-sedan-acura-compressor-1.jpeg" alt="" /></a>
 	                    <figcaption>
 	                      <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
 	                    </figcaption>
@@ -330,7 +346,7 @@
 <div class="swiper-slide">
 	              <article>
 	                <div class="card shadow-lg">
-	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/fleet-suv-viano-compressor-1.jpeg" srcset="./assets/img/photos/fleet-suv-viano-compressor-1.jpeg" alt="" /></a>
+	                  <figure class="card-img-top overlay overlay-1"><a href="{{ route(App::getLocale().'.fleet') }}"> <img src="./assets/img/photos/fleet-suv-viano-compressor-1.jpeg" srcset="./assets/img/photos/fleet-suv-viano-compressor-1.jpeg" alt="" /></a>
 	                    <figcaption>
 	                      <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
 	                    </figcaption>
@@ -366,7 +382,7 @@
 <div class="swiper-slide">
 	              <article>
 	                <div class="card shadow-lg">
-	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/fleet-suv-suburban-compressor-1.jpeg" srcset="./assets/img/photos/fleet-suv-suburban-compressor-1.jpeg" alt="" /></a>
+	                  <figure class="card-img-top overlay overlay-1"><a href="{{ route(App::getLocale().'.fleet') }}"> <img src="./assets/img/photos/fleet-suv-suburban-compressor-1.jpeg" srcset="./assets/img/photos/fleet-suv-suburban-compressor-1.jpeg" alt="" /></a>
 	                    <figcaption>
 	                      <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
 	                    </figcaption>
@@ -411,7 +427,7 @@
 	                  <div class="card-body p-6">
 	                    <div class="post-header">
 	                      <div class="post-category">
-	                        <a href="#" class="hover" rel="category">SUV</a>
+	                        <a href="{{ route(App::getLocale().'.fleet') }}" class="hover" rel="category">SUV</a>
 	                      </div>
 	                      <!-- /.post-category -->
 	                      <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">Escalade
@@ -440,7 +456,7 @@
 <div class="swiper-slide">
 	              <article>
 	                <div class="card shadow-lg">
-	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/fleet-minicoach-sprinter-compressor.jpeg" srcset="./assets/img/photos/fleet-minicoach-sprinter-compressor.jpeg" alt="" /></a>
+	                  <figure class="card-img-top overlay overlay-1"><a href="{{ route(App::getLocale().'.fleet') }}"> <img src="./assets/img/photos/fleet-minicoach-sprinter-compressor.jpeg" srcset="./assets/img/photos/fleet-minicoach-sprinter-compressor.jpeg" alt="" /></a>
 	                    <figcaption>
 	                      <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
 	                    </figcaption>
@@ -476,7 +492,7 @@
 				<div class="swiper-slide">
 	              <article>
 	                <div class="card shadow-lg">
-	                  <figure class="card-img-top overlay overlay-1"><a href="#"> <img src="./assets/img/photos/fleet-coach-irizarpb-compressor-1.jpeg" srcset="./assets/img/photos/fleet-coach-irizarpb-compressor-1.jpeg" alt="" /></a>
+	                  <figure class="card-img-top overlay overlay-1"><a href="{{ route(App::getLocale().'.fleet') }}"> <img src="./assets/img/photos/fleet-coach-irizarpb-compressor-1.jpeg" srcset="./assets/img/photos/fleet-coach-irizarpb-compressor-1.jpeg" alt="" /></a>
 	                    <figcaption>
 	                      <h5 class="from-top mb-0">{{ __('home.info') }}</h5>
 	                    </figcaption>
@@ -1437,4 +1453,5 @@
 	
 @endsection
 @section('scripts')
+
 @endsection

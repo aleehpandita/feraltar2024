@@ -6,7 +6,7 @@ var theme = {
    * Some components have dependencies (plugins).
    * Do not forget to remove dependency from src/js/vendor/ and recompile.
    */
-  init: function () {
+  init: function (jQuery) {
     theme.stickyHeader();
     theme.subMenu();
     theme.offCanvas();
@@ -32,6 +32,7 @@ var theme = {
     theme.bsModal();
     theme.iTooltip();
     theme.forms();
+    theme.wordsChange(jQuery);
     theme.passVisibility();
     theme.pricingSwitcher();
     theme.textRotator();
@@ -800,6 +801,56 @@ var theme = {
             }
           }, false);
         });
+      }, false);
+    })();
+  },
+  wordsChange: () => {
+    (function() {
+      "use strict";
+      window.addEventListener("load", function() {
+        var spans = [... document.querySelectorAll('[data-words]')]
+        var cont = 0
+        spans.forEach((e) => {
+          e.addEventListener('word-change', function (ev) {
+            
+            var words = JSON.parse(this.dataset.words)
+            this.textContent = words[this.dataset.i]
+            this.classList.add('animate__animated', 'animate__fadeInDown')
+            //this.animate()
+            this.dataset.i = parseInt(this.dataset.i) + 1
+            if (this.dataset.i == words.length) {
+              this.dataset.i = 0
+            }
+          })
+          setInterval((words) => {
+            e.dispatchEvent(new Event('word-change'));
+            e.addEventListener('animationend', () => {
+              // do something
+              e.classList.remove('animate__fadeInDown', 'animate__animated')
+            });
+          }, 3000, e)
+        })
+        /*$("[data-words]").attr("data-words", function(i, d){
+          var $self  = $(this),
+              //$words = d.split("|"),
+              $words = JSON.parse(d),
+              tot    = $words.length,
+              c      = 0; 
+          console.log('$words', $words)
+          // CREATE SPANS INSIDE SPAN
+          for(var i=0; i<tot; i++) $self.append($('<span/>',{text:$words[i]}));
+
+          // COLLECT WORDS AND HIDE
+          $words = $self.find("span").hide();
+
+          // ANIMATE AND LOOP
+          (function loop(){
+            $self.animate({ width: $words.eq( c ).width() });
+            $words.stop().fadeOut().eq(c).fadeIn().delay(1000).show(0, loop);
+            c = ++c % tot;
+          }());
+          
+        });*/
       }, false);
     })();
   },
