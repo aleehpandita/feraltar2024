@@ -153,8 +153,8 @@ if (App::getLocale() == 'en') {
         <div class="container flex-lg-row flex-nowrap align-items-center">
           <div class="navbar-brand w-100">
             <a href="{{route(App::getLocale().'.home')}}">
-              <img width="164" class="logo-dark"  src="{{ asset('/assets/img/logo-dark.png') }}" srcset="./assets/img/logo-dark.png 2x" alt="" />
-              <img width="164" class="logo-light" src="{{ asset('/assets/img/logo-light.png') }}" srcset="./assets/img/logo-light.png 2x" alt="" />
+              <img width="164" class="logo-dark"  src="{{ asset('/assets/img/logo-dark.png') }}" srcset="{{ asset('assets/img/logo-dark.png') }} 2x" alt="" />
+              <img width="164" class="logo-light" src="{{ asset('/assets/img/logo-light.png') }}" srcset="{{ asset('assets/img/logo-light.png') }} 2x" alt="" />
             </a>
           </div>
           <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
@@ -762,7 +762,7 @@ if (App::getLocale() == 'en') {
       <div class="row gy-6 gy-lg-0">
         <div class="col-lg-3">
           <div class="widget">
-            <img class="mb-4" width="164" src="./assets/img/logo-light.png" srcset="./assets/img/logo-light@2x.png 2x" alt="" />
+            <img class="mb-4" width="164" src="{{ asset('assets/img/logo-light.png') }}" srcset="{{ asset('assets/img/logo-light@2x.png') }} 2x" alt="" />
             <p class="mb-4">© 2023 {{config('app.name')}}. All rights reserved.</p>
             <nav class="nav social social-white">
               @if (!empty($SITE_CONFIGURATION->twitter))
