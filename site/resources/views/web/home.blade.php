@@ -1398,7 +1398,7 @@ $words = [
 	      </div>
 	      <!-- /column -->
 	      <div class="col-lg-4 text-justify">
-	        <h3>Why Choose Me?</h3>
+	        <h3>{{ __('home.whyy') }}</h3>
 	        <p class="text-justify">{{ __('home.business') }}</p>
 	        <ul class="icon-list bullet-bg bullet-soft-primary">
 			  <li><i class="uil uil-check"></i>{{ __('home.hon') }}</li>

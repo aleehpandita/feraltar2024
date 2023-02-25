@@ -1,5 +1,7 @@
 @extends('layout.web')
-@section('title', __('home.home'))
+@section('title', __('about.title'))
+@section('keywords', __('about.keywords'))
+@section('description', __('about.description'))
 @section('navBarStyle', 'dark')
 @section('head')
 @endsection

@@ -28,6 +28,7 @@ return [
 	'luxc'=>'Luxury cars',
 	'allr'=>'All risk Insurance included',
 	'bbd'=>'Bilingual driver',
-	
-
+	'title'=>'Book Transfer VIP Service - Reserve in GoDandi&Sons.',
+	'description'=>'Executive ground transportation that brings high-profile individuals to their destination.',
+	'keywords'=>'Executive Ground Transportation, Premium Transportation, VIP Transfers'
 ];
