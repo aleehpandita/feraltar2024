@@ -1,17 +1,17 @@
 <?php
 
 return [
-    'h1'=>'Flota',
+    'h1'=>'Flota - Vehiculos de Lujo',
     'title'=>'Flota - Vehículos de lujo',
-    'keywords'=>'',
-    'description'=>'',
+    'keywords'=>'Flota de Vehiculos de Lujo ',
+    'description'=>'Flota de Vehiculos de Lujo, Traslados en vehiculos de lujo, mercedes benz, chevrolet suburban, Escalade',
     'fleet'=>'Ofrecemos una experiencia personal de vehículos de lujo como ningún otro, prestando especial atención a cada detalle menor cuando se trata de elegir a nuestros choferes exclusivos, proporcionando para la comodidad de nuestros clientes, y el mantenimiento de nuestra flota de transporte de lujo.',
     'f1'=>'Filtro',
     'f2'=>'El Chevrolet Suburban ofrece una amplitud fuera de lo común, un rendimiento imponente y una ingeniosa tecnología de seguridad.',
     'f3'=>'Flota',
     'f4'=>'Flota',
     'all'=>'Todos',
-    'case'=>'maletín mediano',
+    'case'=>'maleta',
     'up'=>' Hasta',
     'pax'=>'pasajeros',
     'safe'=>'Servicio de seguridad',

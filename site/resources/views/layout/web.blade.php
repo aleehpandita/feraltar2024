@@ -174,7 +174,7 @@ $restDestinations = \App\Models\Destination::where('country', null)->where('lang
                 <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.about') }}">{{ __('layout.About') }}</a></li>
                 <li class="nav-item d-md-none"><a class="nav-link" href="{{route(App::getLocale().'.contact')}}#drop-us-line" class="btn btn-sm btn-primary rounded-pill">Contact</a></li>
                 <li class="nav-item dropdown dropdown-mega">
-                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Destination</a>
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">{{ __('layout.desti') }}</a>
                   <ul class="dropdown-menu mega-menu">
                     <li class="mega-menu-content">
                       <div class="row gx-0 gx-lg-3">
@@ -197,7 +197,7 @@ $restDestinations = \App\Models\Destination::where('country', null)->where('lang
                         </div>
                         <!--/column -->
                         <div class="col-lg-8">
-                          <h6 class="dropdown-header">Rest of the World</h6>
+                          <h6 class="dropdown-header">{{ __('layout.rest') }}</h6>
                           <ul class="list-unstyled cc-3">
                             <?php foreach ($restDestinations as $key => $d): ?>
                               <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/{{$d->slug}}">{{$d->name}}</a></li>

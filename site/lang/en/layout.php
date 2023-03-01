@@ -9,5 +9,6 @@ return [
 	'ut'=> '',
 	'need'=>'Need Help?',
 	'get'=>'Get in Touch',
-	'desti'=>'Destinations'
+	'desti'=>'Destinations',
+	'rest'=>'Rest of the world'
 ];

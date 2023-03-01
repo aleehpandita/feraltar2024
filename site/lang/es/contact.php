@@ -2,6 +2,41 @@
 
 return [
 
-    'home' => 'Inicio',
-
+    'get-in-touch'=>'Ponte en contacto',
+	'Home'=>'Inicio',
+	'Contact'=>'Póngase en contacto con',
+	'Address'=>'Dirección',
+	'Phone'=>'Teléfono',
+	'Drop-Us-a-Line'=>"¿No encuentra el coche perfecto?",
+	'Reach-out'=>'Póngase en contacto con nosotros a través de nuestro formulario de contacto y le responderemos en breve.',
+	'First Name'=>'Nombre',
+	'Enter First Name'=>'Por favor, introduzca su nombre.',
+	'Looks good'=>'Se ve bien!',
+	'Last Name'=>'Last Name',
+	'Enter Last Name'=>'Please enter your last name.',
+	'Enter valid email'=>'Please provide a valid email address.',
+	'Message'=>'Message',
+	'Enter message'=>'Please enter your messsage.',
+	'fields required'=>'These fields are required.',
+	'Send message'=>'Send message',
+	'Phone'=>'Phone',
+	'email'=>'Email',
+	'messageOk'=>'Hemos recibido sus datos, tan pronto como sea posible uno de nuestros agentes lo contactara.',
+	'messageOk'=>'Hemos recibido su información, nos pondremos en contacto con usted lo antes posible.',
+	'Pickup'=>'Recogida',
+	'Pickup Date'=>'Fecha de recogida',
+	'Dropoff'=>'Dejar',
+	'Dropoff Date'=>'Fecha de entrega',
+	'Destination'=>'Destino',
+	'Please wait'=>'Espere, por favor',
+	'Passengers'=>'Pasajeros',
+	'Arrival Flight'=>'Vuelo de llegada',
+	'Departure Flight'=>'Vuelo de salida',
+	'roundtrip'=>'Redondo',
+	'oneway'=>'Sencillo',
+	'service'=>'Servicio',
+	'message'=>'Mensaje',
+	'Passengers'=>'pasajeros',
+	'contacttext'=>'Godandi&Sons está abierto las veinticuatro horas del día, los siete días de la semana, y nuestro equipo de oficina ejecutiva está siempre a su disposición para atender sus llamadas y ofrecerle soluciones a cualquier problema o duda que pueda tener.
+	Contacte con uno, reserve uno.'
 ];

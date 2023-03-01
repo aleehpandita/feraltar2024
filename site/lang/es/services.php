@@ -50,6 +50,6 @@ return [
     'we2'=>'Seleccionamos a todos nuestros chóferes e investigamos sus conocimientos. Entendemos la importancia de la seguridad de los pasajeros y sus objetos, por lo que hemos desarrollado un entorno de confidencialidad para todos nuestros chóferes. Son como una luna que viaja con usted con su comportamiento tranquilizador y continuo pero manteniendo una distancia.',
     'we1'=>"Con nuestras décadas de experiencia y conocimientos, sabemos lo que se necesita para que sus vacaciones familiares sean únicas y memorables con transporte privado. Ofrecemos un servicio de traslado personalizado y nos aseguraremos de que su viaje se adapte a las necesidades individuales de su familia.",
     'title'=>'Servicios de Transportación de Lujo | Traslados VIP ',
-    'keywords'=>'Transporte de Lujo desde / hacia Aeropuerto, Traslados Privados, Transportacion Premium, VIP',
+    'keywords'=>'Transporte de Lujo desde / hacia Aeropuerto, Traslados Privados, Transportacion Premium, VIP, Vehiculo con chofer, Transporte Privado',
     'description'=>'Transporte de Lujo desde y hacia el aeropuerto, Reserve el traslado al aeropuerto más fiable y seguro. Traslados oficiales de lujo al aeropuerto'
 ];

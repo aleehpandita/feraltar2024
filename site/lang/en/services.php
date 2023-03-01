@@ -50,8 +50,6 @@ return [
     'we2'=>'We select all of our chauffeurs and vet them for knowledge. We understand the importance of safety and security regarding passengers and their items, which is why we have developed a non-disclosure environment for all our chauffeurs. They are like a moon traveling with you with its soothing and continuous behavior but keeping a distance.',
     'we1'=>"With our decades of experience and knowledge, we know what is needed to make your family vacation unique and memorable with private transportation. We provide personalized rental service and will ensure that your trip is catered to your family's individual needs.",
     'title'=>'Luxury Transportation to/from Airport | Private Transfers',
-    'keywords'=>'Luxury Transportation to/from Airport, Private Transfers, Premium Transportation, VIP',
-    'description'=>'Luxury Transportation to and from the airport, Book the most reliable and secure airport transfer. Official luxury airport transfers'.
-
-
+    'keywords'=>'Luxury Transportation to/from Airport, Private Transfers, Premium Transportation, VIP, Private Transportation',
+    'description'=>'Luxury Transportation to and from the airport, Book the most reliable and secure airport transfer. Official luxury airport transfers'
 ];
