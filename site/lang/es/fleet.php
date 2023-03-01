@@ -1,11 +1,30 @@
 <?php
 
 return [
-    'h1'=>'Fleet',
-    'fleet'=>'We provide a personal luxury vehicle experience unlike any other by paying close attention to every minor detail when it comes to choosing our exclusive chauffeurs, providing for the comfort of our clients, and maintaining our fleet of luxury transportation.',
-    'f1'=>'Filter',
-    'f2'=>'Fleet',
-    'f3'=>'Fleet',
-    'f4'=>'Fleet',
-    'all'=>'All'
+    'h1'=>'Flota',
+    'title'=>'Flota - Vehículos de lujo',
+    'keywords'=>'',
+    'description'=>'',
+    'fleet'=>'Ofrecemos una experiencia personal de vehículos de lujo como ningún otro, prestando especial atención a cada detalle menor cuando se trata de elegir a nuestros choferes exclusivos, proporcionando para la comodidad de nuestros clientes, y el mantenimiento de nuestra flota de transporte de lujo.',
+    'f1'=>'Filtro',
+    'f2'=>'El Chevrolet Suburban ofrece una amplitud fuera de lo común, un rendimiento imponente y una ingeniosa tecnología de seguridad.',
+    'f3'=>'Flota',
+    'f4'=>'Flota',
+    'all'=>'Todos',
+    'case'=>'maletín mediano',
+    'up'=>' Hasta',
+    'pax'=>'pasajeros',
+    'safe'=>'Servicio de seguridad',
+    'lux'=>'SUV de lujo',
+    'v1'=>'Los valores interiores del Viano están a la altura de lo que promete la primera impresión exterior.',
+    'es1'=>'El Cadillac Escalade es una combinación perfecta de sofisticación, funcionalidad y tecnología.',
+    'm1'=>'La Clase S de Mercedes-Benz, antes conocida como Sonderklasse (clase especial en alemán), se reconoce al instante por su diseño icónico: fuerte, potente, majestuoso y elegante.',
+    'll1'=>'Vehículo de lujo',
+    'm2'=>'Sutilmente refinado y exquisitamente elaborado, el habitáculo de la Clase E está diseñado para acoger cómodamente a chófer y pasajeros.',
+    'm3'=>'Generoso en espacio y seguridad, pero ágil y eficiente.',
+    'bmw'=>'El BMW Serie 7 muestra el diseño típico de BMW en su forma más elegante gracias a numerosas innovaciones, el confort de referencia y el diseño contemporáneo, así como una dinámica impresionante y altamente eficiente, proporciones dinámicas, líneas precisas y superficies esculpidas.',
+    'jaguar'=>'TEl Jaguar XJ es un lugar en el que los materiales de primera calidad se combinan con elegancia en un diseño que ofrece un confort puro y envolvente.',
+    'acura'=>'El TL "Touring Luxury" es una berlina de tamaño medio con un estilo atractivo, unos detalles impecables y cuidados, una tecnología útil y unos acabados magníficos.',
+    'sprinter'=>'La furgoneta de pasajeros Mercedes-Benz Sprinter ofrece un transporte con un estilo, seguridad e innovación inigualables.',
+    'scania'=>'El revolucionario estilo y las prestaciones del Irizar PB han trascendido al mercado como indicativo de un autocar de lujo.'
 ];

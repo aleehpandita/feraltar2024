@@ -1,13 +1,13 @@
 <?php
 return [
-	'Home'=> 'Home',
-	'call-us'=> 'Call us',
-	'Services'=> 'Services',
-	'Fleet'=> 'Fleet',
-	'Reservations'=> 'Reservations',
-	'About'=> 'About',
+	'Home'=> 'Inicio',
+	'call-us'=> 'Contáctanos',
+	'Services'=> 'Servicios',
+	'Fleet'=> 'Flotilla',
+	'Reservations'=> 'Reservaciones',
+	'About'=> 'Nosotros',
 	'ut'=> '',
-	'need'=>'Need Help?',
-	'get'=>'Get in Touch',
-	'desti'=>'Destinations'
+	'need'=>'¿Ayuda?',
+	'get'=>'Ponte en contacto',
+	'desti'=>'Destinos'
 ];

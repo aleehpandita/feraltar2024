@@ -48,7 +48,10 @@ return [
     'cc6'=>'Whether for an airport transfer, business meeting, shopping trip, or to take in the sights and sounds of your beautiful city, our chauffeurs are available at your convenience to offer a service tailored to meet your needs.',
     'mee2'=>'Meetings & Incentives',
     'we2'=>'We select all of our chauffeurs and vet them for knowledge. We understand the importance of safety and security regarding passengers and their items, which is why we have developed a non-disclosure environment for all our chauffeurs. They are like a moon traveling with you with its soothing and continuous behavior but keeping a distance.',
-    'we1'=>"With our decades of experience and knowledge, we know what is needed to make your family vacation unique and memorable with private transportation. We provide personalized rental service and will ensure that your trip is catered to your family's individual needs."
+    'we1'=>"With our decades of experience and knowledge, we know what is needed to make your family vacation unique and memorable with private transportation. We provide personalized rental service and will ensure that your trip is catered to your family's individual needs.",
+    'title'=>'Luxury Transportation to/from Airport | Private Transfers',
+    'keywords'=>'Luxury Transportation to/from Airport, Private Transfers, Premium Transportation, VIP',
+    'description'=>'Luxury Transportation to and from the airport, Book the most reliable and secure airport transfer. Official luxury airport transfers'.
 
 
 ];
