@@ -287,7 +287,7 @@
             <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center mt-10 ">
               <div class="col-md-8 col-lg-6 col-xl-5 position-relative">
                 <div class="shape bg-soft-primary rounded-circle rellax w-20 h-20" data-rellax-speed="1" style="top: -2rem; right: -1.7rem;"></div>
-                <figure class="rounded"><img src="../../assets/img/photos/arme.jpg" srcset="../../assets/img/photos/arme.jpg" alt=""></figure>
+                <figure class="rounded"><img src="../../assets/img/photos/arme.jpg" srcset="../../assets/img/photos/arme.jpg" alt="{{ __('services.armealt') }}"></figure>
               </div>
               <!--/column -->
               <div class="col-lg-6">
@@ -318,7 +318,7 @@
             <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
               <div class="col-md-8 col-lg-6 col-xl-5 order-lg-2 position-relative">
                 <div class="shape bg-soft-primary rounded-circle rellax w-20 h-20" data-rellax-speed="1" style="top: -2rem; right: -1.7rem;"></div>
-                <figure class="rounded"><img src="../../assets/img/photos/cc1.jpg" srcset="../../assets/img/photos/cc1.jpg" alt=""></figure>
+                <figure class="rounded"><img src="../../assets/img/photos/cc1.jpg"  srcset="../../assets/img/photos/cc1.jpg" alt="{{ __('services.cc1alt') }}"</figure>
               </div>
               <!--/column -->
               <div class="col-lg-6">
@@ -337,7 +337,7 @@
             <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center mt-10">
               <div class="col-md-8 col-lg-6 col-xl-5 position-relative">
                 <div class="shape bg-soft-primary rounded-circle rellax w-20 h-20" data-rellax-speed="1" style="top: -2rem; right: -1.7rem;"></div>
-                <figure class="rounded"><img src="../../assets/img/photos/a51.jpg" srcset="../../assets/img/photos/a51.jpg 2x" alt=""></figure>
+                <figure class="rounded"><img src="../../assets/img/photos/a51.jpg" srcset="../../assets/img/photos/a51.jpg 2x" alt="{{ __('services.a51alt') }}"></figure>
               </div>
               <!--/column -->
               <div class="col-lg-6">
@@ -354,7 +354,7 @@
             <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
               <div class="col-md-8 col-lg-6 col-xl-5 order-lg-2 position-relative">
                 <div class="shape bg-soft-primary rounded-circle rellax w-20 h-20" data-rellax-speed="1" style="top: -2rem; right: -1.7rem;"></div>
-                <figure class="rounded"><img src="../../assets/img/photos/meet.jpg" srcset="../../assets/img/photos/meet.jpg" alt=""></figure>
+                <figure class="rounded"><img src="../../assets/img/photos/meet.jpg" alt="{{ __('services.meetalt') }}" srcset="../../assets/img/photos/meet.jpg" alt=""></figure>
               </div>
               <!--/column -->
               <div class="col-lg-6">
@@ -371,7 +371,7 @@
             <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center mt-10">
               <div class="col-md-8 col-lg-6 col-xl-5 position-relative">
                 <div class="shape bg-soft-primary rounded-circle rellax w-20 h-20" data-rellax-speed="1" style="top: -2rem; right: -1.9rem;"></div>
-                <figure class="rounded"><img src="../../assets/img/photos/pp.jpg" srcset="../../assets/img/photos/pp.jpg" alt=""></figure>
+                <figure class="rounded"><img alt='{{ __("services.ppalt") }}' src="../../assets/img/photos/pp.jpg" srcset="../../assets/img/photos/pp.jpg" alt=""></figure>
               </div>
               <!--/column -->
               <div class="col-lg-6">

@@ -2,7 +2,7 @@
 
 return [
     'whyy'=>'Why Choose Me?',
-    'home' => 'Luxury Private Transportation - Premium Private, Safe and Worry-free Transfers',
+    'home' => 'Luxury Private Transportation - Premium Private Transfers',
     'title1'=> 'We specialize in luxury transportation',
     'title1-1'=>'An outstanding private transfer service',
     'home-h1'=>'THE ONLY & ONE TRANSPORTATION SERVICES YOU DESERVE',

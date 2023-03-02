@@ -51,5 +51,10 @@ return [
     'we1'=>"Con nuestras décadas de experiencia y conocimientos, sabemos lo que se necesita para que sus vacaciones familiares sean únicas y memorables con transporte privado. Ofrecemos un servicio de traslado personalizado y nos aseguraremos de que su viaje se adapte a las necesidades individuales de su familia.",
     'title'=>'Servicios de Transportación de Lujo | Traslados VIP ',
     'keywords'=>'Transporte de Lujo desde / hacia Aeropuerto, Traslados Privados, Transportacion Premium, VIP, Vehiculo con chofer, Transporte Privado',
-    'description'=>'Transporte de Lujo desde y hacia el aeropuerto, Reserve el traslado al aeropuerto más fiable y seguro. Traslados oficiales de lujo al aeropuerto'
+    'description'=>'Transporte de Lujo desde y hacia el aeropuerto, Reserve el traslado al aeropuerto más fiable y seguro. Traslados oficiales de lujo al aeropuerto',
+    'ppalt'=>'Cliente siendo transportado por un vehiculo de lujo',
+    'meetalt'=>'empresaria llegando en su transportacion privada y de lujo',
+    'a51alt'=>'Un chófer a su disposición para ofrecerle un servicio adaptado a sus necesidades',
+    'cc1alt'=>'Empresario llegando de su servicio privado con GoDandiAndSons',
+    'armealt'=>'Chofer esperando a su cliente para trasladarlo en una camioneta de lujo'
 ];

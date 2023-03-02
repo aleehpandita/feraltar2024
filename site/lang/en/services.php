@@ -51,5 +51,10 @@ return [
     'we1'=>"With our decades of experience and knowledge, we know what is needed to make your family vacation unique and memorable with private transportation. We provide personalized rental service and will ensure that your trip is catered to your family's individual needs.",
     'title'=>'Luxury Transportation to/from Airport | Private Transfers',
     'keywords'=>'Luxury Transportation to/from Airport, Private Transfers, Premium Transportation, VIP, Private Transportation',
-    'description'=>'Luxury Transportation to and from the airport, Book the most reliable and secure airport transfer. Official luxury airport transfers'
+    'description'=>'Luxury Transportation to and from the airport, Book the most reliable and secure airport transfer. Official luxury airport transfers',
+    'ppalt'=>'Customer being transported by a luxury vehicle',
+    'meetalt'=>'businesswoman arriving in her private and luxury transportation',
+    'a51alt'=>'An chauffeur available at your convenience to offer a service tailored to meet your needs',
+    'cc1alt'=>'Entrepreneur arriving from his private service with GoDandiAndSons',
+    'armealt'=>'Chauffeur waiting for his client to be transported in a luxury vehicle'
 ];
