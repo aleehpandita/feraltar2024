@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'whyy'=>'¿Por que nosotros?',
-    'home' => 'Inicio',
+    'whyy'=>'¿Por qué nosotros?',
+    'home' => 'Transporte Privado de Lujo - Traslados Privados - Llegar a cualquier Destino',
     'title1'=> 'QUIEN VIAJA A MÉXICO Y LATINOAMÉRICA ESTÁ MÁS SEGURO SI NOSOTROS LO TRANSPORTAMOS',
     'title1-1'=>'Un excelente servicio de traslados privados',
-    'home-h1'=>'Somos excelentes <span class="text-primary animate__animated" data-i="0" data-words=\':words\'>cuidando</span> viajeros muy importantes',
+    'home-h1'=>'Somos excelentes <span class="text-primary animate__animated text-shadow" data-i="0" data-words=\':words\'>cuidando</span> viajeros muy importantes',
     'need'=>'¿NECESITAS TRANSPORTACIÓN?',
     'wehave'=>'Disponemos de conductores profesionales y coches exclusivos para que tenga un traslado VIP con un servicio de alta calidad.',
     'concierge'=>'CONSERJE DEL AEROPUERTO',
@@ -61,6 +61,7 @@ return [
     'recibiendo' => 'recibiendo',
     'trasladando' => 'trasladando',
     'moviendo' => 'moviendo',
+    'cuidando'=>'cuidando',
     'keywords'=>'Transporte de Lujo desde / hacia Aeropuerto, Traslados Privados, Transportacion Premium, VIP',
     'description'=>'Transporte de Lujo desde y hacia el aeropuerto, Reserve el traslado al aeropuerto más fiable y seguro. Traslados oficiales de lujo al aeropuerto'
 ];

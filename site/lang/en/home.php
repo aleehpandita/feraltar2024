@@ -7,7 +7,7 @@ return [
     'title1-1'=>'An outstanding private transfer service',
     'home-h1'=>'THE ONLY & ONE TRANSPORTATION SERVICES YOU DESERVE',
     'title1'=> 'THOSE TRAVELING TO MEXICO AND LATIN AMERICA ARE SAFER IF WE TRANSPORT THEM.',
-    'home-h1'=>'We are excellent <span class="text-primary animate__animated" data-i="0" data-words=\':words\'>caring</span> for important travelers',
+    'home-h1'=>'We are excellent <span class="text-primary animate__animated text-shadow" data-i="0" data-words=\':words\'>caring</span> for important travelers',
     'need'=>'<b>NEED A RIDE?</b>',
     'wehave'=>'We have professional drivers and exclusive cars for you to have a VIP transfer with a high quality service.',
     'concierge'=>'AIRPORT CONCIERGE',

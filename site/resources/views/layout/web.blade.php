@@ -841,6 +841,17 @@ $restDestinations = \App\Models\Destination::where('country', null)->where('lang
       }
     }())
   </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Corporation",
+      "name": "GoDandiAndSons",
+      "alternateName": "Luxury Transportation | Transportación de Lujo",
+      "url": "https://www.godandiandsons.com",
+      "logo": "https://www.godandiandsons.com/assets/img/logo-light.png",
+      "sameAs": "https://www.facebook.com/GodandiWorldwide/"
+    }
+</script>
   @yield('scripts')
 </body>
 
