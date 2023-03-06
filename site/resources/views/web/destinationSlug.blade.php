@@ -18,7 +18,7 @@
                     {{$destination->name}}
                     </h2>
                     <p class="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">{{ __('destinations.let') }} <b>{{ $destination->name }} </b> {{ __('destinations.unfo') }}.</p>
-                    <div class="animate__animated animate__slideInUp animate__delay-3s"><a href="#" class="btn btn-primary btn-lg btn-outline-white rounded-pill">{{ __('home.need') }}</a></div>
+                    <div class="animate__animated animate__slideInUp animate__delay-3s"><a href="#" class="btn btn-primary btn-lg btn-outline-white rounded-pill">{!! __('home.need') !!}</a></div>
                   </div>
                   <!--/column -->
                 </div>
