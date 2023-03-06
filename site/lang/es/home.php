@@ -30,7 +30,7 @@ return [
     'tradi'=>'TRADICIÓN',
     'view'=>'Ver detalles',
     'business'=>'Su empresa se merece una empresa de chóferes profesionales que le ayuden a transportar a sus empleados y clientes de forma segura, puntual, confidencial y con gran estilo.',
-    'wewill'=>'Le recibiremos en el aeropuerto en uno de nuestros coches con chófer u organizaremos una salida elegante desde cualquiera de estos destinos: CDMX, Monterrey, Guadalajara, Los Cabos, Puerta Vallarta, Las Vegas, Nueva York, Cancún, Miami, Los Ángeles, Hawai, Buenos Aires, Bogotá, Medellín, Santiago de Chile, Liberia Costa Rica, San José Costa Rica, Punta del Este Uruguay, Río de Janeiro, Atlanta, Lima Perú, Cusco, Orlando, Japón, Panamá, Puerto Rico, España, Francia, Guatemala, San Salvador, Montevideo, Tijuana, Dallas y San Miguel Allende.',
+    'wewill'=>'Le recibiremos en el aeropuerto en uno de nuestros coches con chófer u organizaremos una salida elegante desde cualquiera de estos destinos: Ciudad de México, Monterrey, Guadalajara, Los Cabos, Puerto Vallarta, Las Vegas, New York, Cancún, Miami, Los Ángeles, Hawaii, Buenos Aires, Bogotá, Medellín, Santiago de Chile, Liberia Costa Rica, San José Costa Rica, Punta del Este Uruguay, Rio de Janeiro, Atlanta, Lima Perú, Cusco, Orlando, Japón, Panamá, Puerto Rico, España, Francia, Guatemala, San Salvador, Montevideo, Tijuana, Dallas y San Miguel de Allende.',
     'hello'=>'Desde entonces, Godandi se ha convertido en el proveedor de servicios de referencia para clientes de todo el mundo, con una fuerte presencia en México y Latinoamérica.',
     'sec'=>'Seguridad',
     'pun'=>'Puntualidad',

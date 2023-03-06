@@ -56,5 +56,10 @@ return [
     'meetalt'=>'businesswoman arriving in her private and luxury transportation',
     'a51alt'=>'An chauffeur available at your convenience to offer a service tailored to meet your needs',
     'cc1alt'=>'Entrepreneur arriving from his private service with GoDandiAndSons',
-    'armealt'=>'Chauffeur waiting for his client to be transported in a luxury vehicle'
+    'armealt'=>'Chauffeur waiting for his client to be transported in a luxury vehicle',
+    'convoyalt'=>'row of luxury vehicles transporting successful customers',
+    'vehialt'=>'Businessman arriving at his destination in an Escalade van',
+    'secalt'=>'one of our executive security personnel is well-built and presentable waiting for you',
+    'luxuryalt'=>'luxury vehicle that is meticulously maintained and in impeccable condition receiving our client',
+    'about1alt'=>'luxury suburban in impeccable condition receiving our succesfull client'
 ];

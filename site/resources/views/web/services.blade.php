@@ -57,7 +57,7 @@
             <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center ">
               <div class="col-md-8 col-lg-6 col-xl-5 order-lg-2 position-relative">
                 <div class="shape bg-soft-primary rounded-circle rellax w-20 h-20" data-rellax-speed="1" style="top: -2rem; right: -1.7rem;"></div>
-                <figure class="rounded"><img src="../../assets/img/photos/about7.jpg" srcset="../../assets/img/photos/about7.jpg" alt=""></figure>
+                <figure class="rounded"><img src="../../assets/img/photos/about7.jpg" srcset="../../assets/img/photos/about7.jpg" alt="{{ __('services.about1alt') }}"></figure>
               </div>
               <!--/column -->
               <div class="col-lg-6">
@@ -68,7 +68,7 @@
                   <div class="col-md-6">
                     <div class="d-flex flex-row">
                       <div>
-                        <img src="../../assets/img/icons/lineal/target.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="" />
+                        <img src="../../assets/img/icons/lineal/target.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="icon" />
                       </div>
                       <div>
                         <p class="mb-0">{{ __('services.p3') }}</p>
@@ -79,7 +79,7 @@
                   <div class="col-md-6">
                     <div class="d-flex flex-row">
                       <div>
-                        <img src="../../assets/img/icons/lineal/award-2.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="" />
+                        <img src="../../assets/img/icons/lineal/award-2.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="icon" />
                       </div>
                       <div>
                         <p class="mb-0">{{ __('services.p4') }}</p>
@@ -97,7 +97,7 @@
             <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center mt-10 ">
               <div class="col-md-8 col-lg-6 col-xl-5 position-relative">
                 <div class="shape bg-soft-primary rounded-circle rellax w-20 h-20" data-rellax-speed="1" style="top: -2rem; right: -1.7rem;"></div>
-                <figure class="rounded"><img src="../../assets/img/photos/about7-1.jpg" srcset="../../assets/img/photos/about7-1.jpg" alt=""></figure>
+                <figure class="rounded"><img src="../../assets/img/photos/about7-1.jpg" srcset="../../assets/img/photos/about7-1.jpg" alt="{{ __('services.about1alt') }}"></figure>
               </div>
               <!--/column -->
               <div class="col-lg-6">
@@ -108,7 +108,7 @@
                   <div class="col-md-6">
                     <div class="d-flex flex-row">
                       <div>
-                        <img src="../../assets/img/icons/lineal/target.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="" />
+                        <img src="../../assets/img/icons/lineal/target.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="icon" />
                       </div>
                       <div>
                         <h4 class="mb-1">{{ __('services.t2') }}</h4>
@@ -119,7 +119,7 @@
                   <div class="col-md-6 order-lg-2">
                     <div class="d-flex flex-row">
                       <div>
-                        <img src="../../assets/img/icons/lineal/award-2.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="" />
+                        <img src="../../assets/img/icons/lineal/award-2.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="icon" />
                       </div>
                       <div>
                         <h4 class="mb-1">{{ __('services.t3') }}</h4>
@@ -137,7 +137,7 @@
             <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center ">
               <div class="col-md-8 col-lg-6 col-xl-5 order-lg-2 position-relative">
                 <div class="shape bg-soft-primary rounded-circle rellax w-20 h-20" data-rellax-speed="1" style="top: -2rem; right: -1.7rem;"></div>
-                <figure class="rounded"><img src="../../assets/img/photos/luxury.jpg" srcset="../../assets/img/photos/luxury.jpg 2x" alt=""></figure>
+                <figure class="rounded"><img src="../../assets/img/photos/luxury.jpg" srcset="../../assets/img/photos/luxury.jpg 2x" alt="{{ __('services.luxuryalt') }}"></figure>
               </div>
               <!--/column -->
               <div class="col-lg-6">
@@ -148,7 +148,7 @@
                   <div class="col-md-6">
                     <div class="d-flex flex-row">
                       <div>
-                        <img src="../../assets/img/icons/lineal/target.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="" />
+                        <img src="../../assets/img/icons/lineal/target.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="icon" />
                       </div>
                       <div>
                         <p class="mb-0">{{ __('services.l3') }}</p>
@@ -159,7 +159,7 @@
                   <div class="col-md-6">
                     <div class="d-flex flex-row">
                       <div>
-                        <img src="../../assets/img/icons/lineal/award-2.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="" />
+                        <img src="../../assets/img/icons/lineal/award-2.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="icon" />
                       </div>
                       <div>
                         <p class="mb-0">{{ __('services.l4') }}</p>
@@ -192,7 +192,7 @@
             <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
               <div class="col-md-8 col-lg-6 col-xl-5 order-lg-2 position-relative">
                 <div class="shape bg-soft-primary rounded-circle rellax w-20 h-20" data-rellax-speed="1" style="top: -2rem; right: -1.7rem;"></div>
-                <figure class="rounded"><img src="../../assets/img/photos/sec.jpg" srcset="../../assets/img/photos/sec.jpg" alt=""></figure>
+                <figure class="rounded"><img src="../../assets/img/photos/sec.jpg" srcset="../../assets/img/photos/sec.jpg" alt="{{ __('services.secalt') }}"></figure>
               </div>
               <!--/column -->
               <div class="col-lg-6">
@@ -202,7 +202,7 @@
                   <div class="col-md-6">
                     <div class="d-flex flex-row">
                       <div>
-                        <img src="../../assets/img/icons/lineal/target.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="" />
+                        <img src="../../assets/img/icons/lineal/target.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="icon" />
                       </div>
                       <div>
                         <p class="mb-0">{{ __('services.ourex') }}</p>
@@ -213,7 +213,7 @@
                   <div class="col-md-6">
                     <div class="d-flex flex-row">
                       <div>
-                        <img src="../../assets/img/icons/lineal/award-2.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="" />
+                        <img src="../../assets/img/icons/lineal/award-2.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="icon" />
                       </div>
                       <div>
                         <p class="mb-0">{{ __('services.weoffer') }}</p>
@@ -231,7 +231,7 @@
             <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center mt-10">
               <div class="col-md-8 col-lg-6 col-xl-5 position-relative">
                 <div class="shape bg-soft-primary rounded-circle rellax w-20 h-20" data-rellax-speed="1" style="top: -2rem; right: -1.7rem;"></div>
-                <figure class="rounded"><img src="../../assets/img/photos/vehi.jpg" srcset="../../assets/img/photos/vehi.jpg" alt=""></figure>
+                <figure class="rounded"><img src="../../assets/img/photos/vehi.jpg" srcset="../../assets/img/photos/vehi.jpg" alt="{{ __('services.vehialt') }}"></figure>
               </div>
               <!--/column -->
               <div class="col-lg-6">
@@ -241,7 +241,7 @@
                   <div class="col-md-6">
                     <div class="d-flex flex-row">
                       <div>
-                        <img src="../../assets/img/icons/lineal/target.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="" />
+                        <img src="../../assets/img/icons/lineal/target.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="icon" />
                       </div>
                       <div>
                         <p class="mb-0">{{ __('services.ourfl') }}</p>
@@ -252,7 +252,7 @@
                   <div class="col-md-6 order-lg-2">
                     <div class="d-flex flex-row">
                       <div>
-                        <img src="../../assets/img/icons/lineal/award-2.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="" />
+                        <img src="../../assets/img/icons/lineal/award-2.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="icon" />
                       </div>
                       <div>
                         <p class="mb-0">{{ __('services.god') }}</p>
@@ -270,7 +270,7 @@
             <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
               <div class="col-md-8 col-lg-6 col-xl-5 order-lg-2 position-relative">
                 <div class="shape bg-soft-primary rounded-circle rellax w-20 h-20" data-rellax-speed="1" style="top: -2rem; right: -1.7rem;"></div>
-                <figure class="rounded"><img src="../../assets/img/photos/convoy.jpg" srcset="../../assets/img/photos/convoy.jpg" alt=""></figure>
+                <figure class="rounded"><img src="../../assets/img/photos/convoy.jpg" srcset="../../assets/img/photos/convoy.jpg" alt="{{ __('services.convoyalt') }}"></figure>
               </div>
               <!--/column -->
               <div class="col-lg-6">

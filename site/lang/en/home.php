@@ -32,7 +32,7 @@ return [
     'tradi'=>'TRADITION',
     'view'=>'View Details',
     'business'=>'Your business deserves a professional chauffeur company to help transport your employees and clients safely, punctually, confidentially and in great style.',
-    'wewill'=>'We will meet and greet you at the airport in one of our chauffeur-driven cars or arrange a stylish departure from any one of these destinations: CDMX, Monterrey, Guadalajara, Los Cabos, Puerta Vallarta, Las Vegas, New York, Cancún, Miami, Los Angeles, Hawai, Buenos Aires, Bogota, Medellin, Santiago de Chile, Liberia Costa Rica, San José Costa Rica, Punta del Este Uruguay, Rio de Janeiro, Atlanta, Lima Perú, Cusco, Orlando, Japón, Panama, Puerto Rico, España, Francia, Guatemala, San Salvador, Montevideo, Tijuana, Dallas y San Miguel Allende.',
+    'wewill'=>'We will meet and greet you at the airport in one of our chauffeur-driven cars or arrange a stylish departure from any one of these destinations: Ciudad de México, Monterrey, Guadalajara, Los Cabos, Puerto Vallarta, Las Vegas, New York, Cancún, Miami, Los Ángeles, Hawaii, Buenos Aires, Bogotá, Medellín, Santiago de Chile, Liberia Costa Rica, San José Costa Rica, Punta del Este Uruguay, Rio de Janeiro, Atlanta, Lima Perú, Cusco, Orlando, Japón, Panamá, Puerto Rico, España, Francia, Guatemala, San Salvador, Montevideo, Tijuana, Dallas y San Miguel de Allende.',
     'hello'=>'Godandi has since become the go-to service provider for clients from around the globe, featuring a strong presence in Mexico and Latin America.',
     'sec'=>'Security',
     'pun'=>'Punctuality',

@@ -56,5 +56,10 @@ return [
     'meetalt'=>'empresaria llegando en su transportacion privada y de lujo',
     'a51alt'=>'Un chófer a su disposición para ofrecerle un servicio adaptado a sus necesidades',
     'cc1alt'=>'Empresario llegando de su servicio privado con GoDandiAndSons',
-    'armealt'=>'Chofer esperando a su cliente para trasladarlo en una camioneta de lujo'
+    'armealt'=>'Chofer esperando a su cliente para trasladarlo en una camioneta de lujo',
+    'convoyalt'=>'fila de vehiculos de lujo transportando clientes exitosos',
+    'vehialt'=>'Empresario llegando a su destino en una camioneta Escalade',
+    'secalt'=>'uno de nuestros ejecutivos de seguridad le espera bien vestido y presentable',
+    'luxuryalt'=>'vehículo de lujo meticulosamente mantenido y en estado impecable que recibe nuestro cliente',
+    'about1alt'=>'suburban de lujo en impecable estado recibiendo a nuestro exitoso cliente'
 ];

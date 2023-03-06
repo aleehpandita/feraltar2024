@@ -72,7 +72,7 @@ $words = [
 	      <div class="col-sm-8 col-md-6 col-lg-4 mx-auto">
 	        <div class="card shadow-lg">
 	          <figure class="card-img-top overlay overlay-1">
-	            <a href="{{ route(App::getLocale().'.services') }}"><img class="img-fluid" src="./assets/img/photos/fs1.jpg" srcset="./assets/img/photos/fs1.jpg" alt="" /></a>
+	            <a href="{{ route(App::getLocale().'.services') }}"><img class="img-fluid" src="./assets/img/photos/fs1.jpg" alt="{{ __('home.fs1alt') }}" srcset="./assets/img/photos/fs1.jpg" alt="" /></a>
 	            <figcaption>
 	              <h5 class="from-top mb-0">{{ __('home.view') }}</h5>
 	            </figcaption>
@@ -88,7 +88,7 @@ $words = [
 	      <div class="col-sm-8 col-md-6 col-lg-4 mx-auto">
 	        <div class="card shadow-lg">
 	          <figure class="card-img-top overlay overlay-1">
-	            <a href="{{ route(App::getLocale().'.services') }}"><img class="img-fluid" src="./assets/img/photos/fs2.jpg" srcset="./assets/img/photos/fs2.jpg" alt="" /></a>
+	            <a href="{{ route(App::getLocale().'.services') }}"><img class="img-fluid" alt="{{ __('home.fs2alt') }}" src="./assets/img/photos/fs2.jpg" srcset="./assets/img/photos/fs2.jpg" alt="" /></a>
 	            <figcaption>
 	              <h5 class="from-top mb-0">{{ __('home.view') }}</h5>
 	            </figcaption>
@@ -104,7 +104,7 @@ $words = [
 	      <div class="col-sm-8 col-md-6 col-lg-4 mx-auto">
 	        <div class="card shadow-lg">
 	          <figure class="card-img-top overlay overlay-1">
-	            <a href="{{ route(App::getLocale().'.services') }}"><img class="img-fluid" src="./assets/img/photos/fs3.jpg" srcset="./assets/img/photos/fs3.jpg" alt="" /></a>
+	            <a href="{{ route(App::getLocale().'.services') }}"><img class="img-fluid" alt="{{ __('home.fs1alt') }}" src="./assets/img/photos/fs3.jpg" srcset="./assets/img/photos/fs3.jpg" alt="" /></a>
 	            <figcaption>
 	              <h5 class="from-top mb-0">{{ __('home.view') }}</h5>
 	            </figcaption>
@@ -791,7 +791,7 @@ $words = [
 	                  </figcaption>
 	                </figure>
 	                <div class="card-body p-6">
-	                  <h3 class="fs-21 mb-1">Republica Dominicana</h3>
+	                  <h3 class="fs-21 mb-1">República Dominicana</h3>
 	                  <ul class="post-meta fs-16 mb-0">
 					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
 	                  </ul>
@@ -851,7 +851,7 @@ $words = [
 	                  </figcaption>
 	                </figure>
 	                <div class="card-body p-6">
-	                  <h3 class="fs-21 mb-1">Los Angeles</h3>
+	                  <h3 class="fs-21 mb-1">Los Ángeles</h3>
 	                  <ul class="post-meta fs-16 mb-0">
 					  <li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
 	                  </ul>

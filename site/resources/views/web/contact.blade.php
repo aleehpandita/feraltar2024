@@ -479,7 +479,7 @@
      data: {
        src: [
          'CD Mexico', 'Monterrey', 'Guadalajara', 'Los cabos', 'Cancun', 'Vallarta',
-         'Republica  Dominicana', 'Santo Domingo', 'Punta Cana',
+         'República  Dominicana', 'Santo Domingo', 'Punta Cana',
          'Buenos aires',
          'Sao paulo ',
          'Río de Janeiro',
@@ -497,7 +497,7 @@
          'Miami',
          'Orlando ',
          'New York',
-         'Los Angeles',
+         'Los Ángeles',
          'San Francisco',
          'Atlanta',
          'Hawai',
