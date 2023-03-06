@@ -735,7 +735,20 @@ $restDestinations = \App\Models\Destination::where('country', null)->where('lang
     </header>
     <!-- /header -->
     @yield('content')
-    
+    <div  class="float-contact">
+      <div class="position-relative">
+        
+        <div id="float-btns" class="float-contact-btns animate__animated ">
+          <a id="close-float" href="#" class="bg-transparent m-0 p-0"><i class="uil uil-times-circle text-danger"></i></a>
+          <a class="shadow-lg" href="https://api.whatsapp.com/send?phone={{$SITE_CONFIGURATION->whatsapp}}"><i class="uil uil-whatsapp"></i></a>
+          <a class="shadow-lg" href="tel:{{$SITE_CONFIGURATION->usa_canada_toll_free}}"><i class="uil uil-phone"></i></a>
+          <a class="shadow-lg" href="{{route(App::getLocale().'.contact')}}#drop-us-line"><i class="uil uil-envelope"></i></a>
+        </div>
+      </div>
+      <div id="float-contact-btn" class="float-contact-btn">
+        <img src="{{asset('assets/img/icons/lineal/telephone-3.svg')}}" class="svg-inject icon-svg icon-svg-sm text-yellow" alt="" />
+      </div>
+    </div>
   </div>
   <!-- /.content-wrapper -->
   <footer class="bg-dark text-inverse">
@@ -816,6 +829,57 @@ $restDestinations = \App\Models\Destination::where('country', null)->where('lang
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
     </svg>
   </div>
+  <style>
+    .float-contact{
+      position: fixed;
+      right: 4.5rem;
+      bottom: 1.5rem;
+      z-index: 10000;
+      width: 300px;
+      display: flex;
+      align-items: center;
+    }
+    .float-contact a {
+      padding: 5px;
+      border-radius: 30px;
+      background-color: #e2c15c;
+      color: #fff;
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+      width: 40px;
+      text-align: center;
+    }
+    .float-contact-btn{
+    /*      position: fixed;*/
+      right: 4.5rem;
+      bottom: 1.5rem;
+      width: 2.3rem;
+      height: 2.3rem;
+      background-color: white;
+      border-radius: 1.15rem;
+      padding: 2px;
+      border: 2px solid #e2c15c;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+    }
+    .content-wrapper .float-contact-btn > svg{
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    .content-wrapper .float-contact-btns  svg{
+      width: .85rem;
+      height: .85rem;
+    }
+    .float-contact-btns{
+      visibility: hidden;
+      display: none;
+      align-items: center;
+    }
+  </style>
+  
   <script src="{{ asset('assets/js/plugins.js') }}"></script>
   <script src="{{ asset('assets/js/theme.js?v=1') }}"></script>
   <div id="loader" class="animate__animated animate__faster">
@@ -840,6 +904,30 @@ $restDestinations = \App\Models\Destination::where('country', null)->where('lang
         }
       }
     }())
+    var FloatContactBtn = (function () {
+      var loaderElement = document.getElementById('float-btns')
+      var eventFunction = function (e) {
+        loaderElement.classList.remove('visivility')
+      }
+      return {
+        open: function() {
+          loaderElement.classList.remove('animate__fadeOutRight')
+          loaderElement.classList.add('visivility', 'animate__fadeInRightBig')
+        },
+        close: function() {
+          loaderElement.addEventListener('animationend', eventFunction, {once : true});
+          loaderElement.classList.add('animate__fadeOutRight')
+        },
+      }
+    }())
+    var floatBtn = document.getElementById('float-contact-btn')
+    floatBtn.addEventListener('click', function (e) {
+      FloatContactBtn.open();
+    })
+    var cls = document.getElementById('close-float')
+    cls.addEventListener('click', function (e) {
+      FloatContactBtn.close();
+    })
   </script>
   <script type="application/ld+json">
     {
