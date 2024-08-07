@@ -12,4 +12,4 @@ All the information regarding file structure, build tools, components, credits, 
 - npm start
 
 ### Support
-If you have any questions that are beyond the scope of the help documentation, feel free to contact us with the links mentioned in the documentation.
+If you have any questions that are beyond the scope of the help documentation, feel free to contact us with the links mentioned in the documentation.# feraltar2024
