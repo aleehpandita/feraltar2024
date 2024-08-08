@@ -25,9 +25,9 @@ __('home.cuidando')
 					<div class="container h-100">
 						<div class="row h-100">
 							<div class="col-md-10 offset-md-1 col-lg-7 offset-lg-0 col-xl-6 col-xxl-5 text-center text-lg-start justify-content-center align-self-center align-items-start">
-								<h2 class="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">{!! __('home.best') !!}</h2>
-								<p class="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">We are a creative company that focuses on long term relationships with customers.</p>
-								<div class="animate__animated animate__slideInUp animate__delay-3s"><a href="#" class="btn btn-lg btn-outline-white rounded-pill">{!! __('home.book') !!}</a></div>
+								<h1 class="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">{!! __('home.best') !!}</h1>
+								<h2 class="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">{!! __('home.home-h2') !!}</h2>
+								<div class="animate__animated animate__slideInUp animate__delay-3s"><a href="#" class="btn btn-lg btn-primary rounded-pill">{!! __('home.book') !!}</a></div>
 							</div>
 							<!--/column -->
 						</div>
@@ -141,7 +141,7 @@ __('home.cuidando')
 	<!-- /.container -->
 </section>
 <!-- /section -->
-<section class="wrapper image-wrapper bg-image bg-overlay text-white" data-image-src="./assets/img/photos/gs23_01.jpg">
+<section class="wrapper image-wrapper bg-image bg-overlay text-white" data-image-src="./assets/img/photos/driver-cancun-airport.webp">
 	<div class="container py-14 py-md-17 text-center">
 		<img src="./assets/img/icons/solid/employees.svg" class="svg-inject icon-svg icon-svg-xs solid-mono text-white fs-30 opacity-50" alt="" />
 		<div class="row mt-3">
@@ -201,7 +201,7 @@ __('home.cuidando')
 		<div class="row">
 			<div class="col-xl-9 col-xxl-7 mx-auto text-center">
 				<img src="./assets/img/icons/solid/employees.svg" class="svg-inject icon-svg icon-svg-xs solid-mono text-leaf fs-30 " alt="" />
-				<h2 class="display-5 text-center mt-2 mb-10">{{ __('home.wehave') }}</h2>
+				<h2 class="display-5 text-center mt-2 mb-10">{!! __('home.wehave') !!}</h2>
 			</div>
 			<!--/column -->
 		</div>
@@ -557,7 +557,7 @@ __('home.cuidando')
 	<div class="container pt-6 pt-md-7 pb-14 pb-md-16">
 		<div class="row gx-md-8 gx-xl-12 gy-6 align-items-center">
 			<div class="col-md-8 col-lg-6 mx-auto">
-				<div class="img-mask mask-1"><img src="./assets/img/photos/about29.jpg" srcset="./assets/img/photos/about29.jpg 2x" alt="" /></div>
+				<!-- <div class="img-mask mask-1"><img src="./assets/img/photos/about29.jpg" srcset="./assets/img/photos/about29.jpg 2x" alt="" /></div> -->
 			</div>
 			<!--/column -->
 			<div class="col-lg-6">
