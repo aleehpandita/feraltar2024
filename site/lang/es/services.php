@@ -3,7 +3,7 @@
 return [
     'concierge'=>'TRASLADOS DEL AEROPUERTO',
     'luxury'=>'TRANSPORTE DE LUJO',
-    'security'=>'SERVICIOS DE SEGURIDAD',
+    'security'=>'GROUP TRANSPORTATION',
     'meet'=>'Conozca a conductores profesionales y súbase a coches de lujo exclusivos para transporte VIP. Llegue o salga del aeropuerto o de cualquiera de nuestros destinos disponibles con la mayor comodidad que pueda imaginar..',
     'all'=>'TODOS',
     'our'=>'Nuestros servicios',

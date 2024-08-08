@@ -15,8 +15,8 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
-
+    'name' => env('APP_NAME', 'Feraltar'),
+    'year' => env('APP_YEAR', date('Y')),
     /*
     |--------------------------------------------------------------------------
     | Application Environment

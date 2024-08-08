@@ -21,9 +21,9 @@ $restDestinations = \App\Models\Destination::where('country', null)->where('lang
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="@yield ('description',' Luxury Transportation, Airport Transfers, Private transportation, VIP Transfers')">
-  <meta name="keywords" content="@yield ('keywords',' Luxury Transportation, Airport Transfers, Private transportation, VIP Transfers')">
-  <meta name="author" content="david calva">
+  <meta name="description" content="@yield ('description',' Cancun Transportation, Airport Transfers, Private transportation, VIP Transfers')">
+  <meta name="keywords" content="@yield ('keywords',' Cancun Transportation, Airport Transfers, Private transportation, VIP Transfers')">
+  <meta name="author" content="alejandra altamirano">
   <title>@yield('title')</title>
   <link rel="shortcut icon" href="{{ asset('assets/img/favicon.png') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/plugins.css') }}">
@@ -172,7 +172,7 @@ $restDestinations = \App\Models\Destination::where('country', null)->where('lang
                 <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.fleet') }}">{{ __('layout.Fleet') }}</a></li>
                 <!-- <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('layout.Reservations') }}</a></li> -->
                 <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.about') }}">{{ __('layout.About') }}</a></li>
-                <li class="nav-item d-md-none"><a class="nav-link" href="{{route(App::getLocale().'.contact')}}#drop-us-line" class="btn btn-sm btn-primary rounded-pill">Contact</a></li>
+                <li class="nav-item d-md-none"><a class="nav-link" href="{{route(App::getLocale().'.contact')}}#drop-us-line" class="btn btn-sm btn-primary rounded-pill">{{ __('home.contactus') }}</a></li>
                 <li class="nav-item dropdown dropdown-mega">
                   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">{{ __('layout.desti') }}</a>
                   <ul class="dropdown-menu mega-menu">
@@ -654,7 +654,7 @@ $restDestinations = \App\Models\Destination::where('country', null)->where('lang
               <!-- <li class="nav-item offcanvas-body d-none  d-md-block "><a class="nav-link " href="{{route(App::getLocale().'.contact')}}"><small class="d-none d-lg-inline">Always at your service: </small><p>☎ 01-800-832-6889</p></a></li> -->
             
               <li class="nav-item d-none d-md-block">
-                <a href="{{route(App::getLocale().'.contact')}}#drop-us-line" class="btn btn-sm btn-primary rounded-pill">Contact</a>
+                <a href="{{route(App::getLocale().'.contact')}}#drop-us-line" class="btn btn-sm btn-primary rounded-pill">{{ __('home.contactus') }} !</a>
               </li>
               <!-- <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-search"><i class="uil uil-search"></i></a></li> -->
               <li class="nav-item d-lg-none">
@@ -756,21 +756,17 @@ $restDestinations = \App\Models\Destination::where('country', null)->where('lang
       <div class="row gy-6 gy-lg-0">
         <div class="col-lg-3">
           <div class="widget">
-            <img class="mb-4" width="164" src="{{ asset('assets/img/logo-light.png') }}" srcset="{{ asset('assets/img/logo-light@2x.png') }} 2x" alt="" />
-            <p class="mb-4">© 2023 {{config('app.name')}}. All rights reserved.</p>
+            <img class="mb-4" width="164" src="{{ asset('assets/img/logo-light.png') }}" srcset="{{ asset('assets/img/logo-light.png') }} 2x" alt="" />
+            <p class="mb-4">© {{config('app.year')}} {{config('app.name')}}. All rights reserved.</p>
             <nav class="nav social social-white">
-              @if (!empty($SITE_CONFIGURATION->twitter))
-                <a href="{{$SITE_CONFIGURATION->twitter}}"><i class="uil uil-twitter"></i></a>
-              @endif
+            
               @if (!empty($SITE_CONFIGURATION->facebook))
                 <a href="{{$SITE_CONFIGURATION->facebook}}"><i class="uil uil-facebook-f"></i></a>
               @endif
               @if (!empty($SITE_CONFIGURATION->instagram))
                 <a href="{{$SITE_CONFIGURATION->instagram}}"><i class="uil uil-instagram"></i></a>
               @endif
-              @if (!empty($SITE_CONFIGURATION->youtube))
-                <a href="{{$SITE_CONFIGURATION->youtube}}"><i class="uil uil-youtube"></i></a>
-              @endif
+              
             </nav>
             <!-- /.social -->
           </div>
@@ -842,7 +838,7 @@ $restDestinations = \App\Models\Destination::where('country', null)->where('lang
     .float-contact a {
       padding: 5px;
       border-radius: 30px;
-      background-color: #e2c15c;
+      background-color: #FF8118;
       color: #fff;
       margin-left: 0.25rem;
       margin-right: 0.25rem;
@@ -858,7 +854,7 @@ $restDestinations = \App\Models\Destination::where('country', null)->where('lang
       background-color: white;
       border-radius: 1.15rem;
       padding: 2px;
-      border: 2px solid #e2c15c;
+      border: 2px solid #FF8118;
       cursor: pointer;
       display: flex;
       align-items: center;
