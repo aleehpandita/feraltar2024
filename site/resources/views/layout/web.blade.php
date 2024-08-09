@@ -876,8 +876,8 @@ $restDestinations = \App\Models\Destination::where('country', null)->where('lang
     }
   </style>
   
-  <script src="{{ asset('assets/js/plugins.js') }}"></script>
-  <script src="{{ asset('assets/js/theme.js?v=1') }}"></script>
+  <script src="{{ asset('assets/js/plugins.js') }}" defer></script>
+  <script src="{{ asset('assets/js/theme.js?v=1') }}" defer></script>
   <div id="loader" class="animate__animated animate__faster">
     <div class="spinner-grow m-auto text-color1" role="status">
       <span class="visually-hidden">Loading...</span>
