@@ -201,7 +201,7 @@ __('home.cuidando')
 		<div class="row">
 			<div class="col-xl-9 col-xxl-7 mx-auto text-center">
 				<img src="./assets/img/icons/solid/employees.svg" class="svg-inject icon-svg icon-svg-xs solid-mono text-leaf fs-30 " alt="" />
-				<h2 class="display-5 text-center mt-2 mb-10">{!! __('home.wehave') !!}</h2>
+				<h4 class=" text-center mt-2 mb-10">{!! __('home.wehave') !!}</h4>
 			</div>
 			<!--/column -->
 		</div>
@@ -538,7 +538,7 @@ __('home.cuidando')
 	<!-- /.overflow-hidden -->
 </section>
 <!-- /section -->
-<section class="wrapper image-wrapper bg-image bg-overlay text-white" data-image-src="./assets/img/photos/bg33.jpg">
+<section class="wrapper image-wrapper bg-image bg-overlay text-white" data-image-src="./assets/img/photos/suburban.webp">
 	<div class="container py-14 py-md-17 text-center">
 		<div class="row">
 			<div class="col-xl-10 col-xxl-8 mx-auto text-center">
@@ -557,7 +557,7 @@ __('home.cuidando')
 	<div class="container pt-6 pt-md-7 pb-14 pb-md-16">
 		<div class="row gx-md-8 gx-xl-12 gy-6 align-items-center">
 			<div class="col-md-8 col-lg-6 mx-auto">
-				<!-- <div class="img-mask mask-1"><img src="./assets/img/photos/about29.jpg" srcset="./assets/img/photos/about29.jpg 2x" alt="" /></div> -->
+				<div class="img-mask mask-1"><img src="./assets/img/photos/feraltar-logo-cancun.webp" srcset="./assets/img/photos/feraltar-logo-cancun.webp 2x" alt="cancun transfers logo" /></div>
 			</div>
 			<!--/column -->
 			<div class="col-lg-6">
@@ -565,12 +565,12 @@ __('home.cuidando')
 				<p class="mb-6"></p>
 				<div class="row counter-wrapper gy-6">
 					<div class="col-md-6">
-						<h3 class="counter">500K+</h3>
+						<h3 class="counter">900K+</h3>
 						<p>{{ __('home.prov') }}</p>
 					</div>
 					<!--/column -->
 					<div class="col-md-6">
-						<h3 class="counter">500+</h3>
+						<h3 class="counter">1M</h3>
 						<p>{{ __('home.happy') }}</p>
 					</div>
 					<!--/column -->
@@ -588,7 +588,7 @@ __('home.cuidando')
 		<div class="row gx-md-8 gx-xl-12 gy-6 mt-2">
 			<div class="col-lg-4">
 				<!-- <h3>My Skills</h3> -->
-				<p>{{ __('home.wewill') }}</p>
+				<p class="text-justify">{{ __('home.wewill') }}</p>
 				<ul class="progress-list">
 					<li>
 						<p>{{ __('home.confi') }}</p>
@@ -628,13 +628,13 @@ __('home.cuidando')
 			</div>
 			<!-- /column -->
 			<div class="col-lg-4">
-				<h3>{{ __('home.process') }}</h3>
+				<h3>{{ __('home.process') }} - {{ __('home.how') }}</h3>
 				<div class="d-flex flex-row mb-5">
 					<div>
 						<span class="icon btn btn-circle btn-soft-primary pe-none mt-1 me-5"><span class="number fs-18">1</span></span>
 					</div>
 					<div>
-						<h5 class="mb-1">{{ __('home.how') }}</h5>
+						<h5 class="mb-1">{{ __('home.step1') }}</h5>
 						<p class="mb-0">{{ __('home.this') }}</p>
 					</div>
 				</div>
