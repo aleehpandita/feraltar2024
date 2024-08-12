@@ -2,6 +2,7 @@
 
 return [
     'video' => '989676515',
+    'slide2' => 'slide2es.webp',
     'whyy'=>'¿Por qué nosotros?',
     'home' => 'Traslados Aeropuerto Cancun y Riviera Maya  | Transportación Hotel',
     'best'=> 'Traslados Aeropuerto Cancun y Riviera Maya | Los Mejores Servicios de Transporte',

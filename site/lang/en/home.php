@@ -2,6 +2,7 @@
 
 return [
     'video' => '991744441',
+    'slide2' => 'slide2.webp',
     'whyy'=>'Why Choose Us?',
     'home' => 'Cancun & Riviera Maya Airport Transfers | Reliable Transportation Services',
     'best'=> 'Cancun & Riviera Maya Airport Transfers | Best Transportation Services',

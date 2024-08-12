@@ -36,7 +36,7 @@ __('home.cuidando')
 					<!--/.container -->
 				</div>
 				<!--/.swiper-slide -->
-				<div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/slide2.webp" style="background-image: url(&quot;./assets/img/photos/slide2.webp&quot;); width: 1440px;" role="group" aria-label="1 / 4">
+				<div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image" data-image-src="./assets/img/photos/{{ __('home.slide2') }}"" style="background-image: url(&quot;./assets/img/photos/{{ __('home.slide2') }}"&quot;); width: 1440px;" role="group" aria-label="1 / 4">
 					<div class="container h-100">
 						<div class="row h-100">
 							<div class="col-md-11 col-lg-8 col-xl-7 col-xxl-6 mx-auto text-center justify-content-center align-self-center">
