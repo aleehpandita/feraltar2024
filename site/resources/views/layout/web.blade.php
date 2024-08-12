@@ -178,7 +178,7 @@ $restDestinations = \App\Models\Destination::where('country', null)->where('lang
                   <ul class="dropdown-menu mega-menu">
                     <li class="mega-menu-content">
                       <div class="row gx-0 gx-lg-3">
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                           
                         <h6 class="dropdown-header">México</h6>
                           <ul class="list-unstyled cc-2 pb-lg-1">
@@ -188,22 +188,17 @@ $restDestinations = \App\Models\Destination::where('country', null)->where('lang
                             
                             
                           </ul>
-                          <h6 class="dropdown-header mt-lg-6">Riviera Maya</h6>
+                         
+                        </div>
+                        <!--/column -->
+                        <div class="col-lg-6">
+                        <h6 class="dropdown-header mt-lg-6">Riviera Maya</h6>
                           <ul class="list-unstyled cc-2">
                             <?php foreach ($usDestinations as $key => $d): ?>
                               <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/{{$d->slug}}">{{$d->name}}</a></li>
                             <?php endforeach ?>
                           </ul>
                         </div>
-                        <!--/column -->
-                        <!-- <div class="col-lg-8">
-                          <h6 class="dropdown-header">{{ __('layout.rest') }}</h6>
-                          <ul class="list-unstyled cc-3">
-                            <?php foreach ($restDestinations as $key => $d): ?>
-                              <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/{{$d->slug}}">{{$d->name}}</a></li>
-                            <?php endforeach ?>
-                          </ul>
-                        </div> -->
                         <!--/column -->
                       </div>
                       <!--/.row -->
@@ -783,22 +778,17 @@ $restDestinations = \App\Models\Destination::where('country', null)->where('lang
                   <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/{{$d->slug}}">{{$d->name}}</a></li>
                 <?php endforeach ?>
               </ul>
-              <h6 class="dropdown-header mt-lg-6">Rivera Maya</h6>
+             
+            </div>
+            <!--/column -->
+            <div class="col-md-6 col-lg-6">
+            <h6 class="dropdown-header mt-lg-6">Rivera Maya</h6>
               <ul class="list-unstyled cc-1">
                 <?php foreach ($usDestinations as $key => $d): ?>
                   <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/{{$d->slug}}">{{$d->name}}</a></li>
                 <?php endforeach ?>
               </ul>
             </div>
-            <!--/column -->
-            <!-- <div class="col-md-6 col-lg-8">
-              <h6 class="dropdown-header">Rest of the World</h6>
-              <ul class="list-unstyled cc-2">
-                <?php foreach ($restDestinations as $key => $d): ?>
-                  <li><a class="dropdown-item" href="{{ route(App::getLocale().'.destinations') }}/{{$d->slug}}">{{$d->name}}</a></li>
-                <?php endforeach ?>
-              </ul>
-            </div> -->
             <!--/column -->
           </div>
         </div>
