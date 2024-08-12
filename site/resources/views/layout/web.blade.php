@@ -771,7 +771,7 @@ $restDestinations = \App\Models\Destination::where('country', null)->where('lang
         <!-- /column -->
         <div class="col-md-12 col-lg-6">
           <div class="row gx-0 gx-lg-3">
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-6">
               <h6 class="dropdown-header">México</h6>
               <ul class="list-unstyled cc-1 pb-lg-1">
                 <?php foreach ($mxDestinations as $key => $d): ?>
