@@ -632,8 +632,6 @@
                <div>
                   <h5 class="mb-1">E-mail</h5>
                   <p class="mb-0"><a href="mailto:bookings@feraltar.com" class="link-body">bookings@feraltar.com</a></p>
-                  <p class="mb-0"><a href="mailto:reserve@godandiandsons.com" class="link-body"> reserve@godandiandsons.com</a></p>
-                  <p class="mb-0"><a href="mailto:info@godandi.globalm" class="link-body">info@godandi.global</a></p>
                </div>
             </div>
          </div>
