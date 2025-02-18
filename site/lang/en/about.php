@@ -24,11 +24,11 @@ return [
 	's2'=>'Service Follow-up',
 	'we1'=>'We will reach out to you for further assistance and follow up',
 	'wegive'=>'We give our best for all our customers.',
-	'wasborn'=>'Godandi was born in 1952 to create unique experiences of excellence, in what refers to integral services of Reception, logistics and executive ground transportation, in Mexico and the world.',
+	'wasborn'=>'',
 	'luxc'=>'Luxury cars',
 	'allr'=>'All risk Insurance included',
 	'bbd'=>'Bilingual driver',
-	'title'=>'Book Transfer VIP Service - Reserve in GoDandi&Sons.',
+	'title'=>'Book Transfer Private Service - Book now in Feraltae.',
 	'description'=>'Executive ground transportation that brings high-profile individuals to their destination.',
-	'keywords'=>'Executive Ground Transportation, Premium Transportation, VIP Transfers'
+	'keywords'=>'Cancun Ground Transportation, Cancun Airport Transportation, VIP Transfers'
 ];

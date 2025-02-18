@@ -592,7 +592,7 @@
                </div>
                <div>
                   <h5 class="mb-1">{{ __('about.address') }}</h5>
-                  <address>Moonshine St. 14/05 Light City, <br class="d-none d-md-block" />London, United Kingdom</address>
+                  <address>Cancun International Airport <br class="d-none d-md-block" />Cancún, México</address>
                </div>
             </div>
             <div class="d-flex flex-row">
@@ -601,9 +601,10 @@
                </div>
                <div>
                   <h5 class="mb-1">{{ __('about.phone') }}</h5>
-                  <p>+52 (55) 5654 0089</p>
-                  <p>+52 (55) 5740 1466</p>
-                  <p>+52 (55) 4754 5981</p>
+                  <p>+52 998 109 9789</p>
+                  <p>+52 998 898 49 77</p>
+                  <p>+52 998 898 49 79</p>
+                  
                </div>
             </div>
             <div class="d-flex flex-row">
@@ -611,8 +612,8 @@
                   <div class="icon text-primary fs-28 me-6 mt-n1"> <i class="uil uil-phone-volume"></i> </div>
                </div>
                <div>
-                  <h5 class="mb-1">NATIONAL CALL CENTER</h5>
-                  <p>01-800-832-6889</p>
+                  <h5 class="mb-1">MEXICO TOLL FREE</h5>
+                  <p>800 099 1746</p>
                </div>
             </div>
             <div class="d-flex flex-row">
@@ -621,7 +622,7 @@
                </div>
                <div>
                   <h5 class="mb-1">USA / CANADA TOLL FREE:</h5>
-                  <p>1-800-704-2942</p>
+                  <p>1-888-644-7803</p>
                </div>
             </div>
             <div class="d-flex flex-row">
@@ -630,7 +631,7 @@
                </div>
                <div>
                   <h5 class="mb-1">E-mail</h5>
-                  <p class="mb-0"><a href="mailto:info@godandiandsons.com" class="link-body">info@godandiandsons.com</a></p>
+                  <p class="mb-0"><a href="mailto:bookings@feraltar.com" class="link-body">bookings@feraltar.com</a></p>
                   <p class="mb-0"><a href="mailto:reserve@godandiandsons.com" class="link-body"> reserve@godandiandsons.com</a></p>
                   <p class="mb-0"><a href="mailto:info@godandi.globalm" class="link-body">info@godandi.global</a></p>
                </div>

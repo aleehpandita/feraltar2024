@@ -168,10 +168,10 @@ $restDestinations = \App\Models\Destination::where('country', null)->where('lang
             <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
               <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.home') }}">{{ __('layout.Home') }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.services') }}">{{ __('layout.Services') }}</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.services') }}">{{ __('layout.Services') }}</a></li> -->
                 <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.fleet') }}">{{ __('layout.Fleet') }}</a></li>
                 <!-- <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('layout.Reservations') }}</a></li> -->
-                <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.about') }}">{{ __('layout.About') }}</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="{{ route(App::getLocale().'.about') }}">{{ __('layout.About') }}</a></li> -->
                 <li class="nav-item d-md-none"><a class="nav-link" href="{{route(App::getLocale().'.contact')}}#drop-us-line" class="btn btn-sm btn-primary rounded-pill">{{ __('home.contactus') }}</a></li>
                 <li class="nav-item dropdown dropdown-mega">
                   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">{{ __('layout.desti') }}</a>

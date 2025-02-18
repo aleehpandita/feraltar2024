@@ -4,7 +4,7 @@
 @section('head')
 @endsection
 @section('content')
-  <section class="wrapper image-wrapper bg-image bg-overlay text-white " data-image-src="{{ asset('/img/a9.jpg') }}">
+  <section class="wrapper image-wrapper bg-image bg-overlay text-white " data-image-src="{{ asset('/img/sub_services.webp') }}">
     <div class="container pt-17 pb-12 pt-md-19 pb-md-16 text-center">
       <div class="row">
         <div class="col-md-8 col-lg-10 col-xl-8 mx-auto">
@@ -63,30 +63,19 @@
               <div class="col-lg-6">
                 <h3 class=" mb-3">{{ __('services.cha') }}</h3>
                 <p>{{ __('services.p1') }}</p>
-                <p class="mb-6">{{ __('services.p2') }}</p>
                 <div class="row gx-xl-10 gy-6">
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                     <div class="d-flex flex-row">
                       <div>
                         <img src="../../assets/img/icons/lineal/target.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="icon" />
                       </div>
                       <div>
-                        <p class="mb-0">{{ __('services.p3') }}</p>
+                      <h4 class="mb-1">{{ __('services.p2') }}</h4>
                       </div>
                     </div>
                   </div>
                   <!--/column -->
-                  <div class="col-md-6">
-                    <div class="d-flex flex-row">
-                      <div>
-                        <img src="../../assets/img/icons/lineal/award-2.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="icon" />
-                      </div>
-                      <div>
-                        <p class="mb-0">{{ __('services.p4') }}</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!--/column -->
+                 
                 </div>
                 <!--/.row -->
               </div>
@@ -105,7 +94,7 @@
                 <p class="lead fs-lg"></p>
                 <p class="mb-6">{{ __('services.t1') }}</p>
                 <div class="row gx-xl-10 gy-6">
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                     <div class="d-flex flex-row">
                       <div>
                         <img src="../../assets/img/icons/lineal/target.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="icon" />
@@ -115,63 +104,14 @@
                       </div>
                     </div>
                   </div>
-                  <!--/column -->
-                  <div class="col-md-6 order-lg-2">
-                    <div class="d-flex flex-row">
-                      <div>
-                        <img src="../../assets/img/icons/lineal/award-2.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="icon" />
-                      </div>
-                      <div>
-                        <h4 class="mb-1">{{ __('services.t3') }}</h4>
-                      </div>
-                    </div>
-                  </div>
-                  <!--/column -->
+                  
                 </div>
                 <!--/.row -->
               </div>
               <!--/column -->
             </div>
             <!--/.row -->
-            <hr class="my-8" />
-            <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center ">
-              <div class="col-md-8 col-lg-6 col-xl-5 order-lg-2 position-relative">
-                <div class="shape bg-soft-primary rounded-circle rellax w-20 h-20" data-rellax-speed="1" style="top: -2rem; right: -1.7rem;"></div>
-                <figure class="rounded"><img src="../../assets/img/photos/luxury.jpg" srcset="../../assets/img/photos/luxury.jpg 2x" alt="{{ __('services.luxuryalt') }}"></figure>
-              </div>
-              <!--/column -->
-              <div class="col-lg-6">
-                <h3 class=" mb-3">{{ __('services.lux') }}</h3>
-                <p class="">{{ __('services.l1') }}</p>
-                <p class="mb-6">{{ __('services.l2') }} </p>
-                <div class="row gx-xl-10 gy-6">
-                  <div class="col-md-6">
-                    <div class="d-flex flex-row">
-                      <div>
-                        <img src="../../assets/img/icons/lineal/target.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="icon" />
-                      </div>
-                      <div>
-                        <p class="mb-0">{{ __('services.l3') }}</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!--/column -->
-                  <div class="col-md-6">
-                    <div class="d-flex flex-row">
-                      <div>
-                        <img src="../../assets/img/icons/lineal/award-2.svg" class="svg-inject icon-svg icon-svg-sm me-4" alt="icon" />
-                      </div>
-                      <div>
-                        <p class="mb-0">{{ __('services.l4') }}</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!--/column -->
-                </div>
-                <!--/.row -->
-              </div>
-              <!--/column -->
-            </div>
+        
             <!--/.row -->
            
           </div>

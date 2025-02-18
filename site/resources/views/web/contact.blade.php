@@ -121,177 +121,7 @@
    <!-- /.container -->
 </section>
 <!-- /section -->
-<section class="wrapper bg-light angled upper-end">
-   <div class="container pb-11">
-      <div class="row pt-7 pt-md-8" id="drop-us-line">
-         <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-            <h2 class="display-4 mb-3 text-center">{{ __('contact.Drop-Us-a-Line') }}</h2>
-            <p class="lead text-center mb-10">{{ __('contact.Reach-out') }}</p>
-            <form id="form" class="contact-form needs-validation" method="post" action="{{route(App::getLocale().'.sendContact')}}" novalidate>
-               <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-               <div class="messages"></div>
-               <div class="row gx-4">
-                  <div class="col-md-12">
-                     <div class="form-floating mb-4 autocomplete">
-                        <input id="autoComplete" name="destination" type="search" class="form-control" placeholder="Hola" required>
-                        <label for="autoComplete">{{ __('contact.Destination') }} *</label>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="form-floating mb-4">
-                        <div class="input-group">
-                           <span class="input-group-text" id="pickup-addon1"><i class="uil uil-location-point"></i></span>
-                           <input id="pickup" type="text" name="pickup" class="form-control" placeholder="Jane" required>
-                           <label for="pickup">{{ __('contact.Pickup') }} *</label>
-                        </div>
-                        <div class="valid-feedback"> {{ __('contact.Looks good') }} </div>
-                        <div class="invalid-feedback"> {{ __('contact.Enter Pickup') }} </div>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="form-floating mb-4">
-                        <div class="input-group">
-                           <span class="input-group-text" id="pickup_date-addon1"><i class="uil uil-calendar-alt"></i></span>
-                           <input id="pickup_date" type="text" name="pickup_date" class="form-control" placeholder="Jane" required>
-                           <label for="pickup_date">{{ __('contact.Pickup Date') }} *</label>
-                        </div>
-                        <div class="valid-feedback"> {{ __('contact.Looks good') }} </div>
-                        <div class="invalid-feedback"> {{ __('contact.Enter Pickup Date') }} </div>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="form-floating mb-4">
-                        <div class="input-group">
-                           <span class="input-group-text" id="arrvial_flight-addon1"><i class="uil uil-plane-arrival"></i></span>
-                           <input id="arrival_flight" type="text" name="arrival_flight" class="form-control" placeholder="Jane" >
-                           <label for="arrival_flight">{{ __('contact.Arrival Flight') }}</label>
-                        </div>
-                        <div class="valid-feedback"> {{ __('contact.Looks good') }} </div>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="form-floating mb-4">
-                        <div class="input-group">
-                           <span class="input-group-text" id="dropoff-addon1"><i class="uil uil-location-point"></i></span>
-                           <input id="dropoff" type="text" name="dropoff" class="form-control" placeholder="Jane" required>
-                           <label for="dropoff">{{ __('contact.Dropoff') }} *</label>
-                        </div>
-                        <div class="valid-feedback"> {{ __('contact.Looks good') }} </div>
-                        <div class="invalid-feedback"> {{ __('contact.Enter Dropoff') }} </div>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="form-floating mb-4">
-                        <div class="input-group">
-                           <span class="input-group-text" id="dropoff_date-addon1"><i class="uil uil-calendar-alt"></i></span>
-                           <input id="dropoff_date" type="text" name="dropoff_date" class="form-control" placeholder="Jane" required>
-                           <label for="dropoff_date">{{ __('contact.Dropoff Date') }} *</label>
-                        </div>
-                        <div class="valid-feedback"> {{ __('contact.Looks good') }} </div>
-                        <div class="invalid-feedback"> {{ __('contact.Enter Dropoff Date') }} </div>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="form-floating mb-4">
-                        <div class="input-group">
-                           <span class="input-group-text" id="departure_flight-addon1"><i class="uil uil-plane-departure"></i></span>
-                           <input id="departure_flight" type="text" name="departure_flight" class="form-control" placeholder="Jane">
-                           <label for="departure_flight">{{ __('contact.Departure Flight') }}</label>
-                        </div>
-                        <div class="valid-feedback"> {{ __('contact.Looks good') }} </div>
-                        <!-- <div class="invalid-feedback"> {{ __('contact.Enter Dropoff Date') }} </div> -->
-                     </div>
-                  </div>
-                  <div class="col-md-6">
-                     <div class="form-floating mb-4">
-                        <div class="input-group">
-                           <span class="input-group-text" id="basic-addon1"><i class="uil uil-users-alt"></i></span>
-                           <select class="form-select" id="pax" name="pax" required>
-                              <option value="" selected>{{ __('contact.Passengers') }}</option>
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5</option>
-                              <option value="6">6</option>
-                              <option value="7">7</option>
-                              <option value="8">8</option>
-                              <option value="9">9</option>
-                              <option value="10">10</option>
-                              <option value="+10">+10</option>
-                           </select>
-                        </div>
-                        <div class="valid-feedback"> {{ __('contact.Looks good') }} </div>
-                        <div class="invalid-feedback"> {{ __('contact.Enter Dropoff Date') }} </div>
-                     </div>
-                  </div>
-                  <div class="col-6">
-                     <div class="form-check">
-                        <input class="form-check-input" name="roundtrip" type="checkbox" value="1" id="flexCheckChecked" checked>
-                        <label class="form-check-label" for="flexCheckChecked"> Roundtrip </label>
-                     </div>
-                  </div>
-                  <div class="col-12">
-                     <hr class="my-4">
-                  </div>
-                  <div class="col-md-6">
-                     <div class="form-floating mb-4">
-                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Jane" required>
-                        <label for="form_name">{{ __('contact.First Name') }} *</label>
-                        <div class="valid-feedback"> {{ __('contact.Looks good') }} </div>
-                        <div class="invalid-feedback"> {{ __('contact.Enter First Name') }} </div>
-                     </div>
-                  </div>
-                  <!-- /column -->
-                  <div class="col-md-6">
-                     <div class="form-floating mb-4">
-                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Doe" required>
-                        <label for="form_lastname">{{ __('contact.Last Name') }} *</label>
-                        <div class="valid-feedback"> {{ __('contact.Looks good') }} </div>
-                        <div class="invalid-feedback"> {{ __('contact.Phone') }} </div>
-                     </div>
-                  </div>
-                  <!-- /column -->
-                  <div class="col-md-12">
-                     <div class="form-floating mb-4">
-                        <input id="form_email" type="email" name="email" class="form-control" placeholder="jane.doe@example.com" required>
-                        <label for="form_email">Email *</label>
-                        <div class="valid-feedback"> {{ __('contact.Looks good') }} </div>
-                        <div class="invalid-feedback"> {{ __('contact.Enter valid email') }} </div>
-                     </div>
-                  </div>
-                  <!-- /column -->
-                  <div class="col-12">
-                     <div class="form-floating mb-4">
-                        <textarea id="form_message" name="message" class="form-control" placeholder="Your message" style="height: 150px" required></textarea>
-                        <label for="form_message">{{ __('contact.Message') }} *</label>
-                        <div class="valid-feedback"> {{ __('contact.Looks good') }} </div>
-                        <div class="invalid-feedback"> {{ __('contact.Enter message') }}  </div>
-                     </div>
-                  </div>
-                  <!-- /column -->
-                  <div class="col-12 text-center">
-                     <input type="hidden" id="recaptcha_token" name="recaptcha_token">
-                     <div class="g-recaptcha"
-                        data-sitekey="{{ $SITE_CONFIGURATION->recapcha_site_key }}"
-                        data-callback="onSubmit"
-                        data-size="invisible">
-                     </div>
-                     <input id="btn-submit" type="submit" class="btn btn-primary rounded-pill btn-send mb-3" value="{{ __('contact.Please wait') }}">
-                     <p class="text-muted"><strong>*</strong> {{ __('contact.fields required') }}</p>
-                  </div>
-                  <!-- /column -->
-               </div>
-               <!-- /.row -->
-            </form>
-            <!-- /form -->
-         </div>
-         <!-- /column -->
-      </div>
-      <!-- /.row -->
-   </div>
-   <!-- /.container -->
-</section>
+
 <!-- /section -->
 <section class="wrapper image-wrapper bg-auto no-overlay bg-image text-center bg-map" data-image-src="./assets/img/map.png">
    <div class="container pt-0 pb-14 pt-md-6 pb-md-4">
@@ -346,7 +176,7 @@
                </div>
                <div>
                   <h5 class="mb-1">{{ __('about.address') }}</h5>
-                  <address>Moonshine St. 14/05 Light City, <br class="d-none d-md-block" />London, United Kingdom</address>
+                  <address>Cancun International Airport <br class="d-none d-md-block" />Cancún, México</address>
                </div>
             </div>
             <div class="d-flex flex-row">
@@ -355,9 +185,9 @@
                </div>
                <div>
                   <h5 class="mb-1">{{ __('about.phone') }}</h5>
-                  <p>+52 (55) 5654 0089</p>
-                  <p>+52 (55) 5740 1466</p>
-                  <p>+52 (55) 4754 5981</p>
+                  <p>+52 998 109 9789</p>
+                  <p>+52 998 898 49 77</p>
+                  <p>+52 998 898 49 79</p>
                </div>
             </div>
             <div class="d-flex flex-row">
@@ -365,8 +195,8 @@
                   <div class="icon text-primary fs-28 me-6 mt-n1"> <i class="uil uil-phone-volume"></i> </div>
                </div>
                <div>
-                  <h5 class="mb-1">NATIONAL CALL CENTER</h5>
-                  <p>01-800-832-6889</p>
+               <h5 class="mb-1">MEXICO TOLL FREE</h5>
+               <p>800 099 1746</p>
                </div>
             </div>
             <div class="d-flex flex-row">
@@ -374,8 +204,8 @@
                   <div class="icon text-primary fs-28 me-6 mt-n1"> <i class="uil uil-phone-volume"></i> </div>
                </div>
                <div>
-                  <h5 class="mb-1">USA / CANADA TOLL FREE:</h5>
-                  <p>1-800-704-2942</p>
+               <h5 class="mb-1">USA / CANADA TOLL FREE:</h5>
+               <p>1-888-644-7803</p>
                </div>
             </div>
             <div class="d-flex flex-row">
