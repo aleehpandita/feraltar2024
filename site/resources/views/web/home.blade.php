@@ -244,7 +244,7 @@ __('home.cuidando')
 								<div class="card-body p-6">
 									<h3 class="fs-21 mb-1">Hyatt Ziva Cancún</h3>
 									<ul class="post-meta fs-16 mb-0">
-										<li><a class="nav-link" href="{{ route(App::getLocale().'.contact') }}">{{ __('home.book') }}</a></li>
+										<li><a class="nav-link" href="https://api.whatsapp.com/send?phone={{$SITE_CONFIGURATION->whatsapp}}">{{ __('home.book') }}</a></li>
 									</ul>
 								</div>
 								<!--/.card-body -->
@@ -586,7 +586,7 @@ __('home.cuidando')
 		</div>
 		<!-- /.row -->
 		<div class="row gx-md-8 gx-xl-12 gy-6 mt-2">
-			<div class="col-lg-4">
+			<div class="col-lg-6">
 				<!-- <h3>My Skills</h3> -->
 				<p class="text-justify">{{ __('home.wewill') }}</p>
 				<ul class="progress-list">
@@ -610,7 +610,7 @@ __('home.cuidando')
 				<!-- /.progress-list -->
 			</div>
 			<!-- /column -->
-			<div class="col-lg-4 text-justify">
+			<div class="col-lg-6 text-justify">
 				<h3>{{ __('home.whyy') }}</h3>
 				<p class="text-justify">{{ __('home.business') }}</p>
 				<ul class="icon-list bullet-bg bullet-soft-primary">
@@ -627,36 +627,7 @@ __('home.cuidando')
 				</ul>
 			</div>
 			<!-- /column -->
-			<div class="col-lg-4">
-				<h3>{{ __('home.process') }} - {{ __('home.how') }}</h3>
-				<div class="d-flex flex-row mb-5">
-					<div>
-						<span class="icon btn btn-circle btn-soft-primary pe-none mt-1 me-5"><span class="number fs-18">1</span></span>
-					</div>
-					<div>
-						<h5 class="mb-1">{{ __('home.step1') }}</h5>
-						<p class="mb-0">{{ __('home.this') }}</p>
-					</div>
-				</div>
-				<div class="d-flex flex-row mb-5">
-					<div>
-						<span class="icon btn btn-circle btn-soft-primary pe-none mt-1 me-5"><span class="number fs-18">2</span></span>
-					</div>
-					<div>
-						<h5 class="mb-1">{{ __('home.easy') }}</h5>
-						<p class="mb-0">{{ __('home.fill') }}</p>
-					</div>
-				</div>
-				<div class="d-flex flex-row">
-					<div>
-						<span class="icon btn btn-circle btn-soft-primary pe-none mt-1 me-5"><span class="number fs-18">3</span></span>
-					</div>
-					<div>
-						<h5 class="mb-1">{{ __('home.enjoytitle') }}</h5>
-						<p class="mb-0">{{ __('home.enjoy') }}</p>
-					</div>
-				</div>
-			</div>
+			
 			<!-- /column -->
 		</div>
 		<!-- /.row -->

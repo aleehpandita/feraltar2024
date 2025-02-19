@@ -18,7 +18,7 @@ return [
     'lux'=>'SUV de lujo',
     'v1'=>'Los valores interiores del Viano están a la altura de lo que promete la primera impresión exterior.',
     'es1'=>'El Cadillac Escalade es una combinación perfecta de sofisticación, funcionalidad y tecnología.',
-    'm1'=>'La Clase S de Mercedes-Benz, antes conocida como Sonderklasse (clase especial en alemán), se reconoce al instante por su diseño icónico: fuerte, potente, majestuoso y elegante.',
+    'm1'=>'El Nissan Versa Sedan combina comodidad, eficiencia y confiabilidad, siendo ideal para servicios de taxi.',
     'll1'=>'Vehículo de lujo',
     'm2'=>'Sutilmente refinado y exquisitamente elaborado, el habitáculo de la Clase E está diseñado para acoger cómodamente a chófer y pasajeros.',
     'm3'=>'Generoso en espacio y seguridad, pero ágil y eficiente.',
@@ -26,5 +26,6 @@ return [
     'jaguar'=>'TEl Jaguar XJ es un lugar en el que los materiales de primera calidad se combinan con elegancia en un diseño que ofrece un confort puro y envolvente.',
     'acura'=>'El TL "Touring Luxury" es una berlina de tamaño medio con un estilo atractivo, unos detalles impecables y cuidados, una tecnología útil y unos acabados magníficos.',
     'sprinter'=>'La furgoneta de pasajeros Mercedes-Benz Sprinter ofrece un transporte con un estilo, seguridad e innovación inigualables.',
-    'scania'=>'El revolucionario estilo y las prestaciones del Irizar PB han trascendido al mercado como indicativo de un autocar de lujo.'
+    'scania'=>'El revolucionario estilo y las prestaciones del Irizar PB han trascendido al mercado como indicativo de un autocar de lujo.',
+     'standard'=>'Servicio Estandár'
 ];
